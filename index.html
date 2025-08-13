@@ -3,13 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>گالری بازی‌ها | جستجو</title>
-  <meta name="description" content="نمایش گالری بازی‌های رایانه‌ای با امکان جستجو و رفتن به صفحه جزئیات هر بازی." />
-  <!-- فونت فارسی -->
+  <title>گالری بازیها | جستجو + فیلتر دستهبندی چندگانه</title>
+  <meta name="description" content="نمایش گالری بازیهای رایانهای با امکان جستجو و فیلتر بر اساس چند دستهبندی و رفتن به صفحه جزئیات هر بازی." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <!-- استایل‌ها -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -18,10 +16,11 @@
       <div class="brand">
         <div class="logo" aria-hidden="true"></div>
         <div>
-          <h1 class="site-title">گالری بازی‌های رایانه‌ای</h1>
-          <p class="sub">می‌توانید بین بازی‌ها جستجو کنید و برای هر بازی وارد صفحهٔ جزئیات شوید.</p>
+          <h1 class="site-title">گالری بازیهای رایانهای</h1>
+          <p class="sub">جستجو کنید یا بر اساس دستهبندی فیلتر کنید. هر بازی میتواند در چند دستهبندی باشد.</p>
         </div>
       </div>
+
       <div class="controls" role="search">
         <div class="search">
           <input id="search" type="search" placeholder="جستجوی عنوان بازی…" aria-label="جستجو" autocomplete="off" />
@@ -29,20 +28,32 @@
             <path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
         </div>
+
+        <div class="select">
+          <label class="sr-only" for="categoryFilter">فیلتر دستهبندی</label>
+          <select id="categoryFilter" aria-label="فیلتر دستهبندی">
+            <option value="">همه دستهبندیها</option>
+            <option value="PS4">PS4</option>
+            <option value="PS3">PS3</option>
+            <option value="PS2">PS2</option>
+            <option value="Xbox">Xbox</option>
+            <option value="PC">PC</option>
+            <option value="Android">Android</option>
+          </select>
+        </div>
       </div>
     </header>
 
     <main>
       <div id="grid" class="grid" aria-live="polite" aria-busy="false"></div>
-      <div id="empty" class="empty" hidden>هیچ بازی مطابق جستجو پیدا نشد.</div>
+      <div id="empty" class="empty" hidden>هیچ بازی مطابق جستجو/فیلتر پیدا نشد.</div>
     </main>
 
     <footer class="footer">
-      ساخته‌شده با ❤️ — برای GitHub Pages کافیست همین فایل‌ها را آپلود کنید.
+      ساختهشده با ❤️ — برای GitHub Pages کافیست همین فایلها را آپلود کنید.
     </footer>
   </div>
 
-  <!-- اسکریپت‌ها (ترتیب مهم است) -->
   <script src="games.js"></script>
   <script src="script.js"></script>
 </body>

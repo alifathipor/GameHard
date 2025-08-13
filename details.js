@@ -1,8 +1,6 @@
-// گرفتن شناسه بازی از URL
 const params = new URLSearchParams(window.location.search);
 const gameId = parseInt(params.get('id'), 10);
 
-// پیدا کردن بازی
 const game = games.find(g => g.id === gameId);
 const container = document.getElementById('detailsContent');
 
@@ -13,6 +11,9 @@ if (!game) {
   container.innerHTML = `
     <section>
       <h2>${game.title}</h2>
+      <div class="meta" style="margin:.5rem 0 1rem;">
+        ${game.categories.map(cat => `<span class="pill">${cat}</span>`).join('')}
+      </div>
       <p>${game.description}</p>
     </section>
 
