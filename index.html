@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>گالری بازی‌ها | جستجو</title>
+  <!-- فونت فارسی زیبا -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b0f1a;
+      --card: rgba(255,255,255,0.06);
+      --card-hover: rgba(255,255,255,0.12);
+      --text: #e8ecf3;
+      --muted: #b7c0cf;
+      --accent: #7c5cff;
+      --accent-2: #2dd4bf;
+      --ring: rgba(124,92,255,.35);
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --glass: blur(12px) saturate(140%);
+      --grid-gap: 18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Vazirmatn', system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 800px at 10% -10%, rgba(124,92,255,.25), transparent 60%),
+        radial-gradient(1000px 700px at 110% 10%, rgba(45,212,191,.2), transparent 60%),
+        linear-gradient(180deg, #0b0f1a 0%, #0a0d17 60%, #0a0b12 100%);
+      min-height:100vh;
+    }
+
+    .container{
+      width:min(1200px, 94%);
+      margin: 32px auto 56px;
+    }
+
+    header{
+      display:flex; align-items:center; gap:16px; flex-wrap:wrap; justify-content:space-between;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+    }
+    .logo{
+      width:48px;height:48px;border-radius:14px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 8px 25px rgba(124,92,255,.35);
+    }
+    h1{font-size: clamp(22px, 4vw, 32px); margin:0; letter-spacing:-.3px}
+    .sub{color:var(--muted); margin-top:6px; font-size:14px}
+
+    .controls{
+      display:flex; gap:12px; align-items:center; width:100%; max-width:680px;
+    }
+
+    .search{
+      position:relative; flex:1;
+    }
+    .search input{
+      width:100%; padding:14px 46px 14px 14px; border-radius: calc(var(--radius) + 6px);
+      background: color-mix(in oklab, var(--card), #fff 2%);
+      -webkit-backdrop-filter: var(--glass); backdrop-filter: var(--glass);
+      border:1px solid rgba(255,255,255,.08);
+      outline:0; color:var(--text); font-size:16px;
+      box-shadow: inset 0 -1px 0 rgba(255,255,255,.04), var(--shadow);
+      transition: box-shadow .25s ease, border-color .25s ease, background .25s ease;
+    }
+    .search input:focus{
+      border-color: var(--accent);
+      box-shadow: 0 0 0 6px var(--ring), var(--shadow);
+      background: color-mix(in oklab, var(--card), #fff 6%);
+    }
+    .search .icon{
+      position:absolute; right:14px; top:50%; translate:0 -50%; pointer-events:none; opacity:.8;
+    }
+    .kbd{
+      border:1px solid rgba(255,255,255,.18); padding:2px 8px; border-radius:10px; font-size:12px; color:var(--muted);
+      background: rgba(255,255,255,.06); -webkit-backdrop-filter: var(--glass); backdrop-filter: var(--glass);
+    }
+
+    .toggle{
+      border:1px solid rgba(255,255,255,.18); border-radius:14px; padding:10px 12px; cursor:pointer;
+      background: rgba(255,255,255,.06); -webkit-backdrop-filter: var(--glass); backdrop-filter: var(--glass);
+      display:flex; align-items:center; gap:8px; user-select:none; transition: background .25s ease;
+    }
+    .toggle:hover{background: rgba(255,255,255,.1)}
+
+    /* گرید کارت‌ها */
+    .grid{
+      margin-top:22px;
+      display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--grid-gap);
+    }
+
+    .card{
+      position:relative; overflow:hidden; border-radius: var(--radius);
+      background: var(--card); border:1px solid rgba(255,255,255,.08);
+      -webkit-backdrop-filter: var(--glass); backdrop-filter: var(--glass);
+      box-shadow: var(--shadow);
+      transition: transform .25s ease, background .25s ease, border-color .25s ease;
+      isolation:isolate;
+    }
+    .card:hover{
+      transform: translateY(-6px);
+      background: var(--card-hover);
+      border-color: rgba(255,255,255,.18);
+    }
+    .thumb{aspect-ratio:16/9; width:100%; object-fit:cover; display:block; filter:saturate(110%) contrast(105%)}
+    .content{padding:12px 14px 16px}
+
+    .title{font-weight:700; font-size:16px; line-height:1.6; margin:0 0 6px}
+    .hl{ background: linear-gradient(90deg, rgba(124,92,255,.25), rgba(45,212,191,.25)); padding:0 3px; border-radius:8px }
+
+    .meta{display:flex; align-items:center; gap:10px; color:var(--muted); font-size:12px}
+    .pill{border:1px solid rgba(255,255,255,.18); padding:4px 8px; border-radius:999px;}
+
+    footer{margin-top:34px; color:var(--muted); text-align:center; font-size:12px}
+    .empty{opacity:.8; text-align:center; padding:60px 12px}
+
+    @media (max-width:480px){
+      .controls{max-width:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>گالری بازی‌های رایانه‌ای</h1>
+          <div class="sub">جستجو بین بازی‌ها؛ طراحی مدرن، سبک و سریع</div>
+        </div>
+      </div>
+      <div class="controls" role="search">
+        <div class="search">
+          <input id="search" type="search" placeholder="جستجوی عنوان بازی…" aria-label="جستجو" autocomplete="off" />
+          <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <button id="themeToggle" class="toggle" type="button" aria-pressed="false" title="تغییر تم (L)">
+          <span id="themeIcon">🌙</span>
+          <span>تم</span>
+          <span class="kbd">L</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div id="grid" class="grid" aria-live="polite" aria-busy="false"></div>
+      <div id="empty" class="empty" hidden>هیچ بازی مطابق جستجو پیدا نشد.</div>
+    </main>
+
+    <footer>
+      ساخته‌شده با ❤️ — قابل انتشار روی GitHub Pages — فقط این فایل را آپلود کنید.
+    </footer>
+  </div>
+
+  <script>
+    // ————————————— داده‌ها (می‌توانید بعداً ویرایش/اضافه کنید) —————————————
+    const games = [
+      { title: 'The Witcher 3: Wild Hunt', img: 'https://images.unsplash.com/photo-1605901309584-818e25960a8b?q=80&w=1600&auto=format&fit=crop' },
+      { title: 'Cyberpunk 2077', img: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1600&auto=format&fit=crop' },
+      { title: 'Red Dead Redemption 2', img: 'https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1600&auto=format&fit=crop' },
+      { title: 'Elden Ring', img: 'https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?q=80&w=1600&auto=format&fit=crop' },
+      { title: 'God of War', img: 'https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1600&auto=format&fit=crop' },
+      { title: 'Horizon Zero Dawn', img: 'https://images.unsplash.com/photo-1585079542156-2755d9c8acc1?q=80&w=1600&auto=format&fit=crop' },
+      { title: 'Ghost of Tsushima', img: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1600&auto=format&fit=crop' },
+      { title: 'Assassin\'s Creed: Valhalla', img: 'https://images.unsplash.com/photo-1542751371-6d65d9a29b6a?q=80&w=1600&auto=format&fit=crop' },
+      { title: 'Minecraft', img: 'https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?q=80&w=1600&auto=format&fit=crop' },
+      { title: 'Fortnite', img: 'https://images.unsplash.com/photo-1605901309584-818e25960a8b?q=80&w=1600&auto=format&fit=crop' },
+      { title: 'Apex Legends', img: 'https://images.unsplash.com/photo-1556438064-2d7646166914?q=80&w=1600&auto=format&fit=crop' },
+      { title: 'League of Legends', img: 'https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?q=80&w=1600&auto=format&fit=crop' },
+    ];
+
+    const grid = document.getElementById('grid');
+    const empty = document.getElementById('empty');
+    const search = document.getElementById('search');
+
+    // رندر کارت‌ها
+    function renderCards(list, query=''){
+      grid.setAttribute('aria-busy','true');
+      grid.innerHTML = '';
+
+      const q = query.trim().toLowerCase();
+      const frag = document.createDocumentFragment();
+
+      list.forEach(({title, img}) => {
+        const match = title.toLowerCase().includes(q);
+        if(q && !match) return;
+
+        const card = document.createElement('article');
+        card.className = 'card';
+        card.tabIndex = 0;
+        card.innerHTML = `
+          <img class="thumb" src="${img}" alt="کاور ${title}" loading="lazy" />
+          <div class="content">
+            <h2 class="title">${highlight(title, q)}</h2>
+            <div class="meta">
+              <span class="pill">ویدئویی</span>
+              <span class="pill">PC</span>
+            </div>
+          </div>
+        `;
+        frag.appendChild(card);
+      });
+
+      grid.appendChild(frag);
+      const hasItems = grid.children.length > 0;
+      empty.hidden = hasItems;
+      grid.setAttribute('aria-busy','false');
+    }
+
+    // هایلایت عبارت جستجو در عنوان
+    function highlight(text, q){
+      if(!q) return text;
+      const idx = text.toLowerCase().indexOf(q);
+      if(idx === -1) return text;
+      const before = text.slice(0, idx);
+      const mid = text.slice(idx, idx + q.length);
+      const after = text.slice(idx + q.length);
+      return `${before}<span class="hl">${mid}</span>${after}`;
+    }
+
+    // جستجو با debounce برای عملکرد بهتر
+    let t;
+    search.addEventListener('input', () => {
+      clearTimeout(t);
+      t = setTimeout(() => renderCards(games, search.value), 120);
+    });
+
+    // شورتکات های کیبورد
+    document.addEventListener('keydown', (e) => {
+      if(e.key === '/' || (e.ctrlKey && e.key.toLowerCase() === 'k')){
+        e.preventDefault(); search.focus();
+      }
+    });
+
+    // تم روشن/تاریک
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function setTheme(mode){
+      document.documentElement.dataset.theme = mode;
+      themeToggle.setAttribute('aria-pressed', mode === 'dark');
+      themeIcon.textContent = mode === 'dark' ? '🌙' : '☀️';
+      // می‌توانید در آینده واریانت‌های رنگی بیشتری اضافه کنید
+    }
+    function toggleTheme(){
+      const cur = document.documentElement.dataset.theme || (prefersDark.matches ? 'dark' : 'light');
+      setTheme(cur === 'dark' ? 'light' : 'dark');
+    }
+    themeToggle.addEventListener('click', toggleTheme);
+    document.addEventListener('keydown', (e)=>{ if(e.key.toLowerCase()==='l') toggleTheme();});
+
+    // شروع
+    setTheme(prefersDark.matches ? 'dark' : 'light');
+    renderCards(games);
+  </script>
+</body>
+</html>
