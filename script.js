@@ -21,25 +21,25 @@ function renderCards(list, query = '') {
   const q = query.trim().toLowerCase();
   const frag = document.createDocumentFragment();
 
-  list.forEach(({ id, title, img }) => {
-    const match = title.toLowerCase().includes(q);
-    if (q && !match) return;
+  list.forEach(({ id, title, image }) => {
+  const match = title.toLowerCase().includes(q);
+  if (q && !match) return;
 
-    const link = document.createElement('a');
-    link.href = `details.html?id=${id}`;
-    link.className = 'card';
-    link.innerHTML = `
-      <img class="thumb" src="${img}" alt="کاور ${title}" loading="lazy" />
-      <div class="content">
-        <h2 class="title">${highlight(title, q)}</h2>
-        <div class="meta">
-          <span class="pill">ویدئویی</span>
-          <span class="pill">PC</span>
-        </div>
+  const link = document.createElement('a');
+  link.href = `details.html?id=${id}`;
+  link.className = 'card';
+  link.innerHTML = `
+    <img class="thumb" src="${image}" alt="کاور ${title}" loading="lazy" />
+    <div class="content">
+      <h2 class="title">${highlight(title, q)}</h2>
+      <div class="meta">
+        <span class="pill">ویدئویی</span>
+        <span class="pill">PC</span>
       </div>
-    `;
-    frag.appendChild(link);
-  });
+    </div>
+  `;
+  frag.appendChild(link);
+});
 
   grid.appendChild(frag);
   empty.hidden = grid.children.length > 0;
