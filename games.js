@@ -15,12 +15,12 @@ const games = [
   },
   {
     id: 2,
-    title: 'God of War (2018)',
-    image: 'https://images.unsplash.com/photo-1603349206295-c633b2b3fa3a?q=80&w=1200',
+    title: 'God of War (208)',
+    image: 'https://images.igdb.com/igdb/image/upload/t_cover_big/co4azn.jpg',
     description: 'اکشن ماجراجویی محبوب با روایت داستانی قدرتمند.',
     categories: ['PS4', 'PC'],
     gallery: [
-      'https://images.unsplash.com/photo-1603349206295-c633b2b3fa3a?q=80&w=1200'
+      'https://images.igdb.com/igdb/image/upload/t_cover_big/co4azn.jpg'
     ],
     video: 'https://www.aparat.com/video/video/embed/videohash/0MTCo/vt/frame'
   },
