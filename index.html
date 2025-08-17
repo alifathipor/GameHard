@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>گالری بازیها | جستجو + فیلتر دستهبندی چندگانه</title>
-  <meta name="description" content="نمایش گالری بازیهای رایانهای با امکان جستجو و فیلتر بر اساس چند دستهبندی و رفتن به صفحه جزئیات هر بازی." />
+  <meta name="description"
+    content="نمایش گالری بازیهای رایانهای با امکان جستجو و فیلتر بر اساس چند دستهبندی و رفتن به صفحه جزئیات هر بازی." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
     <header class="header">
@@ -21,40 +24,45 @@
         </div>
       </div>
 
-      <div class="controls" role="search">
-        <div class="search">
-          <input id="search" type="search" placeholder="جستجوی عنوان بازی…" aria-label="جستجو" autocomplete="off" />
-          <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </div>
 
-        <div class="select">
-          <label class="sr-only" for="categoryFilter">فیلتر دستهبندی</label>
-          <select id="categoryFilter" aria-label="فیلتر دستهبندی">
-            <option value="">همه دستهبندیها</option>
-            <option value="PS4">PS4</option>
-            <option value="PS3">PS3</option>
-            <option value="PS2">PS2</option>
-            <option value="Xbox">Xbox</option>
-            <option value="PC">PC</option>
-            <option value="Android">Android</option>
-          </select>
-        </div>
+      <!-- جستجو -->
+      <div class="search">
+        <input id="search" type="search" placeholder="جستجوی عنوان بازی…" aria-label="جستجو" autocomplete="off" />
+        <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" />
+        </svg>
       </div>
-    </header>
 
-    <main>
-      <div id="grid" class="grid" aria-live="polite" aria-busy="false"></div>
-      <div id="empty" class="empty" hidden>هیچ بازی مطابق جستجو/فیلتر پیدا نشد.</div>
-    </main>
+      <!-- دکمه‌های دسته‌بندی -->
+      <div class="categories" id="categoryButtons">
+        <button data-cat="">همه</button>
+        <button data-cat="PS4">PS4</button>
+        <button data-cat="PS3">PS3</button>
+        <button data-cat="PS2">PS2</button>
+        <button data-cat="Xbox">Xbox</button>
+        <button data-cat="PC">PC</button>
+        <button data-cat="Android">Android</button>
+      </div>
+  </div>
+  </header>
 
-    <footer class="footer">
-      ساختهشده با ❤️ — برای GitHub Pages کافیست همین فایلها را آپلود کنید.
-    </footer>
+  <main>
+    <div id="grid" class="grid" aria-live="polite" aria-busy="false"></div>
+    <div id="empty" class="empty" hidden>هیچ بازی مطابق جستجو/فیلتر پیدا نشد.</div>
+  </main>
+
+  <footer class="footer custom-footer">
+    <div class="footer-content">
+      <span>تماس: <a href="tel:09023394942" dir="ltr" style="font-weight:600;color:#1976d2;text-decoration:none;">09023394942</a></span>
+      <span class="footer-sep">|</span>
+      <span>آدرس: سهند فاز 2 نزدیک میدان امام حسین روبروی گلخانه</span>
+    </div>
+  </footer>
   </div>
 
   <script src="games.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

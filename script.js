@@ -1,8 +1,9 @@
 const grid = document.getElementById('grid');
 const empty = document.getElementById('empty');
 const search = document.getElementById('search');
-const categoryFilter = document.getElementById('categoryFilter');
+const categoryButtons = document.getElementById('categoryButtons');
 
+// رندر کارت‌ها (مثل قبل)
 function highlight(text, q) {
   if (!q) return text;
   const idx = text.toLowerCase().indexOf(q.toLowerCase());
@@ -22,10 +23,16 @@ function renderCards(list, query = '', category = '') {
 
   const frag = document.createDocumentFragment();
 
-  list.forEach(({ id, title, image, categories }) => {
+  list.forEach(({ id, title, image, categories, priceId }) => {
     const matchTitle = title.toLowerCase().includes(q);
     const matchCategory = !selectedCat || categories.includes(selectedCat);
     if ((q && !matchTitle) || !matchCategory) return;
+
+    const priceKey = priceId || id;
+    const { price, discount } = prices[priceKey] || { price: 0, discount: 0 };
+    const finalPrice = discount > 0
+      ? Math.floor(price - (price * discount / 100))
+      : price;
 
     const link = document.createElement('a');
     link.href = `details.html?id=${id}`;
@@ -37,6 +44,14 @@ function renderCards(list, query = '', category = '') {
         <div class="meta">
           ${categories.map(cat => `<span class="pill">${cat}</span>`).join('')}
         </div>
+        <div class="price-box">
+          ${discount > 0
+            ? `<span class="old-price">${price.toLocaleString()} ت</span>
+               <span class="final-price">${finalPrice.toLocaleString()} ت</span>
+               <span class="discount">٪${discount}</span>`
+            : `<span class="final-price">${price.toLocaleString()} ت</span>`
+          }
+        </div>
       </div>
     `;
     frag.appendChild(link);
@@ -47,14 +62,29 @@ function renderCards(list, query = '', category = '') {
   grid.setAttribute('aria-busy', 'false');
 }
 
+// جستجو
 let t;
 search.addEventListener('input', () => {
   clearTimeout(t);
-  t = setTimeout(() => renderCards(games, search.value, categoryFilter.value), 120);
+  t = setTimeout(() => {
+    const activeCatBtn = categoryButtons.querySelector('button.active');
+    const selectedCat = activeCatBtn ? activeCatBtn.dataset.cat : '';
+    renderCards(games, search.value, selectedCat);
+  }, 120);
 });
 
-categoryFilter.addEventListener('change', () => {
-  renderCards(games, search.value, categoryFilter.value);
+// دسته‌بندی با دکمه‌ها
+categoryButtons.addEventListener('click', e => {
+  if (e.target.tagName === 'BUTTON') {
+    const selected = e.target.dataset.cat;
+    [...categoryButtons.children].forEach(btn => btn.classList.remove('active'));
+    e.target.classList.add('active');
+    renderCards(games, search.value, selected);
+  }
 });
 
-renderCards(games, '', categoryFilter.value);
+// فعال کردن اولین دکمه (همه)
+categoryButtons.querySelector('button[data-cat=""]').classList.add('active');
+
+// رندر اولیه
+renderCards(games, '', '');

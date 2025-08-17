@@ -216,3 +216,128 @@ body {
   white-space: nowrap; border: 0;
 }
 
+.price-box {
+  margin-top: 8px;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.final-price {
+  font-weight: bold;
+  color: #e53935;
+}
+
+.discount {
+  background: #ff9800;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.categories {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 6px 0;
+  scrollbar-width: none; /* مخفی کردن اسکرول بار فایرفاکس */
+}
+
+.categories::-webkit-scrollbar {
+  display: none; /* مخفی کردن اسکرول بار کروم */
+}
+
+.categories button {
+  border: 1px solid rgba(255,255,255,.2);
+  background: var(--card);
+  color: var(--text);
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all .25s ease;
+}
+
+.categories button:hover {
+  background: var(--card-hover);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.categories button.active {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(124,92,255,.4);
+}
+
+.btn-back {
+  background: linear-gradient(90deg, #f7fafc 0%, #e3e8ee 100%);
+  color: #222;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  font-weight: 600;
+  padding: 0.5em 1.5em;
+  border-radius: 2em;
+  transition: box-shadow 0.2s, background 0.2s;
+  margin-left: 0.5em;
+}
+
+.btn-back:hover, .btn-back:focus {
+  background: linear-gradient(90deg, #fff 0%, #e3e8ee 100%);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  color: #1976d2;
+  outline: none;
+}
+
+.custom-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: linear-gradient(90deg, rgba(124,92,255,0.18) 0%, rgba(45,212,191,0.14) 100%);
+  color: #e8ecf3;
+  padding: 1em 0;
+  text-align: center;
+  font-size: 1.08em;
+  border-radius: 0;
+  margin: 0;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.09);
+  width: 100%;
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border-top: 1px solid rgba(255,255,255,0.09);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-sep {
+  color: #b7c0cf;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 6px;
+}
+
+.custom-footer a {
+  transition: color 0.2s;
+  color: #7c5cff;
+}
+.custom-footer a:hover, .custom-footer a:focus {
+  color: #2dd4bf;
+  text-decoration: underline;
+}
