@@ -12,7 +12,9 @@ const games = [
       'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200'
     ],
     video: 'https://www.aparat.com/video/video/embed/videohash/0MTCo/vt/frame',
-    priceId: 1
+    priceIdPC: 1,
+    priceIdPS4: 1,
+    isNew: true
   },
   {
   id: 2,
@@ -33,7 +35,11 @@ const games = [
     "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfb.jpg"
   ],
   video: "https://www.youtube.com/embed/SrwKP2iTPb8",
-   priceId: 2
+   priceIdPC: 2,
+   priceIdPS4: 2,
+   priceIdPS5: 1,
+   priceIdXbox: 1,
+   isNew: false
 },
   {
     id: 3,
@@ -45,7 +51,9 @@ const games = [
       'https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1200'
     ],
     video: 'https://www.aparat.com/video/video/embed/videohash/0MTCo/vt/frame',
-     priceId: 1
+    priceIdPC: 3,
+    priceIdPS3: 1,
+    isNew: true
   },
   {
     id: 4,
@@ -57,7 +65,9 @@ const games = [
       'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200'
     ],
     video: 'https://www.aparat.com/video/video/embed/videohash/0MTCo/vt/frame',
-     priceId: 4
+    priceIdPC: 4,
+    priceIdPS2: 1,
+    isNew: false
   },
   {
     id: 5,
@@ -69,7 +79,9 @@ const games = [
       'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200'
     ],
     video: 'https://www.aparat.com/video/video/embed/videohash/0MTCo/vt/frame',
-     priceId: 2
+    priceIdPC: 5,
+    priceIdXbox: 2,
+    isNew: false
   },
   {
     id: 6,
@@ -81,16 +93,43 @@ const games = [
       'https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200'
     ],
     video: 'https://www.aparat.com/video/video/embed/videohash/0MTCo/vt/frame',
-     priceId: 4
+    priceIdAndroid: 1,
+    isNew: true
   }
 ];
 
-const prices = {
-  1: { price: 20000, discount: 0 },
-  2: { price: 450000, discount: 20 },
-  3: { price: 15000, discount: 0 },
-  4: { price: 30000, discount: 50 },
-  5: { price: 250000, discount: 0 },
-  6: { price: 100000, discount: 5 }
+// قیمت مخصوص هر پلتفرم
+const pricesPC = {
+  1: { price: 350000, discount: 10 },
+  2: { price: 400000, discount: 15 },
+  3: { price: 12000, discount: 0 },
+  4: { price: 25000, discount: 5 },
+  5: { price: 420000, discount: 20 }
+};
+
+const pricesPS4 = {
+  1: { price: 500000, discount: 5 },
+  2: { price: 550000, discount: 10 }
+};
+
+const pricesPS5 = {
+  1: { price: 700000, discount: 0 }
+};
+
+const pricesPS3 = {
+  1: { price: 18000, discount: 0 }
+};
+
+const pricesPS2 = {
+  1: { price: 20000, discount: 0 }
+};
+
+const pricesXbox = {
+  1: { price: 480000, discount: 8 },
+  2: { price: 390000, discount: 12 }
+};
+
+const pricesAndroid = {
+  1: { price: 100000, discount: 5 }
 };
 

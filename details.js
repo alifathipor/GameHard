@@ -8,13 +8,55 @@ if (!game) {
   container.innerHTML = `<p class="empty">بازی مورد نظر پیدا نشد.</p>`;
   container.setAttribute('aria-busy', 'false');
 } else {
+  // استخراج قیمت‌ها برای هر پلتفرم
+  const priceRows = [];
+  const platformMap = {
+    PC: { idField: 'priceIdPC', prices: pricesPC, label: 'PC' },
+    PS4: { idField: 'priceIdPS4', prices: pricesPS4, label: 'PS4' },
+    PS5: { idField: 'priceIdPS5', prices: pricesPS5, label: 'PS5' },
+    PS3: { idField: 'priceIdPS3', prices: pricesPS3, label: 'PS3' },
+    PS2: { idField: 'priceIdPS2', prices: pricesPS2, label: 'PS2' },
+    Xbox: { idField: 'priceIdXbox', prices: pricesXbox, label: 'Xbox' },
+    Android: { idField: 'priceIdAndroid', prices: pricesAndroid, label: 'Android' }
+  };
+
+  game.categories.forEach(cat => {
+    const info = platformMap[cat];
+    if (info && game[info.idField]) {
+      const priceObj = info.prices[game[info.idField]];
+      if (priceObj) {
+        const { price, discount } = priceObj;
+        const finalPrice = discount > 0
+          ? Math.floor(price - (price * discount / 100))
+          : price;
+        priceRows.push(`
+          <div class="price-row">
+            <span class="platform-label">${info.label}</span>
+            ${
+              discount > 0
+                ? `<span class="old-price">${price.toLocaleString()} ت</span>
+                   <span class="final-price">${finalPrice.toLocaleString()} ت</span>
+                   <span class="discount">٪${discount}</span>`
+                : `<span class="final-price">${price.toLocaleString()} ت</span>`
+            }
+          </div>
+        `);
+      }
+    }
+  });
+
   container.innerHTML = `
     <section>
       <h2>${game.title}</h2>
       <div class="meta" style="margin:.5rem 0 1rem;">
         ${game.categories.map(cat => `<span class="pill">${cat}</span>`).join('')}
       </div>
-      <p>${game.description}</p>
+      <p class="desc-justify">${game.description}</p>
+      ${priceRows.length > 0 ? `
+        <div class="price-box-details">
+          ${priceRows.join('')}
+        </div>
+      ` : ''}
     </section>
 
     <section style="margin-top:20px;">
@@ -28,12 +70,36 @@ if (!game) {
 
     <section style="margin-top:20px;">
       <h3>گالری تصاویر</h3>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:10px;">
-        ${game.gallery.map(src => `
-          <img src="${src}" alt="تصویر از ${game.title}" style="width:100%;border-radius:var(--radius);box-shadow:var(--shadow);" loading="lazy" />
+      <div class="gallery-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:10px;">
+        ${game.gallery.map((src, i) => `
+          <img src="${src}" alt="تصویر از ${game.title}" class="gallery-img" data-idx="${i}" style="width:100%;border-radius:var(--radius);box-shadow:var(--shadow);cursor:pointer;" loading="lazy" />
         `).join('')}
       </div>
     </section>
+    <div id="lightbox" class="lightbox" style="display:none;">
+      <div class="lightbox-bg"></div>
+      <img id="lightbox-img" src="" alt="تصویر بزرگ" />
+    </div>
   `;
   container.setAttribute('aria-busy', 'false');
+
+  // لایت‌باکس گالری
+  const galleryImgs = container.querySelectorAll('.gallery-img');
+  const lightbox = container.querySelector('#lightbox');
+  const lightboxImg = container.querySelector('#lightbox-img');
+  const lightboxBg = container.querySelector('.lightbox-bg');
+
+  galleryImgs.forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    lightboxImg.src = '';
+    document.body.style.overflow = '';
+  });
 }

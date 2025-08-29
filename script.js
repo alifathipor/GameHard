@@ -15,6 +15,7 @@ function highlight(text, q) {
 }
 
 function renderCards(list, query = '', category = '') {
+  renderNewGames();
   grid.setAttribute('aria-busy', 'true');
   grid.innerHTML = '';
 
@@ -23,16 +24,10 @@ function renderCards(list, query = '', category = '') {
 
   const frag = document.createDocumentFragment();
 
-  list.forEach(({ id, title, image, categories, priceId }) => {
+  list.forEach(({ id, title, image, categories }) => {
     const matchTitle = title.toLowerCase().includes(q);
     const matchCategory = !selectedCat || categories.includes(selectedCat);
     if ((q && !matchTitle) || !matchCategory) return;
-
-    const priceKey = priceId || id;
-    const { price, discount } = prices[priceKey] || { price: 0, discount: 0 };
-    const finalPrice = discount > 0
-      ? Math.floor(price - (price * discount / 100))
-      : price;
 
     const link = document.createElement('a');
     link.href = `details.html?id=${id}`;
@@ -44,14 +39,6 @@ function renderCards(list, query = '', category = '') {
         <div class="meta">
           ${categories.map(cat => `<span class="pill">${cat}</span>`).join('')}
         </div>
-        <div class="price-box">
-          ${discount > 0
-            ? `<span class="old-price">${price.toLocaleString()} ت</span>
-               <span class="final-price">${finalPrice.toLocaleString()} ت</span>
-               <span class="discount">٪${discount}</span>`
-            : `<span class="final-price">${price.toLocaleString()} ت</span>`
-          }
-        </div>
       </div>
     `;
     frag.appendChild(link);
@@ -60,6 +47,33 @@ function renderCards(list, query = '', category = '') {
   grid.appendChild(frag);
   empty.hidden = grid.children.length > 0;
   grid.setAttribute('aria-busy', 'false');
+}
+
+// اضافه کردن بخش بازی‌های جدید ماه
+const newGamesBox = document.createElement('div');
+newGamesBox.className = 'new-games-box';
+newGamesBox.style.marginBottom = '24px';
+grid.parentNode.insertBefore(newGamesBox, grid);
+
+function renderNewGames() {
+  const newGames = games.filter(g => g.isNew);
+  if (newGames.length === 0) {
+    newGamesBox.innerHTML = '';
+    newGamesBox.style.display = 'none';
+    return;
+  }
+  newGamesBox.style.display = '';
+  newGamesBox.innerHTML = `
+    <div class="new-games-title">بازی‌های اضافه شده این ماه</div>
+    <div class="new-games-list">
+      ${newGames.map(game => `
+        <a href="details.html?id=${game.id}" class="new-game-card">
+          <img src="${game.image}" alt="کاور ${game.title}" class="new-game-thumb" loading="lazy" />
+          <span class="new-game-name">${game.title}</span>
+        </a>
+      `).join('')}
+    </div>
+  `;
 }
 
 // جستجو
