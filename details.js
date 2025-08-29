@@ -1,6 +1,8 @@
+// دریافت ID بازی از پارامتر URL
 const params = new URLSearchParams(window.location.search);
 const gameId = parseInt(params.get('id'), 10);
 
+// پیدا کردن بازی در آرایه games
 const game = games.find(g => g.id === gameId);
 const container = document.getElementById('detailsContent');
 
@@ -11,13 +13,13 @@ if (!game) {
   // استخراج قیمت‌ها برای هر پلتفرم
   const priceRows = [];
   const platformMap = {
-    PC: { idField: 'priceIdPC', prices: pricesPC, label: 'PC' },
-    PS4: { idField: 'priceIdPS4', prices: pricesPS4, label: 'PS4' },
-    PS5: { idField: 'priceIdPS5', prices: pricesPS5, label: 'PS5' },
-    PS3: { idField: 'priceIdPS3', prices: pricesPS3, label: 'PS3' },
-    PS2: { idField: 'priceIdPS2', prices: pricesPS2, label: 'PS2' },
-    Xbox: { idField: 'priceIdXbox', prices: pricesXbox, label: 'Xbox' },
-    Android: { idField: 'priceIdAndroid', prices: pricesAndroid, label: 'Android' }
+    PC: { idField: 'priceIdPC', sizeField: 'sizePC', prices: pricesPC, label: 'PC' },
+    PS4: { idField: 'priceIdPS4', sizeField: 'sizePS4', prices: pricesPS4, label: 'PS4' },
+    PS5: { idField: 'priceIdPS5', sizeField: 'sizePS5', prices: pricesPS5, label: 'PS5' },
+    PS3: { idField: 'priceIdPS3', sizeField: 'sizePS3', prices: pricesPS3, label: 'PS3' },
+    PS2: { idField: 'priceIdPS2', sizeField: 'sizePS2', prices: pricesPS2, label: 'PS2' },
+    Xbox: { idField: 'priceIdXbox', sizeField: 'sizeXbox', prices: pricesXbox, label: 'Xbox' },
+    Android: { idField: 'priceIdAndroid', sizeField: 'sizeAndroid', prices: pricesAndroid, label: 'Android' }
   };
 
   game.categories.forEach(cat => {
@@ -29,6 +31,8 @@ if (!game) {
         const finalPrice = discount > 0
           ? Math.floor(price - (price * discount / 100))
           : price;
+        const sizeVal = game[info.sizeField] ? `${game[info.sizeField]} گیگابایت` : "نامشخص";
+
         priceRows.push(`
           <div class="price-row">
             <span class="platform-label">${info.label}</span>
@@ -39,12 +43,23 @@ if (!game) {
                    <span class="discount">٪${discount}</span>`
                 : `<span class="final-price">${price.toLocaleString()} ت</span>`
             }
+            <span class="size">حجم: ${sizeVal}</span>
           </div>
         `);
       }
     }
   });
 
+  // محاسبه و نمایش تاریخ انتشار
+  let releaseInfo = "";
+  if (game.releaseDate) {
+    const releaseYear = new Date(game.releaseDate).getFullYear();
+    const now = new Date().getFullYear();
+    const diff = Math.floor(now - releaseYear);
+    releaseInfo = `<p class="release-date">تاریخ انتشار: ${releaseYear} (${diff} سال قبل)</p>`;
+  }
+
+  // رندر محتوای کامل صفحه
   container.innerHTML = `
     <section>
       <h2>${game.title}</h2>
@@ -52,6 +67,7 @@ if (!game) {
         ${game.categories.map(cat => `<span class="pill">${cat}</span>`).join('')}
       </div>
       <p class="desc-justify">${game.description}</p>
+      ${game.release}
       ${priceRows.length > 0 ? `
         <div class="price-box-details">
           ${priceRows.join('')}
@@ -63,8 +79,7 @@ if (!game) {
       <h3>ویدیو</h3>
       <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);box-shadow:var(--shadow);">
         <iframe src="${game.video}" frameborder="0" allowfullscreen
-          style="position:absolute;top:0;left:0;width:100%;height:100%;">
-        </iframe>
+          style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
       </div>
     </section>
 
@@ -76,18 +91,19 @@ if (!game) {
         `).join('')}
       </div>
     </section>
+
     <div id="lightbox" class="lightbox" style="display:none;">
       <div class="lightbox-bg"></div>
       <img id="lightbox-img" src="" alt="تصویر بزرگ" />
     </div>
   `;
+
   container.setAttribute('aria-busy', 'false');
 
   // لایت‌باکس گالری
   const galleryImgs = container.querySelectorAll('.gallery-img');
   const lightbox = container.querySelector('#lightbox');
   const lightboxImg = container.querySelector('#lightbox-img');
-  const lightboxBg = container.querySelector('.lightbox-bg');
 
   galleryImgs.forEach(img => {
     img.addEventListener('click', () => {

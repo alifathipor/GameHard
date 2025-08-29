@@ -1,107 +1,95 @@
-// لیست بازیها با پشتیبانی از چند دستهبندی
-// هر بازی میتواند چند دسته داشته باشد
 const games = [
+
+
   {
-    id: 1,
-    title: 'The Witcher 3: Wild Hunt',
-    image: 'https://par30games.net/wp-content/uploads/2018/03/A-Way-Out-PC-Game.jpg',
-    description: 'یک بازی نقشآفرینی جهانباز با داستانی عمیق و محیطهای متنوع، ساخته CD Projekt Red.',
-    categories: ['PC', 'PS4'],
-    gallery: [
-      'https://par30games.net/wp-content/uploads/2018/03/A-Way-Out-PC-Game.jpg',
-      'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200'
+    id: 36897,
+    title: "A Way Out",
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vca.jpg",
+    description: "از سازندگان Brothers: A Tale of Two Sons، بازی A Way Out منتشر شده است، یک ماجراجویی منحصراً همکاری که در آن شما نقش یکی از دو زندانی را بازی می‌کنید که فرار جسورانه خود را از زندان انجام می‌دهند. چیزی که به عنوان یک فرار هیجان‌انگیز آغاز می‌شود، به سرعت به یک ماجراجویی غیرقابل پیش‌بینی و احساسی تبدیل می‌شود که قبلاً دیده یا بازی نشده است. A Way Out تجربه‌ای است که باید با دو بازیکن انجام شود. هر بازیکن یکی از شخصیت‌های اصلی، لئو و وینسنت، را در اتحادی بی‌میل برای فرار از زندان و به دست آوردن آزادی خود کنترل می‌کند.",
+    categories: [
+      // "PS4",
+      "PC",
+      // "Xbox"
     ],
-    video: 'https://www.aparat.com/video/video/embed/videohash/0MTCo/vt/frame',
-    priceIdPC: 1,
-    priceIdPS4: 1,
-    isNew: true
+    gallery: [
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/hmimiqg1tofwzwvgjwes.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/flggjcgwvqzngzxb7btj.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/xqcfk1e4mfqsnv2tau6x.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/b8p42cvdrnzg0czlm3js.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/bd114fpqp3d9l3n4sre0.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/whgl6wi39lv8u5w89o63.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/f4stmmaz0damsllwwmnz.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ulp19itnadcheorifj84.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/e3uewyuh6wbgj52z6h5r.jpg"
+    ],
+    video: "https://www.youtube.com/embed/VWvRa4D98Zg",
+    release: "7 سال پیش (2018)",
+    priceIdPC: 2,
+    sizePC: 22
   },
+
+
   {
-  id: 2,
-  title: "Assassin's Creed Valhalla",
-  image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ed3.jpg",
-  description: "در Assassin's Creed Valhalla در نقش «ایوور»، یک جنگجوی افسانه‌ای وایکینگ، قدم به سفری حماسی برای کسب شکوه و افتخار بگذارید.\nدنیایی پویا و گسترده در انتظار شماست؛ جهانی زیبا و نفس‌گیر که در دل دوران تاریک انگلستان شکل گرفته است.\nبه سرزمین دشمنان یورش ببرید، سکونتگاه خود را گسترش دهید و قدرت سیاسی‌تان را افزایش دهید تا در نهایت جایگاهی در میان خدایان «والهالا» به دست آورید.\n\nاین بازی شما را به دنیای پرآشوب و پرخون وایکینگ‌ها می‌برد؛ جایی که هر تصمیم، سرنوشت شما و قبیله‌تان را رقم خواهد زد.\nدر نبردهای سهمگین، استراتژی و قدرت بازوی خود را بیازمایید و در دل طبیعتی خیره‌کننده، از کوهستان‌ها و رودخانه‌ها تا دشت‌های سبز انگلستان، ماجراجویی کنید.\n\nعلاوه بر نبرد، شما باید روابط سیاسی و اجتماعی خود را هوشمندانه بسازید.\nهر انتخاب شما می‌تواند اتحاد یا دشمنی جدیدی به همراه داشته باشد و مسیر داستانی متفاوتی را رقم بزند.\nگسترش قلمرو و ساخت سکونتگاه تنها بخشی از این ماجراجویی عظیم است؛ چرا که روح واقعی یک وایکینگ، در تعادل میان قدرت، شجاعت و خرد نهفته است.\n\nدر Valhalla، شما نه تنها یک جنگجو، بلکه یک رهبر و اسطوره هستید.\nاین فرصت برای شماست که میراثی جاودان خلق کنید و نام خود را در تاریخ وایکینگ‌ها و در تالار باشکوه خدایان حک کنید.",
-  categories: [
-    "PS4",
-    "PC",
-    "PS5",
-    "Xbox"
-  ],
-  gallery: [
-    "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gf9.jpg",
-    "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfc.jpg",
-    "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfa.jpg",
-    "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfd.jpg",
-    "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfb.jpg"
-  ],
-  video: "https://www.youtube.com/embed/SrwKP2iTPb8",
-   priceIdPC: 2,
-   priceIdPS4: 2,
-   priceIdPS5: 1,
-   priceIdXbox: 1,
-   isNew: false
-},
-  {
-    id: 3,
-    title: 'PES 2013',
-    image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1200',
-    description: 'شبیهساز فوتبال کلاسیک محبوب روی کنسولهای قدیمیتر.',
-    categories: ['PS3', 'PC'],
-    gallery: [
-      'https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1200'
+    id: 27316,
+    title: "A Plague Tale: Innocence",
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1lat.jpg",
+    description: "بازی A Plague Tale: Innocence که برای پلی‌استیشن ۴، ایکس‌باکس وان و رایانه‌های شخصی منتشر شده، داستان غم‌انگیز دو خواهر و برادر را روایت می‌کند که در تاریک‌ترین ساعات تاریخ برای بقا با هم می‌جنگند. این بازی ویدیویی جدید از استودیوی Asobo شما را به سفری احساسی در فرانسه قرن چهاردهم می‌فرستد، با گیم‌پلی ترکیبی از ماجراجویی، اکشن و مخفی‌کاری که توسط داستانی جذاب پشتیبانی می‌شود. داستان آمیسیای جوان و برادر کوچکش هوگو را دنبال کنید که با وحشیگری یک دنیای ویران روبرو می‌شوند و هدف خود را برای افشای یک راز تاریک کشف می‌کنند. در حالی که از دست سربازان تفتیش عقاید فرار می‌کنند، آمیسیا و هوگو که توسط انبوهی از موش‌های تجسم‌یافته از مرگ سیاه احاطه شده‌اند، یاد می‌گیرند که یکدیگر را بشناسند و به یکدیگر اعتماد کنند، در حالی که برای زندگی خود در برابر همه مشکلات مبارزه می‌کنند.",
+    categories: [
+      // "PS4",
+      "PC",
+      // "PS5",
+      // "Xbox"
     ],
-    video: 'https://www.aparat.com/video/video/embed/videohash/0MTCo/vt/frame',
-    priceIdPC: 3,
-    priceIdPS3: 1,
-    isNew: true
+    gallery: [
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jte.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jtf.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ua97c9hmezzpqh2yw7aq.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/gpv5xlyade0lpkq9kmes.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/eb0ymcjeudzuocxp0prd.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sfznzvx3uuwj9crqpmxd.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/k3khlm09zsgqgoxyjhep.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc68wl.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc68wm.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jtd.jpg"
+    ],
+    video: "https://www.youtube.com/embed/djmHcNBe1Z4",
+    release: "6 سال پیش (2019)",
+    priceIdPC: 2,
+    sizePC: 40
   },
+
   {
-    id: 4,
-    title: 'GTA: San Andreas',
-    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200',
-    description: 'اکشن ماجرایی جهانباز خاطرهانگیز.',
-    categories: ['PS2', 'PC'],
-    gallery: [
-      'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200'
+    id: 152242,
+    title: "A Plague Tale: Requiem",
+    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co5pwb.jpg",
+    description: "داستان طاعون: مرثیه یک بازی اکشن-ماجراجویی مشابه نسخه قبلی خود است. بازیکن کنترل آمیسیا را بر عهده می‌گیرد و باید با سربازان تفتیش عقاید فرانسه و انبوهی از موش‌هایی که طاعون سیاه را پخش می‌کنند، روبرو شود. گیم‌پلی تا حد زیادی شبیه به بازی اول است، اگرچه سیستم مبارزه به طور قابل توجهی گسترش یافته است. این بازی دارای یک سیستم پیشرفت است که در آن به بازیکن مهارت‌ها و توانایی‌های اضافی اعطا می‌شود. بازیکنان مخفی‌کاری مهارت‌هایی را باز می‌کنند که به آنها اجازه می‌دهد مخفیانه‌تر و کارآمدتر عمل کنند، در حالی که کسانی که رویکرد کشنده‌تری را ترجیح می‌دهند، مهارت‌های رزمی بیشتری را باز می‌کنند. مکان‌ها نیز بزرگتر هستند و به بازیکنان گزینه‌های بیشتری برای پیشرفت می‌دهند.",
+    categories: [
+      "PC",
+      // "PS5"
     ],
-    video: 'https://www.aparat.com/video/video/embed/videohash/0MTCo/vt/frame',
-    priceIdPC: 4,
-    priceIdPS2: 1,
-    isNew: false
-  },
-  {
-    id: 5,
-    title: 'Forza Horizon 4',
-    image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200',
-    description: 'مسابقهای جهانباز با فصول پویا.',
-    categories: ['Xbox', 'PC'],
     gallery: [
-      'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200'
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lw.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9m0.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9ly.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lz.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9m2.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lx.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9m1.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lu.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lv.jpg"
     ],
-    video: 'https://www.aparat.com/video/video/embed/videohash/0MTCo/vt/frame',
-    priceIdPC: 5,
-    priceIdXbox: 2,
-    isNew: false
-  },
-  {
-    id: 6,
-    title: 'PUBG Mobile',
-    image: 'https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200',
-    description: 'بتلرویال محبوب روی اندروید.',
-    categories: ['Android'],
-    gallery: [
-      'https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200'
-    ],
-    video: 'https://www.aparat.com/video/video/embed/videohash/0MTCo/vt/frame',
-    priceIdAndroid: 1,
-    isNew: true
+    video: "https://www.youtube.com/embed/Y-Q5wHtguZI",
+    isNew: true,
+    release: "3 سال پیش (2022)",
+    priceIdPC: 2,
+    sizePC: 40
   }
 ];
 
 // قیمت مخصوص هر پلتفرم
 const pricesPC = {
-  1: { price: 350000, discount: 10 },
-  2: { price: 400000, discount: 15 },
+  1: { price: 50000, discount: 10 },
+  2: { price: 100000, discount: 10 },
   3: { price: 12000, discount: 0 },
   4: { price: 25000, discount: 5 },
   5: { price: 420000, discount: 20 }
@@ -133,3 +121,37 @@ const pricesAndroid = {
   1: { price: 100000, discount: 5 }
 };
 
+// {
+//   id: 100000,
+//   title: "Test",
+//   image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.huronelginwater.ca%2Ftest%2F&psig=AOvVaw2rCsSWTknJfcqgJMcIDtNq&ust=1756573644240000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKjBrvTAsI8DFQAAAAAdAAAAABAE",
+//   description: 'Test',
+//   categories: [
+//     "PS4",
+//     "PC",
+//     "PS5",
+//     "Xbox",
+//     "Android",
+//     "PS2",
+//     "PS3"
+//   ],
+//   gallery: [
+//     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.huronelginwater.ca%2Ftest%2F&psig=AOvVaw2rCsSWTknJfcqgJMcIDtNq&ust=1756573644240000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKjBrvTAsI8DFQAAAAAdAAAAABAE",
+//   ],
+//   video: "https://www.youtube.com/embed/SrwKP2iTPb8",
+//   priceIdPC: 2,
+//   priceIdPS4: 2,
+//   priceIdPS5: 1,
+//   priceIdXbox: 1,
+//   priceIdAndroid: 1,
+//   priceIdPS2: 1,
+//   priceIdPS3: 1,
+//   isNew: false,
+//   sizePC: 80,
+//   sizePS4: 70,
+//   sizePS5: 75,
+//   sizeXbox: 78,
+//   sizeAndroid: 10,
+//   sizePS2: 12,
+//   sizePS3: 15
+// },
