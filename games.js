@@ -4,7 +4,7 @@ const games = [
   {
     id: 36897,
     title: "A Way Out",
-    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vca.jpg",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1vca.jpg",
     description: "از سازندگان Brothers: A Tale of Two Sons، بازی A Way Out منتشر شده است، یک ماجراجویی منحصراً همکاری که در آن شما نقش یکی از دو زندانی را بازی می‌کنید که فرار جسورانه خود را از زندان انجام می‌دهند. چیزی که به عنوان یک فرار هیجان‌انگیز آغاز می‌شود، به سرعت به یک ماجراجویی غیرقابل پیش‌بینی و احساسی تبدیل می‌شود که قبلاً دیده یا بازی نشده است. A Way Out تجربه‌ای است که باید با دو بازیکن انجام شود. هر بازیکن یکی از شخصیت‌های اصلی، لئو و وینسنت، را در اتحادی بی‌میل برای فرار از زندان و به دست آوردن آزادی خود کنترل می‌کند.",
     categories: [
       // "PS4",
@@ -12,17 +12,17 @@ const games = [
       // "Xbox"
     ],
     gallery: [
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/hmimiqg1tofwzwvgjwes.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/flggjcgwvqzngzxb7btj.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/xqcfk1e4mfqsnv2tau6x.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/b8p42cvdrnzg0czlm3js.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/bd114fpqp3d9l3n4sre0.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/whgl6wi39lv8u5w89o63.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/f4stmmaz0damsllwwmnz.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ulp19itnadcheorifj84.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/e3uewyuh6wbgj52z6h5r.jpg"
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/hmimiqg1tofwzwvgjwes.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/flggjcgwvqzngzxb7btj.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/xqcfk1e4mfqsnv2tau6x.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/b8p42cvdrnzg0czlm3js.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/bd114fpqp3d9l3n4sre0.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/whgl6wi39lv8u5w89o63.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/f4stmmaz0damsllwwmnz.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ulp19itnadcheorifj84.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/e3uewyuh6wbgj52z6h5r.jpg"
     ],
-    video: "https://www.youtube.com/embed/VWvRa4D98Zg",
+    video: "https://www.aparat.com/video/video/embed/videohash/vtyw54l/vt/frame",
     release: "7 سال پیش (2018)",
     priceIdPC: 2,
     sizePC: 22
@@ -32,7 +32,7 @@ const games = [
   {
     id: 27316,
     title: "A Plague Tale: Innocence",
-    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1lat.jpg",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1lat.jpg",
     description: "بازی A Plague Tale: Innocence که برای پلی‌استیشن ۴، ایکس‌باکس وان و رایانه‌های شخصی منتشر شده، داستان غم‌انگیز دو خواهر و برادر را روایت می‌کند که در تاریک‌ترین ساعات تاریخ برای بقا با هم می‌جنگند. این بازی ویدیویی جدید از استودیوی Asobo شما را به سفری احساسی در فرانسه قرن چهاردهم می‌فرستد، با گیم‌پلی ترکیبی از ماجراجویی، اکشن و مخفی‌کاری که توسط داستانی جذاب پشتیبانی می‌شود. داستان آمیسیای جوان و برادر کوچکش هوگو را دنبال کنید که با وحشیگری یک دنیای ویران روبرو می‌شوند و هدف خود را برای افشای یک راز تاریک کشف می‌کنند. در حالی که از دست سربازان تفتیش عقاید فرار می‌کنند، آمیسیا و هوگو که توسط انبوهی از موش‌های تجسم‌یافته از مرگ سیاه احاطه شده‌اند، یاد می‌گیرند که یکدیگر را بشناسند و به یکدیگر اعتماد کنند، در حالی که برای زندگی خود در برابر همه مشکلات مبارزه می‌کنند.",
     categories: [
       // "PS4",
@@ -41,18 +41,18 @@ const games = [
       // "Xbox"
     ],
     gallery: [
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jte.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jtf.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ua97c9hmezzpqh2yw7aq.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/gpv5xlyade0lpkq9kmes.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/eb0ymcjeudzuocxp0prd.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sfznzvx3uuwj9crqpmxd.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/k3khlm09zsgqgoxyjhep.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc68wl.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc68wm.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jtd.jpg"
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jte.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jtf.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ua97c9hmezzpqh2yw7aq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/gpv5xlyade0lpkq9kmes.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/eb0ymcjeudzuocxp0prd.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sfznzvx3uuwj9crqpmxd.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/k3khlm09zsgqgoxyjhep.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc68wl.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc68wm.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jtd.jpg"
     ],
-    video: "https://www.youtube.com/embed/djmHcNBe1Z4",
+    video: "https://www.aparat.com/video/video/embed/videohash/m588a36/vt/frame",
     release: "6 سال پیش (2019)",
     priceIdPC: 2,
     sizePC: 40
@@ -61,24 +61,24 @@ const games = [
   {
     id: 152242,
     title: "A Plague Tale: Requiem",
-    image: "https://images.igdb.com/igdb/image/upload/t_cover_big/co5pwb.jpg",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co5pwb.jpg",
     description: "داستان طاعون: مرثیه یک بازی اکشن-ماجراجویی مشابه نسخه قبلی خود است. بازیکن کنترل آمیسیا را بر عهده می‌گیرد و باید با سربازان تفتیش عقاید فرانسه و انبوهی از موش‌هایی که طاعون سیاه را پخش می‌کنند، روبرو شود. گیم‌پلی تا حد زیادی شبیه به بازی اول است، اگرچه سیستم مبارزه به طور قابل توجهی گسترش یافته است. این بازی دارای یک سیستم پیشرفت است که در آن به بازیکن مهارت‌ها و توانایی‌های اضافی اعطا می‌شود. بازیکنان مخفی‌کاری مهارت‌هایی را باز می‌کنند که به آنها اجازه می‌دهد مخفیانه‌تر و کارآمدتر عمل کنند، در حالی که کسانی که رویکرد کشنده‌تری را ترجیح می‌دهند، مهارت‌های رزمی بیشتری را باز می‌کنند. مکان‌ها نیز بزرگتر هستند و به بازیکنان گزینه‌های بیشتری برای پیشرفت می‌دهند.",
     categories: [
       "PC",
       // "PS5"
     ],
     gallery: [
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lw.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9m0.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9ly.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lz.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9m2.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lx.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9m1.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lu.jpg",
-      "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lv.jpg"
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lw.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9m0.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9ly.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lz.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9m2.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lx.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9m1.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lu.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lv.jpg"
     ],
-    video: "https://www.youtube.com/embed/Y-Q5wHtguZI",
+    video: "https://www.aparat.com/video/video/embed/videohash/j387kpu/vt/frame",
     isNew: true,
     release: "3 سال پیش (2022)",
     priceIdPC: 2,
