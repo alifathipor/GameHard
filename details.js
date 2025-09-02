@@ -26,15 +26,33 @@ if (!game) {
     "Platform": "سکوبازی",
     "Puzzle": "معمایی",
     "Racing": "مسابقه‌ای",
-    "Real Time Strategy (RTS)": "استراتژی واقعی (RTS)",
+    "Real Time Strategy (RTS)": "استراتژی هم‌زمان (RTS)",
     "Role-playing (RPG)": "نقش‌آفرینی (RPG)",
     "Simulator": "شبیه‌سازی",
     "Sport": "ورزشی",
     "Strategy": "استراتژی",
     "Turn-based strategy (TBS)": "استراتژی نوبتی (TBS)",
     "Tactical": "تاکتیکی",
-    "Hack and slash/Beat 'em up": "هک‌-‌اند‌-‌اسلش / مبارزه‌ای",
+    "Hack and slash/Beat 'em up": "هک‌-‌اند‌-‌اسلش / بزن‌بهادر",
     "Quiz/Trivia": "پرسش و معلومات"
+  };
+
+  // دیکشنری حالت‌ها (Modes)
+  const modeNames = {
+    "Single player": "تک‌نفره",
+    "Multiplayer": "چندنفره",
+    "Co-operative": "همکاری (Co-op)",
+    "Split screen": "صفحه تقسیم‌شده",
+    "Massively Multiplayer Online (MMO)": "آنلاین گسترده (MMO)"
+  };
+
+  // دیکشنری زاویه دید (Perspectives)
+  const perspectiveNames = {
+    "First person": "اول شخص",
+    "Third person": "سوم شخص",
+    "Bird view / Isometric": "نمای ایزومتریک (بالا به پایین)",
+    "Side view": "نمای کناری",
+    "Text": "متنی"
   };
 
   // استخراج قیمت‌ها برای هر پلتفرم
@@ -94,6 +112,14 @@ if (!game) {
         ${game.categories.map(cat => `<span class="pill">${cat}</span>`).join('')}
         ${game.genres && game.genres.length
           ? game.genres.map(g => `<span class="pill genre">${genreNames[g] || g}</span>`).join('')
+          : ''
+        }
+        ${game.modes && game.modes.length
+          ? game.modes.map(m => `<span class="pill mode">${modeNames[m] || m}</span>`).join('')
+          : ''
+        }
+        ${game.perspectives && game.perspectives.length
+          ? game.perspectives.map(p => `<span class="pill perspective">${perspectiveNames[p] || p}</span>`).join('')
           : ''
         }
       </div>

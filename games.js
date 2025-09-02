@@ -12,6 +12,14 @@ const games = [
     genres: [
       "Adventure"
     ],
+    modes: [
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    perspectives: [
+      "Third person"
+    ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/hmimiqg1tofwzwvgjwes.jpg",
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/flggjcgwvqzngzxb7btj.jpg",
@@ -42,6 +50,12 @@ const games = [
     genres: [
       "Adventure"
     ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jte.jpg",
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jtf.jpg",
@@ -71,6 +85,12 @@ const games = [
     genres: [
       "Adventure"
     ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lw.jpg",
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9m0.jpg",
@@ -83,7 +103,6 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lv.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/j387kpu/vt/frame",
-    isNew: true,
     release: "3 سال پیش (2022)",
     priceIdPC: 2,
     sizePC: 40
@@ -103,6 +122,12 @@ const games = [
     genres: [
       "Role-playing (RPG)",
       "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
     ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gf9.jpg",
@@ -131,6 +156,13 @@ const games = [
     genres: [
       "Platform"
     ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person",
+      "Side view"
+    ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scj0jm.jpg",
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scj0jk.jpg",
@@ -158,6 +190,15 @@ const games = [
     genres: [
       "Simulator",
       "Sport"
+    ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Third person",
+      "Bird view / Isometric"
     ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scnbfq.jpg",
@@ -189,6 +230,15 @@ const games = [
       "Simulator",
       "Sport"
     ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Third person",
+      "Bird view / Isometric"
+    ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct201.jpg",
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct1zv.jpg",
@@ -219,6 +269,13 @@ const games = [
       "Fighting",
       "Sport"
     ],
+    modes: [
+      "Single player",
+      "Multiplayer"
+    ],
+    perspectives: [
+      "Third person"
+    ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8h41.jpg",
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8h43.jpg",
@@ -248,6 +305,15 @@ const games = [
       "Simulator",
       "Sport"
     ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Third person",
+      "Bird view / Isometric"
+    ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scijun.jpg"
     ],
@@ -270,6 +336,15 @@ const games = [
     genres: [
       "Simulator",
       "Sport"
+    ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Third person",
+      "Bird view / Isometric"
     ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6vmj.jpg",
@@ -301,6 +376,15 @@ const games = [
       "Simulator",
       "Sport"
     ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Third person",
+      "Bird view / Isometric"
+    ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fj9.jpg",
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fj7.jpg",
@@ -330,6 +414,15 @@ const games = [
     genres: [
       "Simulator",
       "Sport"
+    ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Third person",
+      "Bird view / Isometric"
     ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scvfvn.jpg",
@@ -361,6 +454,15 @@ const games = [
       "Simulator",
       "Sport"
     ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Third person",
+      "Bird view / Isometric"
+    ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scrl9n.jpg",
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scrl9l.jpg",
@@ -387,6 +489,13 @@ const games = [
     genres: [
       "Role-playing (RPG)",
       "Adventure"
+    ],
+    modes: [
+      "Single player",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Third person"
     ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scu5kx.jpg",
@@ -420,6 +529,12 @@ const games = [
     genres: [
       "Adventure"
     ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkd9.jpg",
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkd7.jpg",
@@ -436,6 +551,7 @@ const games = [
     release: "2 سال پیش (2023)",
     priceIdPS4: 1,
     sizePS4: 30,
+    isNew: true,
   },
 
   {
@@ -453,6 +569,13 @@ const games = [
       "Shooter",
       "Hack and slash/Beat 'em up",
       "Adventure"
+    ],
+    modes: [
+      "Single player",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Third person"
     ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8v26.jpg",
@@ -481,6 +604,16 @@ const games = [
       "Simulator",
       "Sport"
     ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    perspectives: [
+      "First person",
+      "Third person"
+    ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc99kh.jpg",
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc99kg.jpg"
@@ -505,6 +638,15 @@ const games = [
     genres: [
       "Simulator",
       "Sport"
+    ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Third person",
+      "Bird view / Isometric"
     ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sci00p.jpg",
@@ -536,6 +678,15 @@ const games = [
       "Simulator",
       "Sport"
     ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Third person",
+      "Bird view / Isometric"
+    ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fu1.jpg",
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fu0.jpg",
@@ -562,6 +713,9 @@ const games = [
     modes: [
       "Single player"
     ],
+    perspectives: [
+      "Third person"
+    ],
     genres: [
       "Role-playing (RPG)",
       "Strategy",
@@ -582,8 +736,6 @@ const games = [
     priceIdPS4: 1,
     sizePS4: 33,
   },
-
-
 ];
 
 // قیمت مخصوص هر پلتفرم

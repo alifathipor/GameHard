@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>گالری بازی‌ها | جستجو + فیلتر</title>
-  <meta name="description" content="نمایش گالری بازی‌های رایانه‌ای با امکان جستجو و فیلتر بر اساس دستگاه و سبک." />
+  <meta name="description" content="نمایش گالری بازی‌های رایانه‌ای با امکان جستجو و فیلتر بر اساس دستگاه، سبک و حالت بازی." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -18,8 +17,7 @@
       <div class="brand">
         <div>
           <h1 class="site-title">گالری بازی‌های رایانه‌ای</h1>
-          <p class="sub">جستجو کنید یا بر اساس دستگاه و سبک فیلتر کنید. هر بازی می‌تواند چند سبک و چند دستگاه داشته
-            باشد.</p>
+          <p class="sub">جستجو کنید یا بر اساس دستگاه، سبک و حالت بازی فیلتر کنید.</p>
         </div>
       </div>
 
@@ -27,8 +25,7 @@
       <div class="search">
         <input id="search" type="search" placeholder="جستجوی عنوان بازی…" aria-label="جستجو" autocomplete="off" />
         <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5"
-            stroke-linecap="round" />
+          <path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
       </div>
 
@@ -44,20 +41,20 @@
         <button data-cat="Android">Android</button>
       </div>
 
-      <!-- منوی انتخاب حالت بازی -->
+      <!-- فیلتر حالت بازی -->
       <div class="modes-filter">
         <label for="modeSelect">فیلتر بر اساس حالت:</label>
         <select id="modeSelect">
           <option value="">همه حالت‌ها</option>
           <option value="Single player">تک‌نفره</option>
-          <option value="Multiplayer">چند‌نفره</option>
+          <option value="Multiplayer">چندنفره</option>
           <option value="Co-operative">همکاری (Co-op)</option>
-          <option value="Split screen">صفحه‌نمایش تقسیم‌شده</option>
+          <option value="Split screen">صفحه تقسیم‌شده</option>
           <option value="Massively Multiplayer Online (MMO)">آنلاین گسترده (MMO)</option>
         </select>
       </div>
 
-      <!-- منوی انتخاب سبک‌ها -->
+      <!-- فیلتر سبک -->
       <div class="genres-filter">
         <label for="genreSelect">فیلتر بر اساس سبک:</label>
         <select id="genreSelect">
@@ -76,35 +73,36 @@
           <option value="Platform">سکوبازی</option>
           <option value="Puzzle">معمایی</option>
           <option value="Racing">مسابقه‌ای</option>
-          <option value="Real Time Strategy (RTS)">استراتژی واقعی (RTS)</option>
+          <option value="Real Time Strategy (RTS)">استراتژی‌ هم‌زمان (RTS)</option>
           <option value="Role-playing (RPG)">نقش‌آفرینی (RPG)</option>
           <option value="Simulator">شبیه‌سازی</option>
           <option value="Sport">ورزشی</option>
           <option value="Strategy">استراتژی</option>
           <option value="Turn-based strategy (TBS)">استراتژی نوبتی (TBS)</option>
           <option value="Tactical">تاکتیکی</option>
-          <option value="Hack and slash/Beat 'em up">هک‌-‌اند‌-‌اسلش / مبارزه‌ای</option>
+          <option value="Hack and slash/Beat 'em up">هک‌انداَسْلش / بزن‌بهادر</option>
           <option value="Quiz/Trivia">پرسش و معلومات</option>
         </select>
       </div>
     </header>
 
     <main>
+      <!-- شبکه/لیست کارت‌ها (JS پر می‌کند) -->
       <div id="grid" class="grid" aria-live="polite" aria-busy="false"></div>
       <div id="empty" class="empty" hidden>هیچ بازی مطابق جستجو/فیلتر پیدا نشد.</div>
-      <div style="height:80px;"></div> <!-- فاصله قبل از فوتر -->
+      <div style="height:80px;"></div>
     </main>
 
     <footer class="footer custom-footer">
       <div class="footer-content">
-        <span>تماس: <a href="tel:09023394942" dir="ltr"
-            style="font-weight:600;color:#1976d2;text-decoration:none;">09023394942</a></span>
+        <span>تماس: <a href="tel:09023394942" dir="ltr" style="font-weight:600;color:#1976d2;text-decoration:none;">09023394942</a></span>
         <span class="footer-sep">|</span>
         <span>آدرس: سهند فاز 1 نزدیک میدان امام حسین روبروی گلخانه</span>
       </div>
     </footer>
   </div>
 
+  <!-- ترتیب اسکریپت‌ها مثل همیشه -->
   <script src="games.js"></script>
   <script src="script.js"></script>
 </body>
