@@ -559,6 +559,9 @@ const games = [
       // "PS5",
       // "Xbox"
     ],
+    modes: [
+      "Single player"
+    ],
     genres: [
       "Role-playing (RPG)",
       "Strategy",
@@ -579,7 +582,7 @@ const games = [
     priceIdPS4: 1,
     sizePS4: 33,
   },
-  
+
 
 ];
 

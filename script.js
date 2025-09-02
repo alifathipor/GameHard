@@ -1,10 +1,12 @@
+// گرفتن المان‌ها
 const grid = document.getElementById('grid');
-const empty = document.getElementById('empty');
 const search = document.getElementById('search');
-const categoryButtons = document.getElementById('categoryButtons');
 const genreSelect = document.getElementById('genreSelect');
+const modeSelect = document.getElementById('modeSelect');
+const categoryButtons = document.getElementById('categoryButtons');
+const empty = document.getElementById('empty');
 
-// دیکشنری ژانرها (نمایش فارسی، کد انگلیسی)
+// دیکشنری ترجمه ژانرها
 const genreNames = {
   "Pinball": "پین‌بال",
   "Adventure": "ماجراجویی",
@@ -31,41 +33,47 @@ const genreNames = {
   "Quiz/Trivia": "پرسش و معلومات"
 };
 
-// پر کردن منوی ژانر با فارسی
+// دیکشنری ترجمه حالت‌ها
+const modeNames = {
+  "Single player": "تک‌نفره",
+  "Multiplayer": "چندنفره",
+  "Co-operative": "همکاری (Co-op)",
+  "Split screen": "صفحه تقسیم‌شده",
+  "Massively Multiplayer Online (MMO)": "آنلاین گسترده (MMO)"
+};
+// پر کردن ژانرها
 genreSelect.innerHTML = `<option value="">همه ژانرها</option>`;
 Object.keys(genreNames).forEach(key => {
   const option = document.createElement('option');
-  option.value = key;          
-  option.textContent = genreNames[key]; 
+  option.value = key;
+  option.textContent = genreNames[key];
   genreSelect.appendChild(option);
 });
 
-// هایلایت متن جستجو
-function highlight(text, q) {
-  if (!q) return text;
-  const idx = text.toLowerCase().indexOf(q.toLowerCase());
-  if (idx === -1) return text;
-  const before = text.slice(0, idx);
-  const mid = text.slice(idx, idx + q.length);
-  const after = text.slice(idx + q.length);
-  return `${before}<span class="hl">${mid}</span>${after}`;
-}
+// پر کردن حالت‌ها
+modeSelect.innerHTML = `<option value="">همه حالت‌ها</option>`;
+Object.keys(modeNames).forEach(key => {
+  const option = document.createElement('option');
+  option.value = key;
+  option.textContent = modeNames[key];
+  modeSelect.appendChild(option);
+});
 
 // رندر کارت‌ها
-function renderCards(list, query = '', selectedGenre = '', selectedCat = '') {
-  renderNewGames();
+function renderCards(list, query = '', selectedGenre = '', selectedCat = '', selectedMode = '') {
   grid.setAttribute('aria-busy', 'true');
   grid.innerHTML = '';
 
   const q = (query || '').trim().toLowerCase();
   const frag = document.createDocumentFragment();
 
-  list.forEach(({ id, title, image, genres, categories }) => {
+  list.forEach(({ id, title, image, genres, categories, modes }) => {
     const matchTitle = title.toLowerCase().includes(q);
     const matchGenre = !selectedGenre || (genres && genres.includes(selectedGenre));
     const matchCategory = !selectedCat || (categories && categories.includes(selectedCat));
+    const matchMode = !selectedMode || (modes && modes.includes(selectedMode));
 
-    if ((q && !matchTitle) || !matchGenre || !matchCategory) return;
+    if ((q && !matchTitle) || !matchGenre || !matchCategory || !matchMode) return;
 
     const link = document.createElement('a');
     link.href = `details.html?id=${id}`;
@@ -78,8 +86,14 @@ function renderCards(list, query = '', selectedGenre = '', selectedCat = '') {
           ? `<div class="meta">💻 ${categories.map(cat => `<span class="pill">${cat}</span>`).join('')}</div>`
           : ''
         }
+        <h1> </h1>
         ${genres && genres.length
           ? `<div class="meta">🎮 ${genres.map(g => `<span class="pill genre">${genreNames[g] || g}</span>`).join('')}</div>`
+          : ''
+        }
+        <h1> </h1>
+        ${modes && modes.length
+          ? `<div class="meta">👥 ${modes.map(m => `<span class="pill genre">${modeNames[m] || m}</span>`).join('')}</div>`
           : ''
         }
       </div>
@@ -92,69 +106,52 @@ function renderCards(list, query = '', selectedGenre = '', selectedCat = '') {
   grid.setAttribute('aria-busy', 'false');
 }
 
-// بخش بازی‌های جدید ماه
-const newGamesBox = document.createElement('div');
-newGamesBox.className = 'new-games-box';
-newGamesBox.style.marginBottom = '24px';
-grid.parentNode.insertBefore(newGamesBox, grid);
-
-function renderNewGames() {
-  const newGames = games.filter(g => g.isNew);
-  if (newGames.length === 0) {
-    newGamesBox.innerHTML = '';
-    newGamesBox.style.display = 'none';
-    return;
-  }
-  newGamesBox.style.display = '';
-  newGamesBox.innerHTML = `
-    <div class="new-games-title">بازی‌های اضافه شده این ماه</div>
-    <div class="new-games-list">
-      ${newGames.map(game => `
-        <a href="details.html?id=${game.id}" class="new-game-card">
-          <img src="${game.image}" alt="کاور ${game.title}" class="new-game-thumb" loading="lazy" />
-          <span class="new-game-name">${game.title}</span>
-        </a>
-      `).join('')}
-    </div>
-  `;
+// هایلایت متن جستجو
+function highlight(text, keyword) {
+  if (!keyword) return text;
+  const regex = new RegExp(`(${keyword})`, 'gi');
+  return text.replace(regex, '<mark>$1</mark>');
 }
 
-// جستجو با تایمر
-let t;
+// رویداد جستجو
 search.addEventListener('input', () => {
-  clearTimeout(t);
-  t = setTimeout(() => {
-    const activeCatBtn = categoryButtons.querySelector('button.active');
-    const selectedCat = activeCatBtn ? activeCatBtn.dataset.cat : '';
-    const selectedGenre = genreSelect.value;
-    renderCards(games, search.value, selectedGenre, selectedCat);
-  }, 120);
+  const selectedGenre = genreSelect.value;
+  const selectedMode = modeSelect.value;
+  const activeCatBtn = categoryButtons.querySelector('button.active');
+  const selectedCat = activeCatBtn ? activeCatBtn.dataset.cat : '';
+  renderCards(games, search.value, selectedGenre, selectedCat, selectedMode);
 });
 
-// فیلتر دسته‌بندی با دکمه‌ها
+// رویداد ژانر
+genreSelect.addEventListener('change', () => {
+  const selectedGenre = genreSelect.value;
+  const selectedMode = modeSelect.value;
+  const activeCatBtn = categoryButtons.querySelector('button.active');
+  const selectedCat = activeCatBtn ? activeCatBtn.dataset.cat : '';
+  renderCards(games, search.value, selectedGenre, selectedCat, selectedMode);
+});
+
+// رویداد حالت
+modeSelect.addEventListener('change', () => {
+  const selectedGenre = genreSelect.value;
+  const selectedMode = modeSelect.value;
+  const activeCatBtn = categoryButtons.querySelector('button.active');
+  const selectedCat = activeCatBtn ? activeCatBtn.dataset.cat : '';
+  renderCards(games, search.value, selectedGenre, selectedCat, selectedMode);
+});
+
+// رویداد دسته‌بندی (دکمه‌ها)
 categoryButtons.addEventListener('click', e => {
   if (e.target.tagName === 'BUTTON') {
-    const selected = e.target.dataset.cat;
-    [...categoryButtons.children].forEach(btn => btn.classList.remove('active'));
+    categoryButtons.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
     e.target.classList.add('active');
+
     const selectedGenre = genreSelect.value;
-    renderCards(games, search.value, selectedGenre, selected);
+    const selectedMode = modeSelect.value;
+    const selectedCat = e.target.dataset.cat;
+    renderCards(games, search.value, selectedGenre, selectedCat, selectedMode);
   }
 });
 
-// فعال کردن اولین دکمه (همه)
-const firstBtn = categoryButtons.querySelector('button[data-cat=""]');
-if (firstBtn) firstBtn.classList.add('active');
-
-// فیلتر ژانر
-genreSelect.addEventListener('change', () => {
-  const selectedGenre = genreSelect.value;
-  const activeCatBtn = categoryButtons.querySelector('button.active');
-  const selectedCat = activeCatBtn ? activeCatBtn.dataset.cat : '';
-  renderCards(games, search.value, selectedGenre, selectedCat);
-});
-
-// رندر اولیه
-const activeCatBtn = categoryButtons.querySelector('button.active');
-const initialCat = activeCatBtn ? activeCatBtn.dataset.cat : '';
-renderCards(games, '', '', initialCat);
+// اولین بار رندر همه بازی‌ها
+renderCards(games);
