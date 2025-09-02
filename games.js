@@ -1,6 +1,4 @@
 const games = [
-
-
   {
     id: 36897,
     title: "A Way Out",
@@ -10,6 +8,9 @@ const games = [
       // "PS4",
       "PC",
       // "Xbox"
+    ],
+    genres: [
+      "Adventure"
     ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/hmimiqg1tofwzwvgjwes.jpg",
@@ -27,8 +28,6 @@ const games = [
     priceIdPC: 2,
     sizePC: 22
   },
-
-
   {
     id: 27316,
     title: "A Plague Tale: Innocence",
@@ -39,6 +38,9 @@ const games = [
       "PC",
       // "PS5",
       // "Xbox"
+    ],
+    genres: [
+      "Adventure"
     ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jte.jpg",
@@ -57,7 +59,6 @@ const games = [
     priceIdPC: 2,
     sizePC: 40
   },
-
   {
     id: 152242,
     title: "A Plague Tale: Requiem",
@@ -66,6 +67,9 @@ const games = [
     categories: [
       "PC",
       // "PS5"
+    ],
+    genres: [
+      "Adventure"
     ],
     gallery: [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lw.jpg",
@@ -83,7 +87,500 @@ const games = [
     release: "3 سال پیش (2022)",
     priceIdPC: 2,
     sizePC: 40
-  }
+  },
+
+  {
+    id: 133004,
+    title: "Assassin's Creed Valhalla",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2ed3.jpg",
+    description: "در Assassin's Creed Valhalla، در نقش Eivor، یک وایکینگ افسانه‌ای، در جستجوی افتخار، ظاهر شوید. یک دنیای باز پویا و زیبا را در پس‌زمینه‌ای بی‌رحمانه از قرون وسطی انگلستان کاوش کنید. به دشمنان خود حمله کنید، شهرک خود را توسعه دهید و قدرت سیاسی خود را در تلاش برای کسب جایگاهی در میان خدایان در Valhalla بسازید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gf9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfc.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfa.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfd.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfb.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/h955ja4/vt/frame",
+    release: "5 سال پیش (2020)",
+    priceIdPS4: 1,
+    sizePS4: 42,
+  },
+
+  {
+    id: 135254,
+    title: "Crash Bandicoot 4: It's About Time",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2hp4.jpg",
+    description: "Crash Bandicoot 4: It's About Time هشتمین بازی از سری Crash Bandicoot است، هرچند از نظر زمانی چهارمین بازی است. این بازی گیم‌پلی پلتفرمینگ اصلی این سری را حفظ کرده و عناصر جدیدی را از طریق استفاده از ماسک‌های کوانتومی اضافه می‌کند، که می‌توانند سطوح را تغییر دهند و وسیله‌ای برای عبور یا غلبه بر موانع فراهم کنند. همچنین شامل حالت‌های بازی اضافی برای پخش مجدد سطوح و امکان کنترل پنج شخصیت است که سه نفر از آنها - Cortex، Dingodile و Tawna - گیم‌پلی و سطوح منحصر به فرد خود را دارند.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Platform"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scj0jm.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scj0jk.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scj0jl.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scj0jo.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scj0jn.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scj0jj.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/d75k68e/vt/frame",
+    release: "5 سال پیش (2020)",
+    priceIdPS4: 1,
+    sizePS4: 45,
+  },
+  {
+    id: 256092,
+    title: "EA Sports FC 24",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co6qqa.jpg",
+    description: "EA SPORTS FC 24 یک بازی شبیه‌سازی فوتبال بی‌نظیر است که به شما امکان می‌دهد در نقش ستاره‌ها و تیم‌های مورد علاقه‌تان به اصیل‌ترین و فراگیرترین شکل ممکن بازی کنید. با EA SPORTS FC، می‌توانید هیجان بزرگترین مسابقات جهان مانند لیگ برتر، لیگ قهرمانان اروپا، لیگ قهرمانان زنان اروپا، لالیگا سانتاندر، بوندسلیگا، لیگ ۱، سری آ، کونمبول لیبرتادورس، سوپرلیگ زنان بارکلیز، لیگ ملی زنان استرالیا و بسیاری دیگر را تجربه کنید. EA SPORTS FC 24 همچنین دارای یک هویت تجاری جدید است که از مثلث‌هایی که در ۳۰ سال گذشته بخشی از فوتبال EA SPORTS بوده‌اند، الهام گرفته شده است، از چندضلعی‌های ایزومتریک که بازی را تشکیل می‌دهند گرفته تا مثلث‌های شیمی که در Ultimate Team وجود دارند و شاخص بازیکن در هر مسابقه. به باشگاه بپیوندید و بخشی از یک باشگاه فوتبال جدید برای آینده فوتبالی باشید که می‌خواهیم با هم بسازیم.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Simulator",
+      "Sport"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scnbfq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scnbfr.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scnbfs.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scnbfw.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scnbft.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scnbfu.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scnbfv.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/khgi91k/vt/frame",
+    release: "2 سال پیش (2023)",
+    priceIdPS4: 1,
+    sizePS4: 56,
+  },
+
+  {
+    id: 308698,
+    title: "EA Sports FC 25",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/coa755.jpg",
+    description: "EA SPORTS FC 25 راه‌های بیشتری برای پیروزی برای باشگاه به شما می‌دهد. با حالت جدید 5v5 Rush با دوستان خود در حالت‌های مورد علاقه‌تان تیم تشکیل دهید و باشگاه خود را برای پیروزی مدیریت کنید، زیرا FC IQ کنترل تاکتیکی بیشتری نسبت به قبل ارائه می‌دهد.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Simulator",
+      "Sport"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct201.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct1zv.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct202.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct1zy.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct1zz.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct200.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct1zu.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct1zw.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct1zx.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/cgo305h/vt/frame",
+    release: "1 سال پیش (2024)",
+    priceIdPS4: 1,
+    sizePS4: 44,
+  },
+
+  {
+    id: 136560,
+    title: "EA Sports UFC 4",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2es1.jpg",
+    description: "در EA SPORTS UFC 4، مبارزی که به آن تبدیل می‌شوید، با سبک مبارزه، دستاوردهایتان و شخصیتتان شکل می‌گیرد. شخصیت خود را از طریق یک سیستم پیشرفت یکپارچه در تمام حالت‌ها توسعه داده و سفارشی کنید. در حالت جدید Career Mode از یک آماتور ناشناخته به یک فوق ستاره UFC تبدیل شوید، ریشه‌های ورزش‌های رزمی را در دو محیط کاملاً جدید تجربه کنید؛ Kumite و The Backyard، یا در نبردهای جدید Blitz یا مسابقات قهرمانی جهان آنلاین، جهان را به چالش بکشید تا به قهرمان بلامنازع تبدیل شوید. در گیم‌پلی، ترکیبات روان از حمله به حمله، گیم‌پلی ایستاده پاسخگوتر و اصیل‌تری را ارائه می‌دهند، در حالی که مکانیک‌های زمین و زمین بازسازی شده، کنترل بیشتری را در آن مراحل کلیدی مبارزه ارائه می‌دهند. مهم نیست چگونه یا کجا بازی می‌کنید، EA SPORTS UFC 4 «شما» را در مرکز هر مبارزه قرار می‌دهد.",
+    categories: [
+      "PS4",
+      // "Xbox"
+    ],
+    genres: [
+      "Fighting",
+      "Sport"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8h41.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8h43.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8h44.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8h42.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8h3z.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8h40.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/o07ijh1/vt/frame",
+    release: "5 سال پیش (2020)",
+    priceIdPS4: 1,
+    sizePS4: 33,
+  },
+
+  {
+    id: 214925,
+    title: "eFootball 2023",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co5uqx.jpg",
+    description: "eFootball 2023 یک بازی شبیه‌سازی فوتبال است که توسط کونامی به عنوان بخشی از مجموعه بازی‌های eFootball توسعه و منتشر شده است. این بازی که در آگوست 2022 منتشر شد، به جای یک عنوان کاملاً جدید، به‌روزرسانی‌ای برای eFootball 2022 است و مدل رایگان معرفی شده با نسخه قبلی را ادامه می‌دهد.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Simulator",
+      "Sport"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scijun.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/sVuSp/vt/frame",
+    release: "3 سال پیش (2022)",
+    priceIdPS4: 1,
+    sizePS4: 67,
+  },
+
+  {
+    id: 119422,
+    title: "eFootball PES 2020",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1m14.jpg",
+    description: "eFootball PES 2020 یک بازی شبیه‌سازی فوتبال است که توسط شرکت کونامی توسعه و منتشر شده است. این بازی که در سپتامبر ۲۰۱۹ منتشر شد، نوزدهمین نسخه از سری بازی‌های Pro Evolution Soccer و اولین نسخه‌ای است که شامل برند 'eFootball' می‌شود و نشان‌دهنده تمرکز کونامی بر ورزش‌های الکترونیکی است.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Simulator",
+      "Sport"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6vmj.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6vml.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6vmk.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6m9c.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6m9d.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6m9b.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6m9f.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6m9e.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/z40YZ/vt/frame",
+    release: "6 سال پیش (2019)",
+    priceIdPS4: 1,
+    sizePS4: 33,
+  },
+
+  {
+    id: 135881,
+    title: "eFootball PES 2021 Season Update",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2g3c.jpg",
+    description: "بیست و پنجمین سالگرد PES را با به‌روزرسانی فصل eFootball PES 2021 جشن بگیرید! این محصول، نسخه‌ای به‌روزرسانی‌شده از eFootball PES 2020 است که شامل جدیدترین اطلاعات بازیکنان و فهرست باشگاه‌ها می‌شود.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Simulator",
+      "Sport"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fj9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fj7.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fj3.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fjb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fj0.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fj1.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fj2.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fj5.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fj4.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fja.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/d93yvg9/vt/frame",
+    release: "5 سال پیش (2020)",
+    priceIdPS4: 1,
+    sizePS4: 63,
+  },
+
+  {
+    id: 332185,
+    title: "EFootball: Leo Messi Edition 2025",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co9f54.jpg",
+    description: "تیم خود را با لیونل مسی، اسطوره زنده، تقویت کنید. معرفی نسخه ویژه eFootball. هیچ زمانی بهتر از الان برای شروع بازی eFootball نیست!",
+    categories: [
+      "PS4"
+    ],
+    genres: [
+      "Simulator",
+      "Sport"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scvfvn.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scvfvr.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scvfvj.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scvfvl.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scvfvh.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scvfvp.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scvfvf.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/zkinw5m/vt/frame",
+    release: "1 سال پیش (2024)",
+    priceIdPS4: 1,
+    sizePS4: 72,
+  },
+
+  {
+    id: 266157,
+    title: "eFootball 2024",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co72ie.jpg",
+    description: "eFootball 2024 یک بازی شبیه‌سازی فوتبال است که توسط کونامی به عنوان بخشی از مجموعه بازی‌های eFootball توسعه و منتشر شده است. این بازی که در سپتامبر 2023 منتشر شد، به جای یک عنوان کاملاً جدید، به‌روزرسانی‌ای برای eFootball 2023 است و مدل رایگان معرفی شده با نسخه‌های قبلی را ادامه می‌دهد. این بازی شامل فهرست تیم‌های به‌روز شده، گرافیک بهبود یافته و مکانیک‌های گیم‌پلی اصلاح شده است.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Simulator",
+      "Sport"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scrl9n.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scrl9l.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scrl9m.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scrl9o.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/h04kr34/vt/frame",
+    release: "2 سال پیش (2023)",
+    priceIdPS4: 1,
+    sizePS4: 65,
+  },
+
+  {
+    id: 119133,
+    title: "Elden Ring",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg",
+    description: "Elden Ring یک بازی نقش‌آفرینی اکشن است که توسط FromSoftware توسعه یافته و توسط Bandai Namco Entertainment منتشر شده و در فوریه 2022 منتشر شده است. این بازی به کارگردانی Hidetaka Miyazaki و با مشارکت رمان‌نویس George R. R. Martin، دارای یک دنیای باز گسترده به نام Lands Between است. بازیکنان نقش یک شخصیت قابل تنظیم به نام Tarnished را بر عهده می‌گیرند که باید این دنیا را کاوش کند، با دشمنان قدرتمند مبارزه کند و به دنبال بازیابی Elden Ring باشد تا به Elden Lord تبدیل شود. این بازی بر اساس مکانیک‌های گیم‌پلی چالش‌برانگیز آشنا از سری Dark Souls ساخته شده است، اما ساختاری بازتر با کاوش‌های گسترده، آب و هوای پویا و چرخه روز و شب را معرفی می‌کند. این بازی داستان عمیق، شخصیت‌های پیچیده و دنیایی به هم پیوسته پر از اسرار، سیاه‌چال‌ها و غول‌های قدرتمند را ارائه می‌دهد.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scu5kx.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scu5kw.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scagdp.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scagdq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scagds.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scagdm.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scagdn.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scagdo.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scagdr.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scf2s1.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/kca8485/vt/frame",
+    release: "3 سال پیش (2022)",
+    priceIdPS4: 1,
+    sizePS4: 36,
+  },
+
+  {
+    id: 215060,
+    title: "Assassin's Creed Mirage",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co57sj.jpg",
+    description: "در قرن نهم میلادی، بغداد در اوج خود قرار دارد و در علم، هنر، نوآوری و تجارت، جهان را رهبری می‌کند. در میان چشم‌انداز شهری شلوغ آن، یک جوان یتیم درگیر با گذشته‌ای غم‌انگیز باید برای زنده ماندن در خیابان‌ها راه برود. در Assassin’s Creed Mirage، شما در نقش بسیم، یک دزد خیابانی حیله‌گر با رویاهای کابوس‌وار، به دنبال پاسخ و عدالت هستید. پس از یک عمل انتقام‌جویانه مرگبار، بسیم از بغداد فرار می‌کند و به یک سازمان باستانی - The Hidden Ones - می‌پیوندد. او با یادگیری آیین‌های مرموز و اصول قدرتمند آنها، توانایی‌های منحصر به فرد خود را تقویت می‌کند، ماهیت واقعی خود را کشف می‌کند و به درک یک فرقه جدید می‌رسد - فرقه‌ای که سرنوشت او را به شیوه‌هایی که هرگز تصور نمی‌کرد، تغییر خواهد داد.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Adventure"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkd9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkd7.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkd8.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scikfy.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmo.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmr.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipms.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmt.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmp.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/Wj8hQ/vt/frame",
+    release: "2 سال پیش (2023)",
+    priceIdPS4: 1,
+    sizePS4: 30,
+  },
+
+  {
+    id: 141547,
+    title: "Evil West",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co4udq.jpg",
+    description: "یک تهدید تاریک غرب وحشی را در بر گرفته است. به صورت انفرادی یا گروهی، با سبکی خاص در نبردی انفجاری و احشایی علیه هیولاهای خونخوار بجنگید. با دستکش آتش‌نشانی خود، انبوه خون‌آشام‌ها را ریشه‌کن کنید و به یک ابرقهرمان غرب وحشی تبدیل شوید. در نبردی انفجاری و احشایی، با سلاح‌های گرم، دستکش آتش‌نشانی و ابزارهای خود، جهنمی را به پا کنید. هیولاهای خونخوار را به سبک یک شکارچی تنها یا در حالت همکاری با یک دوست، از بین ببرید. در یک کمپین روایت‌محور، کاوش و مبارزه کنید و در عین حال سلاح‌ها و ابزارهای شکار خود را ارتقا دهید. امتیازات جدیدی را باز کنید تا مهارت خود در کشتن هیولا را تکامل دهید و سبک بازی خود را برای شکست دادن انبوهی از هیولاهای ماوراءالطبیعه بسازید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter",
+      "Hack and slash/Beat 'em up",
+      "Adventure"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8v26.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8v27.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8v25.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/o22b4la/vt/frame",
+    release: "3 سال پیش (2022)",
+    priceIdPS4: 1,
+    sizePS4: 27,
+  },
+
+  {
+    id: 145838,
+    title: "F1 2021",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co31gd.jpg",
+    description: "هر داستان در F1 2021 آغازی دارد! از ویژگی‌های جدید خیره‌کننده، از جمله تجربه داستانی هیجان‌انگیز «نقطه ترمز»، بخش حرفه‌ای دو نفره لذت ببرید و با «شروع فصل واقعی» به جدول رده‌بندی نزدیک‌تر شوید. تیم خود را در حالت حرفه‌ای تحسین‌شده ده ساله «تیم من» به صدر جدول ببرید، یا در حالت‌های اسپلیت اسکرین و چند نفره به صورت رو در رو مسابقه دهید. خود را در بزرگترین نمایش مسابقه‌ای روی کره زمین غرق کنید و با ترکیب معتبر بیست راننده قهرمان و ده تیم نمادین از فصل 2021 مسابقه دهید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Racing",
+      "Simulator",
+      "Sport"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc99kh.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc99kg.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/b25rh7p/vt/frame",
+    release: "4 سال پیش (2021)",
+    priceIdPS4: 1,
+    sizePS4: 43,
+  },
+
+  {
+    id: 205780,
+    title: "FIFA 23",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co4zw5.jpg",
+    description: "فیفا ۲۳ با فناوری HyperMotion2 که واقع‌گرایی گیم‌پلی بیشتری را ارائه می‌دهد، جام جهانی فیفا مردان و زنان که در طول فصل برگزار می‌شود، تیم‌های باشگاهی زنان، ویژگی‌های کراس‌پلی و موارد دیگر، بازی جهانی را به زمین می‌آورد.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Simulator",
+      "Sport"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sci00p.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sci00g.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sci00n.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sci00l.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sci00k.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sci00i.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sci00q.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/u27n28z/vt/frame",
+    release: "3 سال پیش (2022)",
+    priceIdPS4: 1,
+    sizePS4: 48,
+  },
+
+  {
+    id: 134101,
+    title: "FIFA 21",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co3wm2.jpg",
+    description: "فوتبال با EA Sports FIFA 21 برگشته است و راه‌های بیشتری برای تیم شدن در خیابان یا ورزشگاه برای لذت بردن از پیروزی‌های بزرگتر با دوستان ارائه می‌دهد. بازی جهانی را با بیش از ۱۷۰۰۰ بازیکن، بیش از ۷۰۰ تیم در ۹۰+ استادیوم و بیش از ۳۰ لیگ از سراسر جهان انجام دهید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Simulator",
+      "Sport"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fu1.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fu0.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fu3.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fu2.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/FsS79/vt/frame",
+    release: "5 سال پیش (2020)",
+    priceIdPS4: 1,
+    sizePS4: 44,
+  },
+
+  {
+    id: 27092,
+    title: "GreedFall",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1ppo.jpg",
+    description: "با قدم گذاشتن در جزیره‌ای دورافتاده و سرشار از جادو - در کنار بسیاری از مهاجران، مزدوران و شکارچیان گنج - در کنار هم، دنیایی تازه و جدید را کشف کنید، جزیره‌ای که شایعه شده پر از ثروت و اسرار گمشده است. GreedFall با الهام از هنر باروک قرن هفدهم اروپا، به دنبال هویت بصری بسیار منحصر به فردی است که مناظر باشکوه را با رنگ‌های گرم ملایم و ته رنگ‌های تیره به تصویر می‌کشد. سفری باشکوه و پر از رمز و راز در پی آن آغاز می‌شود، زیرا خود را در میان تنش‌های فزاینده بین مهاجران مهاجم و مردم محلی، که توسط موجودات ماوراء طبیعی، مظهر جادوی زمینی جزیره، محافظت می‌شوند، می‌یابید. GreedFall با تمرکز قوی بر هویت اصلی نقش‌آفرینی خود، تجربه عنکبوت‌ها را در ساخت جهان‌های پیچیده و پر از رمز و راز برای کشف، ایجاد تعاملات عمیق بین شخصیت‌ها و ارائه آزادی عمل زیاد به بازیکنان برای دستیابی به ماموریت‌ها و اهداف به روش‌های مختلف - البته از طریق نبرد، بلکه از طریق دیپلماسی، فریب یا مخفی‌کاری - دنبال می‌کند.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Role-playing (RPG)",
+      "Strategy",
+      "Adventure"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lx8.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lx7.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lxc.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lxe.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lx9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lxa.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lxb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lxd.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/n0184cm/vt/frame",
+    release: "6 سال پیش (2019)",
+    priceIdPS4: 1,
+    sizePS4: 33,
+  },
+  
+
 ];
 
 // قیمت مخصوص هر پلتفرم
@@ -96,8 +593,8 @@ const pricesPC = {
 };
 
 const pricesPS4 = {
-  1: { price: 500000, discount: 5 },
-  2: { price: 550000, discount: 10 }
+  1: { price: 50000, discount: 5 },
+  2: { price: 85000, discount: 5 }
 };
 
 const pricesPS5 = {

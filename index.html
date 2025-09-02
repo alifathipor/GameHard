@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>گالری بازیها | جستجو + فیلتر دستهبندی چندگانه</title>
-  <meta name="description"
-    content="نمایش گالری بازیهای رایانهای با امکان جستجو و فیلتر بر اساس چند دستهبندی و رفتن به صفحه جزئیات هر بازی." />
+  <title>گالری بازی‌ها | جستجو + فیلتر</title>
+  <meta name="description" content="نمایش گالری بازی‌های رایانه‌ای با امکان جستجو و فیلتر بر اساس دستگاه و سبک." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -17,16 +16,12 @@
   <div class="container">
     <header class="header">
       <div class="brand">
-        <div class="logo" aria-hidden="true">
-          <img src="images/logo.png" alt="لوگو سایت"
-            style="width:64px;height:64px;object-fit:contain;border-radius:12px;box-shadow:0 2px 8px #0002;">
-        </div>
         <div>
-          <h1 class="site-title">گالری بازیهای رایانهای</h1>
-          <p class="sub">جستجو کنید یا بر اساس دستهبندی فیلتر کنید. هر بازی میتواند در چند دستهبندی باشد.</p>
+          <h1 class="site-title">گالری بازی‌های رایانه‌ای</h1>
+          <p class="sub">جستجو کنید یا بر اساس دستگاه و سبک فیلتر کنید. هر بازی می‌تواند چند سبک و چند دستگاه داشته
+            باشد.</p>
         </div>
       </div>
-
 
       <!-- جستجو -->
       <div class="search">
@@ -37,9 +32,10 @@
         </svg>
       </div>
 
-      <!-- دکمه‌های دسته‌بندی -->
+      <!-- دکمه‌های دسته‌بندی دستگاه -->
       <div class="categories" id="categoryButtons">
         <button data-cat="">همه</button>
+        <button data-cat="PS5">PS5</button>
         <button data-cat="PS4">PS4</button>
         <button data-cat="PS3">PS3</button>
         <button data-cat="PS2">PS2</button>
@@ -47,21 +43,53 @@
         <button data-cat="PC">PC</button>
         <button data-cat="Android">Android</button>
       </div>
-  </div>
-  </header>
 
-  <main>
-    <div id="grid" class="grid" aria-live="polite" aria-busy="false"></div>
-    <div id="empty" class="empty" hidden>هیچ بازی مطابق جستجو/فیلتر پیدا نشد.</div>
-    <div style="height:80px;"></div> <!-- فاصله قبل از فوتر -->
-  </main>
-  <footer class="footer custom-footer">
-    <div class="footer-content">
-      <span>تماس: <a href="tel:09023394942" dir="ltr" style="font-weight:600;color:#1976d2;text-decoration:none;">09023394942</a></span>
-      <span class="footer-sep">|</span>
-      <span>آدرس: سهند فاز 1 نزدیک میدان امام حسین روبروی گلخانه</span>
-    </div>
-  </footer>
+      <!-- منوی انتخاب سبک‌ها -->
+      <div class="genres-filter">
+        <label for="genreSelect">فیلتر بر اساس سبک:</label>
+        <select id="genreSelect">
+          <option value="">همه سبک‌ها</option>
+          <option value="Pinball">پین‌بال</option>
+          <option value="Adventure">ماجراجویی</option>
+          <option value="Indie">ایندی (مستقل)</option>
+          <option value="Arcade">آرکید</option>
+          <option value="Visual Novel">ویژوال ناول</option>
+          <option value="Card & Board Game">بازی کارت و تخته‌ای</option>
+          <option value="MOBA">میدان آنلاین (MOBA)</option>
+          <option value="Point-and-click">اشاره و کلیک</option>
+          <option value="Fighting">مبارزه‌ای</option>
+          <option value="Shooter">شوتر</option>
+          <option value="Music">موسیقی</option>
+          <option value="Platform">سکوبازی</option>
+          <option value="Puzzle">معمایی</option>
+          <option value="Racing">مسابقه‌ای</option>
+          <option value="Real Time Strategy (RTS)">استراتژی واقعی (RTS)</option>
+          <option value="Role-playing (RPG)">نقش‌آفرینی (RPG)</option>
+          <option value="Simulator">شبیه‌سازی</option>
+          <option value="Sport">ورزشی</option>
+          <option value="Strategy">استراتژی</option>
+          <option value="Turn-based strategy (TBS)">استراتژی نوبتی (TBS)</option>
+          <option value="Tactical">تاکتیکی</option>
+          <option value="Hack and slash/Beat 'em up">هک‌-‌اند‌-‌اسلش / مبارزه‌ای</option>
+          <option value="Quiz/Trivia">پرسش و معلومات</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <div id="grid" class="grid" aria-live="polite" aria-busy="false"></div>
+      <div id="empty" class="empty" hidden>هیچ بازی مطابق جستجو/فیلتر پیدا نشد.</div>
+      <div style="height:80px;"></div> <!-- فاصله قبل از فوتر -->
+    </main>
+
+    <footer class="footer custom-footer">
+      <div class="footer-content">
+        <span>تماس: <a href="tel:09023394942" dir="ltr"
+            style="font-weight:600;color:#1976d2;text-decoration:none;">09023394942</a></span>
+        <span class="footer-sep">|</span>
+        <span>آدرس: سهند فاز 1 نزدیک میدان امام حسین روبروی گلخانه</span>
+      </div>
+    </footer>
   </div>
 
   <script src="games.js"></script>

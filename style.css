@@ -487,3 +487,107 @@ body {
   font-weight: bold;
   margin-bottom: 2.5rem;
 }
+
+/* جعبه‌های دسته‌بندی و ژانر */
+#categoryButtons, #genreSelect {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* دکمه‌های دسته‌بندی */
+#categoryButtons button {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 10px 16px;
+  font-size: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+#categoryButtons button:hover {
+  background: #f7f7f7;
+}
+
+#categoryButtons button.active {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* انتخاب ژانر (دراپ‌داون) */
+#genreSelect {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+/* شبکه گالری بازی‌ها */
+/* شبکه گالری بازی‌ها */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* کارت بازی - شیشه‌ای */
+.grid-item {
+  background: rgba(255, 255, 255, 0.15); /* سفید شفاف */
+  backdrop-filter: blur(12px); /* افکت شیشه‌ای */
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255,255,255,0.2); /* حاشیه شیشه‌ای */
+}
+
+/* تصویر بازی */
+.grid-item img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px 12px 0 0;
+}
+
+/* جزئیات بازی */
+.grid-item .info {
+  padding: 12px;
+  flex: 1;
+  color: #fff; /* متن روی شیشه */
+}
+
+/* ریسپانسیو برای صفحات کوچک */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* فقط دو ستون */
+  }
+}
+
+/* فاصله امن برای فوتر */
+main {
+  min-height: calc(100vh - 160px); /* ارتفاع کل منهای هدر و فوتر تقریبی */
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer همواره پایین */
+.footer {
+  margin-top: auto;
+  padding: 12px 16px;
+  background: #f9f9f921; /* کمی شفاف */
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+
+

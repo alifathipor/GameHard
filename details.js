@@ -10,6 +10,33 @@ if (!game) {
   container.innerHTML = `<p class="empty">بازی مورد نظر پیدا نشد.</p>`;
   container.setAttribute('aria-busy', 'false');
 } else {
+  // دیکشنری ژانرها (نمایش فارسی)
+  const genreNames = {
+    "Pinball": "پین‌بال",
+    "Adventure": "ماجراجویی",
+    "Indie": "ایندی (مستقل)",
+    "Arcade": "آرکید",
+    "Visual Novel": "ویژوال ناول",
+    "Card & Board Game": "بازی کارت و تخته‌ای",
+    "MOBA": "میدان آنلاین (MOBA)",
+    "Point-and-click": "اشاره و کلیک",
+    "Fighting": "مبارزه‌ای",
+    "Shooter": "شوتر",
+    "Music": "موسیقی",
+    "Platform": "سکوبازی",
+    "Puzzle": "معمایی",
+    "Racing": "مسابقه‌ای",
+    "Real Time Strategy (RTS)": "استراتژی واقعی (RTS)",
+    "Role-playing (RPG)": "نقش‌آفرینی (RPG)",
+    "Simulator": "شبیه‌سازی",
+    "Sport": "ورزشی",
+    "Strategy": "استراتژی",
+    "Turn-based strategy (TBS)": "استراتژی نوبتی (TBS)",
+    "Tactical": "تاکتیکی",
+    "Hack and slash/Beat 'em up": "هک‌-‌اند‌-‌اسلش / مبارزه‌ای",
+    "Quiz/Trivia": "پرسش و معلومات"
+  };
+
   // استخراج قیمت‌ها برای هر پلتفرم
   const priceRows = [];
   const platformMap = {
@@ -65,9 +92,13 @@ if (!game) {
       <h2>${game.title}</h2>
       <div class="meta" style="margin:.5rem 0 1rem;">
         ${game.categories.map(cat => `<span class="pill">${cat}</span>`).join('')}
+        ${game.genres && game.genres.length
+          ? game.genres.map(g => `<span class="pill genre">${genreNames[g] || g}</span>`).join('')
+          : ''
+        }
       </div>
       <p class="desc-justify">${game.description}</p>
-      ${game.release}
+      ${releaseInfo}
       ${priceRows.length > 0 ? `
         <div class="price-box-details">
           ${priceRows.join('')}
