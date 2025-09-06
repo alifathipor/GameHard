@@ -50,15 +50,21 @@ function renderCards(list, query = '', selectedGenre = '', selectedCat = '', sel
 
   const q = (query || '').trim().toLowerCase();
 
+
   // سورت بر اساس release_year
-  let sortedList = [...list];
-  if (selectedNew === 'new') {
-    // از جدیدترین به قدیمی‌ترین
-    sortedList.sort((a, b) => (b.release_year || 0) - (a.release_year || 0));
-  } else if (selectedNew === 'old') {
-    // از قدیمی‌ترین به جدیدترین
-    sortedList.sort((a, b) => (a.release_year || 0) - (b.release_year || 0));
-  }
+// سورت بر اساس release_year (اگر انتخاب شده)
+let sortedList = [...list];
+if (selectedNew === 'new') {
+  sortedList.sort((a, b) => (Number(b.release_year) || 0) - (Number(a.release_year) || 0));
+} else if (selectedNew === 'old') {
+  sortedList.sort((a, b) => (Number(a.release_year) || 0) - (Number(b.release_year) || 0));
+}
+
+// سپس از روی همین sortedList، ابتدا آیتم‌های isNew را بیاور
+const newGames = sortedList.filter(g => g.isNew);
+const oldGames = sortedList.filter(g => !g.isNew);
+sortedList = [...newGames, ...oldGames];
+
 
   const frag = document.createDocumentFragment();
 
@@ -81,18 +87,18 @@ function renderCards(list, query = '', selectedGenre = '', selectedCat = '', sel
         ${release_year ? `<div class="meta">📅 تاریخ انتشار: <span style="color:#1976d2">${release_year}</span></div>` : ''}
         ${description ? `<p class="desc">${description}</p>` : ''}
         ${categories && categories.length
-          ? `<div class="meta">💻 پلتفرم: ${categories.map(cat => `<span class="pill">${cat}</span>`).join('')}</div>`
-          : ''
-        }
+        ? `<div class="meta">💻 پلتفرم: ${categories.map(cat => `<span class="pill">${cat}</span>`).join('')}</div>`
+        : ''
+      }
         ${genres && genres.length
-          ? `<div class="meta">🎮 ژانر: ${genres.map(g => `<span class="pill genre">${genreNames[g] || g}</span>`).join('')}</div>`
-          : ''
-        }
+        ? `<div class="meta">🎮 ژانر: ${genres.map(g => `<span class="pill genre">${genreNames[g] || g}</span>`).join('')}</div>`
+        : ''
+      }
         ${modes && modes.length
-          ? `<div class="meta">👥 حالت: ${modes.map(m => `<span class="pill mode">${modeNames[m] || m}</span>`).join('')}</div>`
-          : ''
-        }
-        ${isNew ? `<div class="meta"><span class="pill new">🆕 جدید</span></div>` : ''}
+        ? `<div class="meta">👥 حالت: ${modes.map(m => `<span class="pill mode">${modeNames[m] || m}</span>`).join('')}</div>`
+        : ''
+      }
+        ${isNew ? `<div class="meta"><span class="pill new">🆕 بازی هایی که اخیرا به هارد اضافه شده</span></div>` : ''}
       </div>
     `;
     frag.appendChild(card);
@@ -117,7 +123,7 @@ search.addEventListener('input', () => {
   const selectedNew = newSelect.value;
   const activeCatBtn = categoryButtons.querySelector('button.active');
   const selectedCat = activeCatBtn ? activeCatBtn.dataset.cat : '';
-    renderCards(games, search.value, selectedGenre, selectedCat, selectedMode,selectedNew);
+  renderCards(games, search.value, selectedGenre, selectedCat, selectedMode, selectedNew);
 });
 
 // رویداد ژانر
@@ -127,7 +133,7 @@ genreSelect.addEventListener('change', () => {
   const selectedNew = newSelect.value;
   const activeCatBtn = categoryButtons.querySelector('button.active');
   const selectedCat = activeCatBtn ? activeCatBtn.dataset.cat : '';
-  renderCards(games, search.value, selectedGenre, selectedCat, selectedMode,selectedNew);
+  renderCards(games, search.value, selectedGenre, selectedCat, selectedMode, selectedNew);
 });
 
 // رویداد حالت
@@ -137,7 +143,7 @@ modeSelect.addEventListener('change', () => {
   const selectedNew = newSelect.value;
   const activeCatBtn = categoryButtons.querySelector('button.active');
   const selectedCat = activeCatBtn ? activeCatBtn.dataset.cat : '';
-  renderCards(games, search.value, selectedGenre, selectedCat, selectedMode,selectedNew);
+  renderCards(games, search.value, selectedGenre, selectedCat, selectedMode, selectedNew);
 });
 
 newSelect.addEventListener('change', () => {
@@ -146,7 +152,7 @@ newSelect.addEventListener('change', () => {
   const selectedNew = newSelect.value;
   const activeCatBtn = categoryButtons.querySelector('button.active');
   const selectedCat = activeCatBtn ? activeCatBtn.dataset.cat : '';
-  renderCards(games, search.value, selectedGenre, selectedCat, selectedMode,selectedNew);
+  renderCards(games, search.value, selectedGenre, selectedCat, selectedMode, selectedNew);
 });
 
 // رویداد دسته‌بندی (دکمه‌ها)
@@ -159,7 +165,7 @@ categoryButtons.addEventListener('click', e => {
     const selectedMode = modeSelect.value;
     const selectedCat = e.target.dataset.cat;
     const selectedNew = newSelect.value;
-    renderCards(games, search.value, selectedGenre, selectedCat, selectedMode,selectedNew);
+    renderCards(games, search.value, selectedGenre, selectedCat, selectedMode, selectedNew);
   }
 });
 

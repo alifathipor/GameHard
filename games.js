@@ -551,7 +551,6 @@ const games = [
     release_year: 2023,
     priceIdPS4: 1,
     sizePS4: 30,
-    isNew: true,
   },
 
   {
@@ -982,8 +981,43 @@ const games = [
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/zmz4pke/vt/frame",
     release_year: 2024,
-    priceIdPC: 1,
+    priceIdPC: 2,
     sizePC: 30,
+  },
+
+  {
+    id: 282949,
+    title: "Ace Combat 7: Skies Unknown Deluxe Edition",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co7zp0.jpg",
+    description: "نسخه لوکس بازی Ace Combat 7: Skies Unknown که در جولای ۲۰۲۴ برای نینتندو سوییچ منتشر می‌شود، شامل بازی اصلی و مجموعه‌ای از بسته‌های الحاقی رایگان است: سیزن پس، جنگنده‌های F-104C -Avril-، F-4E Phantom II + ۳ پوسته و ۸ نشان محبوب اسکادران.",
+    categories: [
+      "PC",
+      "PS4"
+    ],
+    genres: [
+      "Shooter",
+      "Simulator",
+      "Arcade"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10j.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10l.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10g.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10h.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10k.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10i.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/o89v023/vt/frame",
+    release_year: 2024,
+    isNew: true,
+    priceIdPC: 2,
+    sizePC: 45,
   }
 ];
 
