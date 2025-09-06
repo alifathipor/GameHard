@@ -115,7 +115,7 @@ const games = [
     description: "در Assassin's Creed Valhalla، در نقش Eivor، یک وایکینگ افسانه‌ای، در جستجوی افتخار، ظاهر شوید. یک دنیای باز پویا و زیبا را در پس‌زمینه‌ای بی‌رحمانه از قرون وسطی انگلستان کاوش کنید. به دشمنان خود حمله کنید، شهرک خود را توسعه دهید و قدرت سیاسی خود را در تلاش برای کسب جایگاهی در میان خدایان در Valhalla بسازید.",
     categories: [
       "PS4",
-      // "PC",
+      "PC",
       // "PS5",
       // "Xbox"
     ],
@@ -522,7 +522,7 @@ const games = [
     description: "در قرن نهم میلادی، بغداد در اوج خود قرار دارد و در علم، هنر، نوآوری و تجارت، جهان را رهبری می‌کند. در میان چشم‌انداز شهری شلوغ آن، یک جوان یتیم درگیر با گذشته‌ای غم‌انگیز باید برای زنده ماندن در خیابان‌ها راه برود. در Assassin’s Creed Mirage، شما در نقش بسیم، یک دزد خیابانی حیله‌گر با رویاهای کابوس‌وار، به دنبال پاسخ و عدالت هستید. پس از یک عمل انتقام‌جویانه مرگبار، بسیم از بغداد فرار می‌کند و به یک سازمان باستانی - The Hidden Ones - می‌پیوندد. او با یادگیری آیین‌های مرموز و اصول قدرتمند آنها، توانایی‌های منحصر به فرد خود را تقویت می‌کند، ماهیت واقعی خود را کشف می‌کند و به درک یک فرقه جدید می‌رسد - فرقه‌ای که سرنوشت او را به شیوه‌هایی که هرگز تصور نمی‌کرد، تغییر خواهد داد.",
     categories: [
       "PS4",
-      // "PC",
+      "PC",
       // "PS5",
       // "Xbox"
     ],
@@ -1018,6 +1018,308 @@ const games = [
     isNew: true,
     priceIdPC: 2,
     sizePC: 45,
+  },
+
+  {
+    id: 55057,
+    title: "Age of Empires III: Definitive Edition",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2fin.jpg",
+    description: "بازی Age of Empires III: Definitive Edition با گرافیک و موسیقی بازسازی‌شده، تمام بسته‌های الحاقی منتشر شده قبلی و محتوای کاملاً جدید برای اولین بار، جشن یکی از محبوب‌ترین فرنچایزهای استراتژی همزمان را تکمیل می‌کند.",
+    categories: [
+      "PC"
+    ],
+    genres: [
+      "Real Time Strategy (RTS)",
+      "Strategy"
+    ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Bird view / Isometric"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ir8.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ir2.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ir0.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ir4.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ir1.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ir3.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ir5.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ir7.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ir6.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ir9.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/h03c04i/vt/frame",
+    release_year: 2020,
+    priceIdPC: 2,
+    sizePC: 36,
+  },
+
+  {
+    id: 55029,
+    title: "Age of Empires IV",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co39tg.jpg",
+    description: "یکی از محبوب‌ترین بازی‌های استراتژی بی‌درنگ با Age of Empires IV به شکوه خود بازمی‌گردد و شما را در مرکز نبردهای تاریخی حماسی که جهان را شکل داده‌اند، قرار می‌دهد. Age of Empires IV با ارائه روش‌های جدید آشنا و نوآورانه برای گسترش امپراتوری شما در مناظر وسیع با کیفیت بصری خیره‌کننده 4K، یک بازی استراتژی بی‌درنگ تکامل‌یافته را به نسل جدید می‌آورد.",
+    categories: [
+      "PC"
+    ],
+    genres: [
+      "Real Time Strategy (RTS)",
+      "Strategy"
+    ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative"
+    ],
+    perspectives: [
+      "Bird view / Isometric"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc98hq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc98hr.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc98hn.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc98hp.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc98hs.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc98ht.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc98ta.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc98t9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc98t8.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc98tc.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/g79mc17/vt/frame",
+    release_year: 2021,
+    priceIdPC: 2,
+    sizePC: 55,
+  },
+
+  {
+    id: 273997,
+    title: "Alan Wake II: The Lake House",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co8z06.jpg",
+    description: "آلن ویک ۲: خانه‌ی کنار دریاچه (Alan Wake II: The Lake House) یک بسته‌ی الحاقی (DLC) برای بازی آلن ویک ۲ است. این بسته محتوای داستانی جدیدی را معرفی می‌کند که در یک خانه‌ی کنار دریاچه‌ای دورافتاده در نزدیکی برایت فالز (Bright Falls) اتفاق می‌افتد، جایی که بازیکنان سرنخ‌های بیشتری در مورد نیروهای ماوراءالطبیعه که آلن ویک را تحت تأثیر قرار می‌دهند، کشف می‌کنند. این بسته‌ی الحاقی تمرکز بازی اصلی را بر وحشت روان‌شناختی و کاوش روایت‌محور حفظ می‌کند.",
+    categories: [
+      "PC",
+      // "PS5"
+    ],
+    genres: [
+      "Shooter",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scu86b.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scu869.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scu86a.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scu86d.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scu86e.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scu86c.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/znxmp34/vt/frame",
+    release_year: 2024,
+    riceIdPC: 3,
+    sizePC: 88,
+    isNew: true,
+  },
+
+  {
+    id: 213237,
+    title: "Alone in the Dark",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/coa1g8.jpg",
+    description: "تنها در تاریکی، بافتی دلهره‌آور از وحشت روان‌شناختی و جذابیت گوتیک جنوبی را در هم می‌آمیزد و بازی نمادینی را که معیار این ژانر را تعیین کرده است، از نو تصویر می‌کند. از شما دعوت می‌کنیم در سفری به درون جنون به ما بپیوندید، جایی که هر رویارویی می‌تواند آخرین رویارویی شما باشد. با هر قدمی که به کشف راز درسه‌تو نزدیک‌تر می‌شوید، چشمانی که از تاریکی نظاره‌گر هستند، تشنه‌تر می‌شوند. هر گلوله به معنای تفاوت بین بقا و پایانی غیرقابل تصور است. در بعدی که باز می‌کنید می‌تواند به قلمرویی کابوس‌وار منتهی شود که چیزی جز چنگال‌های برنده، شاخک‌های چنگ‌زننده و سلامت عقل فرسوده ارائه نمی‌دهد. سفری به لوئیزیانا در دوران میان‌جنگ، جایی که دوران انحطاط، داستان تاریک‌تری را پنهان می‌کند - داستان فرار از آسیب‌های گذشته و جامعه‌ای متعصب، به سوی درک انتظار چیزی تاریک‌تر، چیزی که صبورانه برای اعصار غیرممکن در کمین بوده است. این تنها در تاریکی است، آنطور که تا به حال ندیده‌اید - روایتی ماهرانه و در هم تنیده از ظرافت گوتیک جنوبی و جنونی عجیب و غریب که به ریشه‌های افسانه‌ای خود ادای احترام می‌کند و در عین حال گامی رو به جلو در داستان‌سرایی ژانر وحشت بقا برمی‌دارد.",
+    categories: [
+      "PC",
+      // "PS5"
+    ],
+    genres: [
+      "Puzzle",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scic8k.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scic8i.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scic8l.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scic8j.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scic8h.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/4QNwd/vt/frame",
+    release_year: 2024,
+    riceIdPC: 3,
+    sizePC: 27,
+    isNew: true,
+  },
+
+  {
+    id: 1266,
+    title: "Assassin's Creed III",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1xii.jpg",
+    description: "مستعمرات آمریکا، ۱۷۷۵. یک جنگجوی جوان شجاع برای نجات سرزمین مادری خود می‌جنگد. اما آنچه که به عنوان مبارزه‌ای بر سر قلمرو آغاز می‌شود، به سفری خارق‌العاده تبدیل می‌شود که او را به یک استاد قاتل تبدیل می‌کند - و برای همیشه سرنوشت یک ملت را تغییر خواهد داد. شما کانر هستید، پسر جنگجوی یک مادر بومی آمریکایی و یک پدر بریتانیایی. با نزدیک شدن مستعمرات به انقلاب، شما زندگی خود را وقف آزادی قبیله خود خواهید کرد - و به جرقه‌ای تبدیل می‌شوید که انقلاب را به شعله‌ای کامل تبدیل می‌کند. جنگ صلیبی شما شما را از میان میدان‌های نبرد غرق در خون به خیابان‌های شلوغ شهر، به بیابان‌های خطرناک و فراتر از آن خواهد برد. شما نه تنها شاهد تاریخ خواهید بود - بلکه آن را رقم خواهید زد. به فصلی کاملاً جدید در حماسه Assassin’s Creed خوش آمدید.",
+    categories: [
+      "PC",
+      "PS4",
+    ],
+    genres: [
+      "Adventure"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ok2u0qqlarohz7rx8eo7.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/mlynnq49vemvljigsx79.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ccfvfvn8w5ucmtaw9uu2.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/umu9a0ptzj84rdzc5wa0.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/jmyedumbxkdyfudgzaay.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/lwbc2mifimzfmyxt6r56.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/fjsea0ufemtie04czf9m.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/okyz7qmbwrbqr7s3yxsh.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/aghxxmr2mpygyq5ftldb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/mazwxafpn4trr1egmj7j.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/s32qz/vt/frame",
+    release_year: 2012,
+    riceIdPC: 1,
+    sizePC: 16,
+  },
+
+  {
+    id: 221823,
+    title: "Assassin's Creed Brotherhood",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co5j8z.jpg",
+    description: "نسخه بازسازی شده Assassin's Creed Brotherhood که به همراه Assassin's Creed: The Ezio Collection عرضه می‌شود. تمام محتوای الحاقی تک نفره (توطئه کوپرنیک، ناپدید شدن داوینچی) در این نسخه گنجانده شده و بخش چند نفره حذف شده است.",
+    categories: [
+      "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scje53.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scje52.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scolee.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/6tL2d/vt/frame",
+    release_year: 2016,
+    riceIdPC: 1,
+    sizePC: 8,
+  },
+
+  {
+    id: 127,
+    title: "Assassin's Creed II",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1rcf.jpg",
+    description: "داستانی جذاب و حماسی از قدرت، انتقام و توطئه را در برهه‌ای محوری از تاریخ کشف کنید: رنسانس ایتالیا. آزادی و غوطه‌وری در یک دنیای باز کاملاً جدید و ساختار ماموریتی با محیط‌هایی مانند پشت‌بام‌ها و کانال‌های ونیز زیبا را تجربه کنید. گزینه‌های شما در مبارزه، ترور و فرار بسیار گسترده است و سلاح‌ها، محیط‌ها و عناصر گیم‌پلی جدید زیادی در آن وجود دارد.",
+    categories: [
+      "PC"
+    ],
+    genres: [
+      "Platform",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/zvhehvzfakxb7aob8j7m.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/apxgvdkwwsb1v0fgbn8w.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/dxb4yiwyhvwehvsisy7a.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/jbeteinfgsoxkoxv08i0.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/wkagtolikjqalonaaixb.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/e24x9vf/vt/frame",
+    release_year: 2009,
+    riceIdPC: 1,
+    sizePC: 6,
+  },
+
+  {
+    id: 537,
+    title: "Assassin's Creed Revelations",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1xih.jpg",
+    description: "Assassin's Creed Revelations فراگیرترین تجربه موجود در این مجموعه تا به امروز و اوج ماجراجویی اتزیو را ارائه می‌دهد. در Assassin's Creed Revelations، استاد قاتل، اتزیو آدیتوره، در سفری از کشف و شهود، پا در جای پای مربی افسانه‌ای خود، الطایر، می‌گذارد. این مسیری خطرناک است - مسیری که اتزیو را به قسطنطنیه، قلب امپراتوری عثمانی، می‌برد، جایی که ارتش رو به رشد تمپلارها، منطقه را تهدید به بی‌ثباتی می‌کند. علاوه بر داستان برنده جایزه اتزیو، تجربه تحسین‌شده چند نفره آنلاین از انجمن Assassin's Creed بازمی‌گردد؛ اصلاح‌شده و گسترش‌یافته، با حالت‌های بیشتر، نقشه‌های بیشتر و شخصیت‌های بیشتر که به بازیکنان اجازه می‌دهد مهارت‌های قاتلی خود را در برابر دیگران از سراسر جهان آزمایش کنند. آخرین فصل از حماسه Assassin's Creed همچنین شامل گیم‌پلی انقلابی است که به بازیکنان اجازه می‌دهد ساختار خاطرات دزموند و انیموس را دستکاری کنند تا اسرار گذشته او را رمزگشایی کنند و به بینشی از آینده دست یابند.",
+    categories: [
+      "PC"
+    ],
+    genres: [
+      "Adventure"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/g6l3sr93xngc4b7wddvt.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/y6o09sjwlpotulpkyi8v.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/djemthnshqygffcpas1w.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/taqubzfll3c84co1v0a5.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/jhbcpqlsowkfwwsyimnm.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/k715e28/vt/frame",
+    release_year: 2011,
+    riceIdPC: 1,
+    sizePC: 5,
+  },
+  {
+    id: 7570,
+    title: "Assassin's Creed Rogue",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1xir.jpg",
+    description: "Assassin's Creed Rogue یک بازی ویدیویی اکشن-ماجراجویی محصول سال ۲۰۱۴ است که توسط Ubisoft Sofia توسعه یافته و توسط Ubisoft منتشر شده است. این هفتمین قسمت اصلی از مجموعه بازی‌های Assassin's Creed است و بین Assassin's Creed III (۲۰۱۲) و Assassin's Creed IV: Black Flag (۲۰۱۳) روایت می‌شود. همچنین با Assassin's Creed Unity که در همان روز Rogue منتشر شد، ارتباط دارد. این آخرین بازی Assassin's Creed است که برای نسل هفتم کنسول‌ها توسعه داده شده و در نوامبر ۲۰۱۴ برای پلی‌استیشن ۳ و ایکس‌باکس ۳۶۰ و در مارس ۲۰۱۵ برای ویندوز منتشر شد.",
+    categories: [
+      "PC"
+    ],
+    genres: [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/lw5xjcozcirdyjzb3nxo.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/xeyi9yk9jejvyqfqxf6m.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/yjnlbd6qsmqii7milsay.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/df1gorenmjrz83fe6hwx.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/s0luzuvtqwpr7lbhtxwn.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/AG6rc/vt/frame",
+    release_year: 2014,
+    riceIdPC: 1,
+    sizePC: 5,
   }
 ];
 
@@ -1025,9 +1327,7 @@ const games = [
 const pricesPC = {
   1: { price: 50000, discount: 10 },
   2: { price: 100000, discount: 10 },
-  3: { price: 12000, discount: 0 },
-  4: { price: 25000, discount: 5 },
-  5: { price: 420000, discount: 20 }
+  3: { price: 150000, discount: 5 },
 };
 
 const pricesPS4 = {
@@ -1036,57 +1336,21 @@ const pricesPS4 = {
 };
 
 const pricesPS5 = {
-  1: { price: 700000, discount: 0 }
+  1: { price: 0, discount: 0 }
 };
 
 const pricesPS3 = {
-  1: { price: 18000, discount: 0 }
+  1: { price: 0, discount: 0 }
 };
 
 const pricesPS2 = {
-  1: { price: 20000, discount: 0 }
+  1: { price: 0, discount: 0 }
 };
 
 const pricesXbox = {
-  1: { price: 480000, discount: 8 },
-  2: { price: 390000, discount: 12 }
+  1: { price: 0, discount: 0 }
 };
 
 const pricesAndroid = {
-  1: { price: 100000, discount: 5 }
+  1: { price: 0, discount: 0 }
 };
-
-// {
-//   id: 100000,
-//   title: "Test",
-//   image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.huronelginwater.ca%2Ftest%2F&psig=AOvVaw2rCsSWTknJfcqgJMcIDtNq&ust=1756573644240000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKjBrvTAsI8DFQAAAAAdAAAAABAE",
-//   description: 'Test',
-//   categories: [
-//     "PS4",
-//     "PC",
-//     "PS5",
-//     "Xbox",
-//     "Android",
-//     "PS2",
-//     "PS3"
-//   ],
-//   gallery: [
-//     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.huronelginwater.ca%2Ftest%2F&psig=AOvVaw2rCsSWTknJfcqgJMcIDtNq&ust=1756573644240000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKjBrvTAsI8DFQAAAAAdAAAAABAE",
-//   ],
-//   video: "https://www.youtube.com/embed/SrwKP2iTPb8",
-//   priceIdPC: 2,
-//   priceIdPS4: 2,
-//   priceIdPS5: 1,
-//   priceIdXbox: 1,
-//   priceIdAndroid: 1,
-//   priceIdPS2: 1,
-//   priceIdPS3: 1,
-//   isNew: false,
-//   sizePC: 80,
-//   sizePS4: 70,
-//   sizePS5: 75,
-//   sizeXbox: 78,
-//   sizeAndroid: 10,
-//   sizePS2: 12,
-//   sizePS3: 15
-// },
