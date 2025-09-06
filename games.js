@@ -736,6 +736,224 @@ const games = [
     priceIdPS4: 1,
     sizePS4: 33,
   },
+
+  {
+    id: 118871,
+    title: "Grid",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2crq.jpg",
+    description: "گرید یک تجربه مسابقه‌ای بی‌نظیر است. گرید با ارائه مسابقات لحظه به لحظه بی‌نظیر، با یک تجربه کاملاً جدید بازگشته است که در آن هر مسابقه فرصتی برای انتخاب مسیر خود، خلق داستان خود و فتح دنیای ورزش‌های موتوری است.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Racing",
+      "Simulator",
+      "Sport"
+    ],
+    modes: [
+      "Single player",
+      "Multiplayer"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lza.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lz5.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lz4.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lz3.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lz7.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lz8.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lz9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lz6.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lzb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lzd.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/a56n790/vt/frame",
+    release: "6 سال پیش (2019)",
+    priceIdPS4: 1,
+    sizePS4: 41,
+  },
+
+  {
+    id: 730,
+    title: "Grand Theft Auto III",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2lb8.jpg",
+    description: "Grand Theft Auto III با ارائه یک شهر کاملاً سه‌بعدی زنده، ترکیبی از گیم‌پلی روایت‌محور و غیرخطی و محیطی کاملاً باز، جهشی بزرگ در سرگرمی‌های تعاملی را نشان می‌دهد. برای اولین بار، بازیکنان در قلب فیلم گانگستری خود قرار می‌گیرند و در یک شهر سه‌بعدی کاملاً واقعی رها می‌شوند، که در آن هر اتفاقی می‌تواند رخ دهد و احتمالاً رخ خواهد داد. با صدها نفر، بیش از ۵۰ وسیله نقلیه، از ماشین‌های اسپرت گرفته تا کامیون‌های بستنی‌فروشی و از قایق‌ها گرفته تا اتوبوس‌ها، ۳ ساعت موسیقی، شامل اپرا، رگی، هاوس، درام و بیس، پاپ و دیسکو، مجموعه‌ای عظیم از سلاح‌های خیابانی و برخی از خشن‌ترین شخصیت‌های تاریخ بازی‌های ویدیویی، Grand Theft Auto 3 یک حماسه گسترده است که به شما نشان می‌دهد گاهی اوقات، جرم و جنایت می‌تواند پاداش داشته باشد و گاهی اوقات می‌تواند برای شما پاداش داشته باشد. اکنون برای PlayStation2، Xbox، PC و Macintosh در دسترس است.",
+    categories: [
+      "PS4",
+      // "PC"
+    ],
+    genres: [
+      "Shooter",
+      "Racing",
+      "Simulator",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person",
+      "Bird view / Isometric"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sch5kp.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sch5l4.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sch5l3.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sch5l1.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sch5kn.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sch5kq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sch5ky.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sch5l2.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sch5l5.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sch5kw.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/HMNh0/vt/frame",
+    release: "24 سال پیش (2001)",
+    priceIdPS4: 1,
+    sizePS4: 5,
+  },
+
+  {
+    id: 732,
+    title: "Grand Theft Auto: San Andreas",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2lb9.jpg",
+    description: "کارل جانسون، یک خلافکار سابق، پس از قتل مادرش به شهر نیمه‌خیالی لس سانتوس (براساس لس‌آنجلس) بازمی‌گردد و باید با کسب احترام و دوباره به دست آوردن کنترل خیابان‌ها، خیابان‌ها را برای خانواده و دوستانش پس بگیرد. با این حال، داستانی پر از جنایت، دروغ و فساد او را مجبور می‌کند تا برای بازسازی زندگی‌اش، کل ایالت سن آندریاس (براساس کالیفرنیا و نوادا) را با پای پیاده بپیماید.",
+    categories: [
+      "PS4",
+      // "PC"
+    ],
+    genres: [
+      "Shooter",
+      "Racing",
+      "Adventure"
+    ],
+    modes: [
+      "Single player",
+      "Co-operative"
+    ],
+    perspectives: [
+      "First person",
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/hircn6ewsgu70ynlzis5.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/e11zpyhhjc9qdqgrx7v0.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/dbbtmdz0q1536npbpr5o.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sojdbdt93e06wojplpsj.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/eswubyh9h3uereuyumjq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scgoqf.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scgoqg.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scgoqe.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scgoqh.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scgoqi.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/29uSE/vt/frame",
+    release: "21 سال پیش (2004)",
+    priceIdPS4: 1,
+    sizePS4: 23,
+  },
+
+  {
+    id: 733,
+    title: "Grand Theft Auto: Vice City",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2lbb.jpg",
+    description: "در سال ۱۹۸۶، تامی ورستی پس از خراب شدن یک معامله مواد مخدر، به شدت به مافوق‌های مافیایی خود بدهکار است، اما رویاهایش برای تصاحب شهر وایس سیتی (که بر اساس میامی ساخته شده است) او را به مسیر متفاوتی سوق می‌دهد. GTA: Vice City با دارا بودن طیف گسترده‌ای از وسایل نقلیه و سلاح‌ها، ایستگاه‌های رادیویی که آهنگ‌های پرطرفدار آن دوران را پخش می‌کنند و فضایی پرشور، یک بازی جهان‌باز و سندباکس طنزآمیز از میامی دهه ۸۰ است.",
+    categories: [
+      "PS4"
+    ],
+    genres: [
+      "Shooter",
+      "Racing",
+      "Adventure",
+      "Arcade"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/txxrbak4yycdogvvjwtb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ilxqfgiaxygal1srqnfz.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/tfcu496z7nwgnkbqfvrv.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/yl0nzc7itjnc6oyawagp.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/cqiwbbgjhersmqru7339.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/k39ax43/vt/frame",
+    release: "23 سال پیش (2002)",
+    priceIdPS4: 1,
+    sizePS4: 11,
+  },
+
+  {
+    id: 152249,
+    title: "Marvel's Guardians of the Galaxy",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co39pu.jpg",
+    description: "با نگاهی تازه به نگهبانان کهکشان مارول، سفری هیجان‌انگیز را در کیهان آغاز کنید. در این بازی اکشن-ماجراجویی، شما در نقش استار-لرد هستید که نگهبانان غیرقابل پیش‌بینی را از یک انفجار هرج و مرج به انفجار دیگر هدایت می‌کنید. احتمالاً متوجه منظورم شده‌اید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter",
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "First person",
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scaheb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scahe8.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scahec.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scahe9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scahea.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/w598o3y/vt/frame",
+    release: "4 سال پیش (2021)",
+    priceIdPS4: 1,
+    sizePS4: 59,
+  },
+
+  {
+    id: 493,
+    title: "Heavy Rain",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/coaajv.jpg",
+    description: "Heavy Rain یک بازی تریلر روانشناختی سینمایی از شرکت توسعه‌دهنده بازی Quantic Dream است که منحصراً برای پلی‌استیشن ۳ منتشر شده است. این بازی که با طیف وسیعی از مضامین بزرگسالانه سروکار دارد، حول یک طرح داستانی پیچیده و رشته‌های روایی قوی می‌چرخد که یک گزاره اخلاقی پیچیده را بررسی می‌کند. شما نقش شخصیت‌های متعددی با پیشینه‌ها، انگیزه‌ها و مهارت‌های بسیار متفاوت را در دنیایی بر عهده می‌گیرید که هر تصمیم بازیکن بر اتفاقات بعدی تأثیر می‌گذارد.",
+    categories: [
+      "PS4",
+      // "PC"
+    ],
+    genres: [
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "First person",
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/n79lclnyzkyg82iaotnp.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/k2zmtm03stdzyw9pqivu.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/w7s3b3ylqststasevlpj.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/io5akxvdn7aosqdt82gs.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/rvpqkdb8dp4bwrtq0ixl.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/s808f4y/vt/frame",
+    release: "15 سال پیش (2010)",
+    priceIdPS4: 1,
+    sizePS4: 27,
+  }
 ];
 
 // قیمت مخصوص هر پلتفرم

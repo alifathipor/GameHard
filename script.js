@@ -145,3 +145,9 @@ categoryButtons.addEventListener('click', e => {
 
 // اولین بار رندر همه بازی‌ها
 renderCards(games);
+
+// 👇 فعال کردن دکمه "همه" در شروع
+const defaultBtn = categoryButtons.querySelector('button[data-cat=""]');
+if (defaultBtn) {
+  defaultBtn.classList.add('active');
+}
