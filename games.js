@@ -32,7 +32,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/e3uewyuh6wbgj52z6h5r.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/vtyw54l/vt/frame",
-    release: "7 سال پیش (2018)",
+    release_year: 2018,
     priceIdPC: 2,
     sizePC: 22
   },
@@ -69,7 +69,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jtd.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/m588a36/vt/frame",
-    release: "6 سال پیش (2019)",
+    release_year: 2019,
     priceIdPC: 2,
     sizePC: 40
   },
@@ -103,7 +103,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scg9lv.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/j387kpu/vt/frame",
-    release: "3 سال پیش (2022)",
+    release_year: 2022,
     priceIdPC: 2,
     sizePC: 40
   },
@@ -137,7 +137,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfb.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/h955ja4/vt/frame",
-    release: "5 سال پیش (2020)",
+    release_year: 2020,
     priceIdPS4: 1,
     sizePS4: 42,
   },
@@ -172,7 +172,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scj0jj.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/d75k68e/vt/frame",
-    release: "5 سال پیش (2020)",
+    release_year: 2020,
     priceIdPS4: 1,
     sizePS4: 45,
   },
@@ -210,7 +210,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scnbfv.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/khgi91k/vt/frame",
-    release: "2 سال پیش (2023)",
+    release_year: 2023,
     priceIdPS4: 1,
     sizePS4: 56,
   },
@@ -251,7 +251,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct1zx.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/cgo305h/vt/frame",
-    release: "1 سال پیش (2024)",
+    release_year: 2024,
     priceIdPS4: 1,
     sizePS4: 44,
   },
@@ -285,7 +285,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8h40.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/o07ijh1/vt/frame",
-    release: "5 سال پیش (2020)",
+    release_year: 2020,
     priceIdPS4: 1,
     sizePS4: 33,
   },
@@ -318,7 +318,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scijun.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/sVuSp/vt/frame",
-    release: "3 سال پیش (2022)",
+    release_year: 2022,
     priceIdPS4: 1,
     sizePS4: 67,
   },
@@ -357,7 +357,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6m9e.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/z40YZ/vt/frame",
-    release: "6 سال پیش (2019)",
+    release_year: 2019,
     priceIdPS4: 1,
     sizePS4: 33,
   },
@@ -398,7 +398,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fja.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/d93yvg9/vt/frame",
-    release: "5 سال پیش (2020)",
+    release_year: 2020,
     priceIdPS4: 1,
     sizePS4: 63,
   },
@@ -434,7 +434,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scvfvf.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/zkinw5m/vt/frame",
-    release: "1 سال پیش (2024)",
+    release_year: 2024,
     priceIdPS4: 1,
     sizePS4: 72,
   },
@@ -470,7 +470,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scrl9o.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/h04kr34/vt/frame",
-    release: "2 سال پیش (2023)",
+    release_year: 2023,
     priceIdPS4: 1,
     sizePS4: 65,
   },
@@ -510,7 +510,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scf2s1.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/kca8485/vt/frame",
-    release: "3 سال پیش (2022)",
+    release_year: 2022,
     priceIdPS4: 1,
     sizePS4: 36,
   },
@@ -548,7 +548,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmp.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/Wj8hQ/vt/frame",
-    release: "2 سال پیش (2023)",
+    release_year: 2023,
     priceIdPS4: 1,
     sizePS4: 30,
     isNew: true,
@@ -583,7 +583,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8v25.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/o22b4la/vt/frame",
-    release: "3 سال پیش (2022)",
+    release_year: 2022,
     priceIdPS4: 1,
     sizePS4: 27,
   },
@@ -619,7 +619,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc99kg.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/b25rh7p/vt/frame",
-    release: "4 سال پیش (2021)",
+    release_year: 2021,
     priceIdPS4: 1,
     sizePS4: 43,
   },
@@ -658,7 +658,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sci00q.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/u27n28z/vt/frame",
-    release: "3 سال پیش (2022)",
+    release_year: 2022,
     priceIdPS4: 1,
     sizePS4: 48,
   },
@@ -694,7 +694,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8fu2.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/FsS79/vt/frame",
-    release: "5 سال پیش (2020)",
+    release_year: 2020,
     priceIdPS4: 1,
     sizePS4: 44,
   },
@@ -732,7 +732,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lxd.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/n0184cm/vt/frame",
-    release: "6 سال پیش (2019)",
+    release_year: 2019,
     priceIdPS4: 1,
     sizePS4: 33,
   },
@@ -769,7 +769,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lzd.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/a56n790/vt/frame",
-    release: "6 سال پیش (2019)",
+    release_year: 2019,
     priceIdPS4: 1,
     sizePS4: 41,
   },
@@ -809,7 +809,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sch5kw.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/HMNh0/vt/frame",
-    release: "24 سال پیش (2001)",
+    release_year: 2001,
     priceIdPS4: 1,
     sizePS4: 5,
   },
@@ -849,11 +849,10 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scgoqi.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/29uSE/vt/frame",
-    release: "21 سال پیش (2004)",
+    release_year: 2004,
     priceIdPS4: 1,
     sizePS4: 23,
   },
-
   {
     id: 733,
     title: "Grand Theft Auto: Vice City",
@@ -882,7 +881,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/cqiwbbgjhersmqru7339.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/k39ax43/vt/frame",
-    release: "23 سال پیش (2002)",
+    release_year: 2002,
     priceIdPS4: 1,
     sizePS4: 11,
   },
@@ -918,7 +917,7 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scahea.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/w598o3y/vt/frame",
-    release: "4 سال پیش (2021)",
+    release_year: 2021,
     priceIdPS4: 1,
     sizePS4: 59,
   },
@@ -950,9 +949,41 @@ const games = [
       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/rvpqkdb8dp4bwrtq0ixl.jpg"
     ],
     video: "https://www.aparat.com/video/video/embed/videohash/s808f4y/vt/frame",
-    release: "15 سال پیش (2010)",
+    release_year: 2010,
     priceIdPS4: 1,
     sizePS4: 27,
+  },
+
+  {
+    id: 294453,
+    title: "A Quiet Place: The Road Ahead",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co8gtp.jpg",
+    description: "یک مکان ساکت: جاده پیش رو یک بازی ماجراجویی ترسناک تک نفره است که با الهام از مجموعه فیلم‌های پرفروش و تحسین‌شده‌ی «یک مکان ساکت: جاده پیش رو» ساخته شده و داستان منحصر به فردی از بازماندگان پس از هجوم موجودات مرگبار را روایت می‌کند. در این اسپین‌آف اختصاصی، سفر یک زن جوان را تجربه کنید که باید در بحبوحه درگیری‌های خانوادگی بین فردی، آخرالزمانی خائنانه را تحمل کند و در عین حال با ترس‌های درونی خود نیز کنار بیاید.",
+    categories: [
+      "PC",
+      // "PS5"
+    ],
+    genres: [
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scsrwe.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scsrwc.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scsrwd.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scsrw9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scsrwb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scsrwa.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/zmz4pke/vt/frame",
+    release_year: 2024,
+    priceIdPC: 1,
+    sizePC: 30,
   }
 ];
 

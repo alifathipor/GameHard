@@ -81,13 +81,12 @@ if (!game) {
         priceRows.push(`
           <div class="price-row">
             <span class="platform-label">${info.label}</span>
-            ${
-              discount > 0
-                ? `<span class="old-price">${price.toLocaleString()} ت</span>
+            ${discount > 0
+            ? `<span class="old-price">${price.toLocaleString()} ت</span>
                    <span class="final-price">${finalPrice.toLocaleString()} ت</span>
                    <span class="discount">٪${discount}</span>`
-                : `<span class="final-price">${price.toLocaleString()} ت</span>`
-            }
+            : `<span class="final-price">${price.toLocaleString()} ت</span>`
+          }
             <span class="size">حجم: ${sizeVal}</span>
           </div>
         `);
@@ -95,14 +94,42 @@ if (!game) {
     }
   });
 
-  // محاسبه و نمایش تاریخ انتشار
-  let releaseInfo = "";
-  if (game.releaseDate) {
-    const releaseYear = new Date(game.releaseDate).getFullYear();
-    const now = new Date().getFullYear();
-    const diff = Math.floor(now - releaseYear);
-    releaseInfo = `<p class="release-date">تاریخ انتشار: ${releaseYear} (${diff} سال قبل)</p>`;
+  // تابع کمکی: از مقدار ورودی سالِ انتشار درست استخراج می‌کنه
+  function extractYear(val) {
+    if (val === null || val === undefined) return null;
+    const n = Number(val);
+
+    if (!Number.isNaN(n)) {
+      // اگر مقدار یک عدد بزرگ (نشانه timestamp میلی‌ثانیه)
+      if (n > 1e12) {
+        const d = new Date(n);
+        return isNaN(d.getFullYear()) ? null : d.getFullYear();
+      }
+      // اگر عدد به اندازه timestamp ثانیه باشد (مثلاً 1514764800)
+      if (n > 1e9) {
+        const d = new Date(n * 1000);
+        return isNaN(d.getFullYear()) ? null : d.getFullYear();
+      }
+      // اگر عدد یک سال واقعی (مثلاً 2018)
+      if (n >= 1800 && n <= 3000) {
+        return Math.floor(n);
+      }
+    }
+
+    // در غیر این صورت سعی کن رشته را به Date تبدیل کنی (مثلاً "2018-03-01")
+    const d = new Date(val);
+    return isNaN(d.getFullYear()) ? null : d.getFullYear();
   }
+
+  // جایگزین کردن کد قدیمیِ releaseInfo
+  let releaseInfo = "";
+  const releaseYear = extractYear(game.release_year); // یا game.releaseDate اگر از آن استفاده می‌کنی
+  if (releaseYear) {
+    const now = new Date().getFullYear();
+    const diff = now - releaseYear;
+    releaseInfo = `<p class="release-date">تاریخ انتشار: <span style="color:#1976d2">${releaseYear}</span> (${diff} سال قبل)</p>`;
+  }
+
 
   // رندر محتوای کامل صفحه
   container.innerHTML = `
@@ -111,17 +138,17 @@ if (!game) {
       <div class="meta" style="margin:.5rem 0 1rem;">
         ${game.categories.map(cat => `<span class="pill">${cat}</span>`).join('')}
         ${game.genres && game.genres.length
-          ? game.genres.map(g => `<span class="pill genre">${genreNames[g] || g}</span>`).join('')
-          : ''
-        }
+      ? game.genres.map(g => `<span class="pill genre">${genreNames[g] || g}</span>`).join('')
+      : ''
+    }
         ${game.modes && game.modes.length
-          ? game.modes.map(m => `<span class="pill mode">${modeNames[m] || m}</span>`).join('')
-          : ''
-        }
+      ? game.modes.map(m => `<span class="pill mode">${modeNames[m] || m}</span>`).join('')
+      : ''
+    }
         ${game.perspectives && game.perspectives.length
-          ? game.perspectives.map(p => `<span class="pill perspective">${perspectiveNames[p] || p}</span>`).join('')
-          : ''
-        }
+      ? game.perspectives.map(p => `<span class="pill perspective">${perspectiveNames[p] || p}</span>`).join('')
+      : ''
+    }
       </div>
       <p class="desc-justify">${game.description}</p>
       ${releaseInfo}

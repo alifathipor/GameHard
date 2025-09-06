@@ -84,22 +84,65 @@ body {
   color: #fff;
 }
 
-/* فیلتر ژانر و حالت */
-.genres-filter, .modes-filter {
-  margin-bottom: 14px;
+/* بخش فیلترها */
+.genres-filter, .modes-filter, .new-filter {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.genres-filter label, .modes-filter label {
-  margin-left: 8px;
+
+.genres-filter label,
+.modes-filter label,
+.new-filter label {
   font-size: 14px;
-  color: #aaa;
+  color: #bbb;
+  font-weight: 500;
+  white-space: nowrap;
 }
-.genres-filter select, .modes-filter select {
-  padding: 6px 12px;
-  border-radius: 8px;
-  border: none;
+
+/* استایل زیبای منو */
+.genres-filter select,
+.modes-filter select,
+.new-filter select {
+  padding: 14px 14px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  background: rgba(30, 30, 30, 0.8);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+}
+
+/* وقتی موس روش میره */
+.genres-filter select:hover,
+.modes-filter select:hover,
+.new-filter select:hover {
+  border-color: #1976d2;
+  background: rgba(40, 40, 40, 0.95);
+}
+
+/* وقتی انتخاب میشه */
+.genres-filter select:focus,
+.modes-filter select:focus,
+.new-filter select:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 6px #1976d280;
+}
+
+/* استایل برای گزینه‌ها */
+.genres-filter option,
+.modes-filter option,
+.new-filter option {
   background: #1e1e1e;
   color: #fff;
+  padding: 10px;
 }
+
 
 /* ----------------------- */
 /* گرید کارت‌ها */
