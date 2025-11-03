@@ -200,8 +200,13 @@ function setupCounters() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          setTimeout(() => odometer.update(value), 100);
-          observer.unobserve(el);
+          // Reset مقدار به صفر
+          odometer.update(0);
+
+          // شروع شمارش بعد از کمی تاخیر
+          setTimeout(() => odometer.update(value), 350);
+
+          // دیگر unobserve نمی‌کنیم تا هر بار که اسکرول شد دوباره شمارش شود
         }
       });
     }, { threshold: 0.1 });
@@ -218,4 +223,43 @@ function setupCounters() {
 // اجرای توابع در زمان بارگذاری
 document.addEventListener('DOMContentLoaded', () => {
   setupCounters();
+});
+
+const hero = document.getElementById("hero");
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+hero.addEventListener('mousedown', (e) => {
+  isDown = true;
+  startX = e.pageX;
+});
+
+hero.addEventListener('mouseup', (e) => {
+  if (!isDown) return;
+  isDown = false;
+  const diff = e.pageX - startX;
+  if (diff > 50) prevSlide(); // کشیدن به راست → اسلاید قبلی
+  else if (diff < -50) nextSlide(); // کشیدن به چپ → اسلاید بعدی
+});
+
+hero.addEventListener('mousemove', (e) => {
+  e.preventDefault();
+});
+
+hero.addEventListener('mouseleave', () => {
+  isDown = false;
+});
+
+// برای دستگاه‌های لمسی
+hero.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].pageX;
+});
+
+hero.addEventListener('touchend', (e) => {
+  const endX = e.changedTouches[0].pageX;
+  const diff = endX - startX;
+  if (diff > 50) prevSlide();
+  else if (diff < -50) nextSlide();
 });

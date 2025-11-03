@@ -69,7 +69,7 @@ img {
 #hero {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   min-height: 450px;
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@ img {
 
 #mainGameBox {
   width: 280px;
-  height: 340px;
+  height: 300px;
   position: relative;
   border-radius: var(--radius);
   overflow: hidden;
@@ -117,7 +117,7 @@ img {
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-  margin-top: 20px;
+  margin-top: 35px;
   z-index: 2;
 }
 

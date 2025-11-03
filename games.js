@@ -1,42 +1,5 @@
 // const games = [
 //   {
-//     id: 36897,
-//     title: "A Way Out",
-//     image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1vca.jpg",
-//     description: "از سازندگان Brothers: A Tale of Two Sons، بازی A Way Out منتشر شده است، یک ماجراجویی منحصراً همکاری که در آن شما نقش یکی از دو زندانی را بازی می‌کنید که فرار جسورانه خود را از زندان انجام می‌دهند. چیزی که به عنوان یک فرار هیجان‌انگیز آغاز می‌شود، به سرعت به یک ماجراجویی غیرقابل پیش‌بینی و احساسی تبدیل می‌شود که قبلاً دیده یا بازی نشده است. A Way Out تجربه‌ای است که باید با دو بازیکن انجام شود. هر بازیکن یکی از شخصیت‌های اصلی، لئو و وینسنت، را در اتحادی بی‌میل برای فرار از زندان و به دست آوردن آزادی خود کنترل می‌کند.",
-//     categories: [
-//       // "PS4",
-//       "PC",
-//       // "Xbox"
-//     ],
-//     genres: [
-//       "Adventure"
-//     ],
-//     modes: [
-//       "Multiplayer",
-//       "Co-operative",
-//       "Split screen"
-//     ],
-//     perspectives: [
-//       "Third person"
-//     ],
-//     gallery: [
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/hmimiqg1tofwzwvgjwes.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/flggjcgwvqzngzxb7btj.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/xqcfk1e4mfqsnv2tau6x.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/b8p42cvdrnzg0czlm3js.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/bd114fpqp3d9l3n4sre0.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/whgl6wi39lv8u5w89o63.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/f4stmmaz0damsllwwmnz.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ulp19itnadcheorifj84.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/e3uewyuh6wbgj52z6h5r.jpg"
-//     ],
-//     video: "https://www.aparat.com/video/video/embed/videohash/vtyw54l/vt/frame",
-//     release_year: 2018,
-//     priceIdPC: 2,
-//     sizePC: 22
-//   },
-//   {
 //     id: 27316,
 //     title: "A Plague Tale: Innocence",
 //     image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1lat.jpg",
@@ -108,39 +71,7 @@
 //     sizePC: 40
 //   },
 
-//   {
-//     id: 133004,
-//     title: "Assassin's Creed Valhalla",
-//     image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2ed3.jpg",
-//     description: "در Assassin's Creed Valhalla، در نقش Eivor، یک وایکینگ افسانه‌ای، در جستجوی افتخار، ظاهر شوید. یک دنیای باز پویا و زیبا را در پس‌زمینه‌ای بی‌رحمانه از قرون وسطی انگلستان کاوش کنید. به دشمنان خود حمله کنید، شهرک خود را توسعه دهید و قدرت سیاسی خود را در تلاش برای کسب جایگاهی در میان خدایان در Valhalla بسازید.",
-//     categories: [
-//       "PS4",
-//       "PC",
-//       // "PS5",
-//       // "Xbox"
-//     ],
-//     genres: [
-//       "Role-playing (RPG)",
-//       "Adventure"
-//     ],
-//     modes: [
-//       "Single player"
-//     ],
-//     perspectives: [
-//       "Third person"
-//     ],
-//     gallery: [
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gf9.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfc.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfa.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfd.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfb.jpg"
-//     ],
-//     video: "https://www.aparat.com/video/video/embed/videohash/h955ja4/vt/frame",
-//     release_year: 2020,
-//     priceIdPS4: 1,
-//     sizePS4: 42,
-//   },
+
 
 //   {
 //     id: 135254,
@@ -478,43 +409,7 @@
 //     sizePS4: 36,
 //   },
 
-//   {
-//     id: 215060,
-//     title: "Assassin's Creed Mirage",
-//     image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co57sj.jpg",
-//     description: "در قرن نهم میلادی، بغداد در اوج خود قرار دارد و در علم، هنر، نوآوری و تجارت، جهان را رهبری می‌کند. در میان چشم‌انداز شهری شلوغ آن، یک جوان یتیم درگیر با گذشته‌ای غم‌انگیز باید برای زنده ماندن در خیابان‌ها راه برود. در Assassin’s Creed Mirage، شما در نقش بسیم، یک دزد خیابانی حیله‌گر با رویاهای کابوس‌وار، به دنبال پاسخ و عدالت هستید. پس از یک عمل انتقام‌جویانه مرگبار، بسیم از بغداد فرار می‌کند و به یک سازمان باستانی - The Hidden Ones - می‌پیوندد. او با یادگیری آیین‌های مرموز و اصول قدرتمند آنها، توانایی‌های منحصر به فرد خود را تقویت می‌کند، ماهیت واقعی خود را کشف می‌کند و به درک یک فرقه جدید می‌رسد - فرقه‌ای که سرنوشت او را به شیوه‌هایی که هرگز تصور نمی‌کرد، تغییر خواهد داد.",
-//     categories: [
-//       "PS4",
-//       "PC",
-//       // "PS5",
-//       // "Xbox"
-//     ],
-//     genres: [
-//       "Adventure"
-//     ],
-//     modes: [
-//       "Single player"
-//     ],
-//     perspectives: [
-//       "Third person"
-//     ],
-//     gallery: [
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkd9.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkd7.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkd8.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scikfy.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmo.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmr.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipms.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmq.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmt.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmp.jpg"
-//     ],
-//     video: "https://www.aparat.com/video/video/embed/videohash/Wj8hQ/vt/frame",
-//     release_year: 2023,
-//     priceIdPS4: 1,
-//     sizePS4: 30,
-//   },
+//   
 
 //   {
 //     id: 141547,
@@ -886,40 +781,7 @@
 //     sizePC: 30,
 //   },
 
-//   {
-//     id: 282949,
-//     title: "Ace Combat 7: Skies Unknown Deluxe Edition",
-//     image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co7zp0.jpg",
-//     description: "نسخه لوکس بازی Ace Combat 7: Skies Unknown که در جولای ۲۰۲۴ برای نینتندو سوییچ منتشر می‌شود، شامل بازی اصلی و مجموعه‌ای از بسته‌های الحاقی رایگان است: سیزن پس، جنگنده‌های F-104C -Avril-، F-4E Phantom II + ۳ پوسته و ۸ نشان محبوب اسکادران.",
-//     categories: [
-//       "PC",
-//       "PS4"
-//     ],
-//     genres: [
-//       "Shooter",
-//       "Simulator",
-//       "Arcade"
-//     ],
-//     modes: [
-//       "Single player"
-//     ],
-//     perspectives: [
-//       "First person"
-//     ],
-//     gallery: [
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10j.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10l.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10g.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10h.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10k.jpg",
-//       "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10i.jpg"
-//     ],
-//     video: "https://www.aparat.com/video/video/embed/videohash/o89v023/vt/frame",
-//     release_year: 2024,
-//     isNew: true,
-//     priceIdPC: 2,
-//     sizePC: 45,
-//   },
+//  
 
 //   {
 //     id: 55057,
@@ -1296,6 +1158,7 @@ const games = [
     priceIdPS4: 2,
     sizePS4: 85,
     banner: true,
+    isNew: true,
   },
 
   {
@@ -1337,6 +1200,7 @@ const games = [
     priceIdPS4: 2,
     sizePS4: 120,
     banner: true,
+    isNew: true,
   },
 
   {
@@ -1378,6 +1242,7 @@ const games = [
     priceIdPS4: 2,
     sizePS4: 110,
     banner: true,
+    isNew: true,
   },
 
   {
@@ -1418,7 +1283,8 @@ const games = [
     release_year: 2019,
     priceIdPS4: 2,
     sizePS4: 90,
-    banner: true
+    banner: true,
+    isNew: true,
   },
   {
     id: 353848,
@@ -1460,6 +1326,7 @@ const games = [
     priceIdPS4: 2,
     sizePS4: 85,
     banner: true,
+    isNew: true,
   },
   {
     id: 152249,
@@ -2132,6 +1999,7 @@ const games = [
     priceIdPS4: 2,
     sizePS4: 80,
     banner: true,
+    isNew: true,
   },
   {
     id: 119422,
@@ -3699,7 +3567,8 @@ const games = [
     release_year: 2025,
     priceIdPS4: 2,
     sizePS4: 110,
-    banner: true
+    banner: true,
+    isNew: true,
   },
 
   {
@@ -3734,5 +3603,1241 @@ const games = [
     release_year: 2016,
     priceIdPS4: 1,
     sizePS4: 45
+  },
+  {
+    id: 27316,
+    title: "A Plague Tale: Innocence",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1lat.jpg",
+    description: "بازی A Plague Tale: Innocence که برای پلی‌استیشن ۴، ایکس‌باکس وان و رایانه‌های شخصی منتشر شده، داستان غم‌انگیز دو خواهر و برادر را روایت می‌کند که در تاریک‌ترین ساعات تاریخ برای بقا با هم می‌جنگند. این بازی ویدیویی جدید از استودیوی Asobo شما را به سفری احساسی در فرانسه قرن چهاردهم می‌فرستد، با گیم‌پلی ترکیبی از ماجراجویی، اکشن و مخفی‌کاری که توسط داستانی جذاب پشتیبانی می‌شود. داستان آمیسیای جوان و برادر کوچکش هوگو را دنبال کنید که با وحشیگری یک دنیای ویران روبرو می‌شوند و هدف خود را برای افشای یک راز تاریک کشف می‌کنند. در حالی که از دست سربازان تفتیش عقاید فرار می‌کنند، آمیسیا و هوگو که توسط انبوهی از موش‌های تجسم‌یافته از مرگ سیاه احاطه شده‌اند، یاد می‌گیرند که یکدیگر را بشناسند و به یکدیگر اعتماد کنند، در حالی که برای زندگی خود در برابر همه مشکلات مبارزه می‌کنند.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jte.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jtf.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ua97c9hmezzpqh2yw7aq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/gpv5xlyade0lpkq9kmes.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/eb0ymcjeudzuocxp0prd.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sfznzvx3uuwj9crqpmxd.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/k3khlm09zsgqgoxyjhep.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc68wl.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc68wm.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5jtd.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/m588a36/vt/frame",
+    release_year: 2019,
+    priceIdPS4: 1,
+    sizePS4: 40
+  },
+  {
+    id: 36897,
+    title: "A Way Out",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1vca.jpg",
+    description: "از سازندگان Brothers: A Tale of Two Sons، بازی A Way Out منتشر شده است، یک ماجراجویی منحصراً همکاری که در آن شما نقش یکی از دو زندانی را بازی می‌کنید که فرار جسورانه خود را از زندان انجام می‌دهند. چیزی که به عنوان یک فرار هیجان‌انگیز آغاز می‌شود، به سرعت به یک ماجراجویی غیرقابل پیش‌بینی و احساسی تبدیل می‌شود که قبلاً دیده یا بازی نشده است. A Way Out تجربه‌ای است که باید با دو بازیکن انجام شود. هر بازیکن یکی از شخصیت‌های اصلی، لئو و وینسنت، را در اتحادی بی‌میل برای فرار از زندان و به دست آوردن آزادی خود کنترل می‌کند.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Adventure"
+    ],
+    modes: [
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/hmimiqg1tofwzwvgjwes.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/flggjcgwvqzngzxb7btj.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/xqcfk1e4mfqsnv2tau6x.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/b8p42cvdrnzg0czlm3js.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/bd114fpqp3d9l3n4sre0.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/whgl6wi39lv8u5w89o63.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/f4stmmaz0damsllwwmnz.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ulp19itnadcheorifj84.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/e3uewyuh6wbgj52z6h5r.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/vtyw54l/vt/frame",
+    release_year: 2018,
+    priceIdPS4: 1,
+    sizePS4: 20
+  },
+  {
+    id: 282949,
+    title: "Ace Combat 7: Skies Unknown Deluxe Edition",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co7zp0.jpg",
+    description: "نسخه لوکس بازی Ace Combat 7: Skies Unknown که در جولای ۲۰۲۴ برای نینتندو سوییچ منتشر می‌شود، شامل بازی اصلی و مجموعه‌ای از بسته‌های الحاقی رایگان است: سیزن پس، جنگنده‌های F-104C -Avril-، F-4E Phantom II + ۳ پوسته و ۸ نشان محبوب اسکادران.",
+    categories: [
+      // "PC",
+      "PS4"
+    ],
+    genres: [
+      "Shooter",
+      "Simulator",
+      "Arcade"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10j.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10l.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10g.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10h.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10k.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sct10i.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/o89v023/vt/frame",
+    release_year: 2024,
+    priceIdPS4: 1,
+    sizePS4: 40
+  },
+
+  {
+    id: 167611,
+    title: "Alan Wake Remastered",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co65aa.jpg",
+    description: "Alan Wake Remastered یک نسخه به‌روز شده از بازی اصلی اکشن و ماجراجویی ترسناک روانشناختی است که توسط Remedy Entertainment ساخته شده است.\n\nبازی روایت اصلی را دنبال می‌کند: داستان‌نویس پرفروش آلن ویک با بلاک نویسنده دست و پنجه نرم می‌کند و به همراه همسرش آلیس برای یافتن الهام به شهر کوچک برایت فالز سفر می‌کند. اندکی پس از ورود، آلیس به طور مرموزی ناپدید می‌شود.\n\nآلن صفحاتی از رمانی هیجان‌انگیز را پیدا می‌کند که به یاد نمی‌آورد نوشته باشد، و وقایعی از نسخه خطی زنده می‌شوند. او با موجودات فراطبیعی به نام ''ه شده' روبرو می‌شود که توسط تاریکی کنترل می‌شوند. نسخه بازسازی شده دارای گرافیک و عملکرد بهبود یافته است، اما گیم‌پلی و خط داستانی با تمرکز بر واقعیت، تخیل و قدرت کلام نویسندگی مطابق نسخه اصلی است.\n\nاین نسخه شامل دو DLC داستانی The Signal' و 'The Writer' نیز می‌باشد.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scd71u.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scd71s.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scd71r.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scd71t.jpg"
+    ],
+    video: "https://www.youtube.com/embed/mRVBZC-RJF0",
+    release_year: 2021,
+    priceIdPS4: 1,
+    sizePS4: 35
+  },
+
+  {
+    id: 125479,
+    title: "AO Tennis 2",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1xwu.jpg",
+    description: "AO Tennis 2 که همزمان با اوپن استرالیا، اولین تورنمنت بزرگ تنیس سال منتشر شد، سطح بی‌سابقه‌ای از عمق و طیف گسترده‌ای از گزینه‌های سفارشی‌سازی را برای یک تجربه گیم‌پلی سفارشی ارائه می‌دهد. در حالت حرفه‌ای کاملاً جدید مبتنی بر روایت، می‌توانید بر زمین تسلط داشته باشید، شهرت خود را بسازید، به قله صعود کنید و به یک اسطوره تنیس تبدیل شوید!",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Simulator",
+      "Sport"
+    ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc99vi.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc99ve.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc99vc.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc99vd.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc99vf.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc99vh.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc99vg.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc7la1.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc7la3.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc7la0.jpg"
+    ],
+    video: "https://www.youtube.com/embed/_cqkWF3gbS0",
+    release_year: 2020,
+    priceIdPS4: 1,
+    sizePS4: 20
+  },
+  {
+    id: 215060,
+    title: "Assassin's Creed Mirage",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co57sj.jpg",
+    description: "در قرن نهم میلادی، بغداد در اوج خود قرار دارد و در علم، هنر، نوآوری و تجارت، جهان را رهبری می‌کند. در میان چشم‌انداز شهری شلوغ آن، یک جوان یتیم درگیر با گذشته‌ای غم‌انگیز باید برای زنده ماندن در خیابان‌ها راه برود. در Assassin’s Creed Mirage، شما در نقش بسیم، یک دزد خیابانی حیله‌گر با رویاهای کابوس‌وار، به دنبال پاسخ و عدالت هستید. پس از یک عمل انتقام‌جویانه مرگبار، بسیم از بغداد فرار می‌کند و به یک سازمان باستانی - The Hidden Ones - می‌پیوندد. او با یادگیری آیین‌های مرموز و اصول قدرتمند آنها، توانایی‌های منحصر به فرد خود را تقویت می‌کند، ماهیت واقعی خود را کشف می‌کند و به درک یک فرقه جدید می‌رسد - فرقه‌ای که سرنوشت او را به شیوه‌هایی که هرگز تصور نمی‌کرد، تغییر خواهد داد.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkd9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkd7.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkd8.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scikfy.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmo.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmr.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipms.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmt.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scipmp.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/Wj8hQ/vt/frame",
+    release_year: 2023,
+    priceIdPS4: 1,
+    sizePS4: 35,
+  },
+
+  {
+    id: 1970,
+    title: "Assassin's Creed IV Black Flag",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co4qfn.jpg",
+    description: "Assassin’s Creed IV Black Flag در سال 1715 آغاز شد، زمانی که دزدان دریایی یک جمهوری غیرقانونی در کارائیب ایجاد کردند و بر خشکی و دریاها حکومت کردند. این قانون شکنان نیروی دریایی را فلج کردند، تجارت بین المللی را متوقف کردند و ثروت های هنگفتی را غارت کردند. آنها ساختارهای قدرت حاکم بر اروپا را تهدید کردند، تخیل میلیون ها نفر را الهام بخشیدند و میراثی از خود بر جای گذاشتند که هنوز پابرجاست.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Adventure"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer",
+      // "Co-operative"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/uiaywb4ybnqal47xgska.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/jejhpngrm1kttpn03lol.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sceetx.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sceetw.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sceety.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sceevg.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/amoqttuiszhyd6s4tgg5.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/xcxhhxv4vvevmstzxzz6.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/klueeisww1wumxudur9l.jpg"
+    ],
+    video: "https://www.youtube.com/embed/sPYN9crIA38",
+    release_year: 2013,
+    priceIdPS4: 1,
+    sizePS4: 20
+  },
+
+  {
+    id: 109532,
+    title: "Assassin's Creed III Remastered",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2gjw.jpg",
+    description: "انقلاب آمریکا را دوباره زنده کنید یا برای اولین بار در Assassin's Creed III Remastered با گرافیک پیشرفته و مکانیک‌های گیم‌پلی بهبود یافته تجربه کنید.\n\nاین نسخه شامل تمام DLCهای تک‌نفره اصلی، از جمله The Tyranny of King Washington نیز می‌باشد.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc671o.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc671r.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc671v.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6dk9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6dk8.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6dk7.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc671s.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc671w.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc671t.jpg"
+    ],
+    video: "https://www.youtube.com/embed/4rWU9PB-3Ns",
+    release_year: 2019,
+    priceIdPS4: 1,
+    sizePS4: 70
+  },
+
+  {
+    id: 28540,
+    title: "Assassin's Creed Origins",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1rbe.jpg",
+    description: "در چهار سال گذشته، تیم سازنده Assassin’s Creed IV Black Flag شروعی جدید برای فرنچایز Assassin’s Creed ایجاد کرده است.\n\nدر مصر باستان، بازیکنان به اسرارآمیزترین مکان‌های تاریخ سفر می‌کنند، در دوره‌ای حیاتی که جهان را شکل می‌دهد و باعث پیدایش Assassin’s Brotherhood می‌شود. بازیکنان در دنیای باز زنده، سیستمی و باشکوه غوطه‌ور می‌شوند، اکوسیستم‌های پرجنب‌وجوشی را کشف می‌کنند که از مناظر متنوع و عجیب و غریب ساخته شده‌اند و فرصت‌های بی‌پایانی از اکتشاف، ماجراجویی و چالش‌های خالص را فراهم می‌کنند.\n\nAssassin's Creed Origins با فلسفه مبارزه جدید و مسیر RPG کاملاً جدید ارائه شده است که در آن بازیکنان سطح می‌گیرند، غارت می‌کنند و توانایی‌های خود را برای شکل دادن و سفارشی کردن Assassin ماهر خود انتخاب می‌کنند، در حالی که در قدرت و تخصص خود حین کاوش در کل کشور مصر باستان رشد می‌کنند.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/uaxy3tjubonooualy5x8.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/wzltqoi9xgmmgimnxsrq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/efqqm3t15ey0jlkv0xqv.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/oh9o0c3d5eo7qnwkm9q2.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/l1nbqll4r42lqrz1wesv.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/dxbpxe7xewmvkz8dnrgp.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/p5fjuotpkdecuturqw1c.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/giqtb8y4awm9ibt942cn.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/gxadfrdicxjlraalvltb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/nfwxynqhormtovylykxr.jpg"
+    ],
+    video: "https://www.youtube.com/embed/7rbsIDwYW3Y",
+    release_year: 2017,
+    priceIdPS4: 1,
+    sizePS4: 50
+  },
+
+  {
+    id: 81205,
+    title: "Assassin's Creed: Rogue Remastered",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1xit.jpg",
+    description: "بازی Assassin's Creed Rogue Remastered علاوه بر اجرای با کیفیت 4K، از بافت‌ها و سایه‌هایی با وضوح بالاتر، رندر محیطی بهبود یافته و جلوه‌های بصری جدید بهره می‌برد که طبیعت وسیع، مناظر یخی قطب شمال و نسخه شلوغ شهر نیویورک را چشمگیرتر از همیشه می‌کند. نسخه جدید همچنین دارای تمام محتوای قابل دانلود و بسط نسخه اصلی است، از جمله دو ماموریت جایزه – The Armor of Sir Gunn و The Siege of Fort de Sable – و همچنین سلاح‌ها، لباس‌ها و موارد سفارشی‌سازی در بسته‌های Master Templar و Explorer. همچنین شامل یک جایزه جدید است: لباس قدیمی Bayek از Assassin's Creed Origins.",
+    categories: [
+      "PS4",
+      // "Xbox"
+    ],
+    genres: [
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/uewvk7eiqevo3hrxhqur.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/hkixmadn22sbkdfi7pbf.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/k2d8uxdrt4szwbeorimo.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/z7cslpnwuidaaywjqil5.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/y5sazxz3klikoqxrxyje.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ctqfggxkrbgld3srpeb1.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/vqvntvv9gtfv6sqj42uh.jpg"
+    ],
+    video: "https://www.youtube.com/embed/Ut9AomUVkn8",
+    release_year: 2018,
+    priceIdPS4: 1,
+    sizePS4: 15
+  },
+
+  {
+    id: 8263,
+    title: "Assassin's Creed Syndicate",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1xis.jpg",
+    description: "لندن، 1868. انقلاب صنعتی عصری باورنکردنی از اختراعات را آغاز کرد و زندگی میلیون‌ها نفر را با فناوری‌هایی که زمانی غیرممکن تصور می‌شد، متحول کرد. فرصت‌های ایجاد شده در این دوره باعث شد مردم به لندن هجوم آورند تا در این دنیای جدید شرکت کنند، دنیایی که دیگر توسط پادشاهان، امپراتورها، سیاستمداران یا مذهب کنترل نمی‌شود، بلکه یک مخرج مشترک جدید دارد: پول.\n\nبا این حال، همه نمی‌توانند از مزایای این رونق بهره‌مند شوند. با وجود سوخت موتور امپراتوری بریتانیا، زندگی کارگران چیزی بیش از بردگی قانونی نیست، در حالی که درصد کمی از افراد بالا از کار خود سود می‌برند. طبقه پایین که فقیر زندگی می‌کنند و جوانان در حال مرگ هستند، در اعتراض به عنوان نوع جدیدی از خانواده، گروه‌هایی را شکل می‌دهند که در مبارزه برای بقا به زندگی در دنیای زیرین روی می‌آورند. یک مبارزه تا زمانی که قاتلان مراقب به طرف آنها بیایند و دوباره آتش یک درگیری دیرینه را شعله‌ور کنند، که رهبران لندن را درگیر می‌کند و در طول تاریخ مدرن، از زیرزمین به بالا، منعکس خواهد شد.\n\nJacob Frye را معرفی می‌کنیم که با کمک خواهر دوقلوی خود Evie، سرنوشت میلیون‌ها نفر را در Assassin’s Creed Syndicate تغییر خواهد داد. در یک ماجراجویی پر از اکشن، دسیسه و مبارزات وحشیانه، به جمع‌آوری برخیزید و دنیای اموات را برای شکستن قبضه فاسد لندن هدایت کنید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/yzo5suzogbmfrphlauxm.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/dtzztba92lcblgmvcfme.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ly4zgrgcwehts21gfs5m.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ub0tdmywutwkixqaumzi.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/hwxquluauq9w6k9v5hwn.jpg"
+    ],
+    video: "https://www.youtube.com/embed/pkg0pNagFKU",
+    release_year: 2015,
+    priceIdPS4: 1,
+    sizePS4: 45
+  },
+
+  {
+    id: 5606,
+    title: "Assassin's Creed Unity",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1xiq.jpg",
+    description: "پاریس، 1789. انقلاب فرانسه شهری که زمانی باشکوه بود را به مکانی از وحشت و هرج و مرج تبدیل کرد. خیابان های سنگفرش شده آن از خون مردم عادی که جرأت قیام علیه اشراف ستمگر را دارند قرمز شده است. با این حال، در حالی که ملت خود را از هم می پاشد، مرد جوانی به نام آرنو سفری خارق العاده را برای افشای قدرت های واقعی پشت سر انقلاب آغاز می کند. تعقیب او او را به وسط یک مبارزه بی رحمانه برای سرنوشت یک ملت پرتاب می کند و او را به یک استاد قاتل واقعی تبدیل می کند.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer",
+      // "Co-operative"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/mfvd0wya0vmd7ah5hsbh.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/rd2u6c3wochb1okq5vyc.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ckpwbqm6hqcisdikazz9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/na3gtfcncvsxudkipg93.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ebdmswryf1vuyfymrpkf.jpg"
+    ],
+    video: "https://www.youtube.com/embed/YP2ve8Jd0qE",
+    release_year: 2014,
+    priceIdPS4: 1,
+    sizePS4: 45
+  },
+  {
+    id: 133004,
+    title: "Assassin's Creed Valhalla",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2ed3.jpg",
+    description: "در Assassin's Creed Valhalla، در نقش Eivor، یک وایکینگ افسانه‌ای، در جستجوی افتخار، ظاهر شوید. یک دنیای باز پویا و زیبا را در پس‌زمینه‌ای بی‌رحمانه از قرون وسطی انگلستان کاوش کنید. به دشمنان خود حمله کنید، شهرک خود را توسعه دهید و قدرت سیاسی خود را در تلاش برای کسب جایگاهی در میان خدایان در Valhalla بسازید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gf9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfc.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfa.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfd.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8gfb.jpg"
+    ],
+    video: "https://www.aparat.com/video/video/embed/videohash/h955ja4/vt/frame",
+    release_year: 2020,
+    priceIdPS4: 1,
+    sizePS4: 42,
+  },
+
+  {
+    id: 103054,
+    title: "Assassin's Creed Odyssey",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2nul.jpg",
+    description: "اودیسه حماسی خود را بنویسید و در Assassin's Creed Odyssey به یک قهرمان اسپارتی افسانه ای تبدیل شوید، یک ماجراجویی الهام بخش که در آن باید سرنوشت خود را بسازید و مسیر خود را در دنیایی که در آستانه از هم پاشیدن است مشخص کنید. با تجربه دنیایی غنی و دائماً در حال تغییر که بر اساس تصمیمات شما شکل گرفته است، بر نحوه باز شدن تاریخ تأثیر بگذارید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/bxpsd9akgwqbcdusdjwf.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/gapzclh3mulnucw0ytti.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/wmrvnumhfxku1hvpq7m6.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/oy3sblbvvxpaatmhis6n.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/gfpbnk9unsxba7swao0v.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/fkkiiyjtcu7os0fpvhe0.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/gcfut0wzdwzr2lt7zhog.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/uomt842usvkcn08bygrm.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/zkk4g8kigrrgfuswdvyl.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/wg3k2ccwua6aca2cvx5j.jpg"
+    ],
+    video: "https://www.youtube.com/embed/vAxc0c5de0c",
+    release_year: 2018,
+    priceIdPS4: 1,
+    sizePS4: 48
+  },
+
+  {
+    id: 116200,
+    title: "Back 4 Blood",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2mhj.jpg",
+    description: "Back 4 Blood یک بازی تیراندازی اول شخص مشارکتی و هیجان انگیز از سازندگان فرنچایز تحسین شده Left 4 Dead است. شما در مرکز جنگ علیه رایدن هستید. این میزبانان یک انگل کشنده که زمانی انسان بودند، به موجودات وحشتناکی تبدیل شده اند که برای بلعیدن آنچه از تمدن باقی مانده اند، خم شده اند. با انقراض بشریت در خط، این به شما و دوستانتان بستگی دارد که با دشمن مبارزه کنید، Ridden را ریشه کن کنید و جهان را پس بگیرید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer",
+      // "Co-operative"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8v6c.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8v6d.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8v6a.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8v6b.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctjbq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctjbs.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctjbr.jpg"
+    ],
+    video: "https://www.youtube.com/embed/7RCgT-XOPr4",
+    release_year: 2021,
+    priceIdPS4: 1,
+    sizePS4: 40
+  },
+
+  {
+    id: 5503,
+    title: "Batman: Arkham Knight",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/coagib.jpg",
+    description: "Batman: Arkham Knight یک بازی اکشن و ماجراجویی است که توسط Rocksteady Studios ساخته شده و در سال 2015 منتشر شد. این آخرین قسمت از سری Arkham است. بازیکنان بتمن را کنترل می‌کنند، که با Scarecrow روبرو می‌شود، کسی که جنایتکاران گاتهام را برای نابودی شوالیه تاریکی متحد می‌کند. شوالیه آرکام مرموز، یک دشمن جدید، به Scarecrow در نقشه خود کمک می‌کند.\n\nاین بازی دارای کاوش در جهان باز، مخفی‌کاری، مبارزه و حل پازل است. یکی دیگر از ویژگی‌های کلیدی، Batmobile است که برای پیمایش و مبارزه استفاده می‌شود. داستان، مبارزات روانی بتمن و فروپاشی اتحادهای او را بررسی می‌کند، زیرا گاتهام به سمت هرج‌ومرج می‌رود.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Hack and slash/Beat 'em up",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/zy4zjqeydva5pw4afk9b.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/hhpdzsjzt1rq0zfyztqh.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/es3bkhmszhr0lgfitds7.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/f7dtfyst1yempsfapqze.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/wmryo6uxdy1opndpqzsg.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/z3z1odurhninhnorve6g.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/njfbulzuivfqqtavv8pi.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/gvexzjpbwq7aelsicwt1.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/g6djmksheahgmj8qw4jh.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/qphzev6p9rdtqun10tnj.jpg"
+    ],
+    video: "https://www.youtube.com/embed/GKM19dGEoGo",
+    release_year: 2015,
+    priceIdPS4: 1,
+    sizePS4: 50
+  },
+
+  {
+    id: 19245,
+    title: "Batman: Return to Arkham",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2dhj.jpg",
+    description: "Batman: Return to Arkham ترکیبی از دو ورودی کلاسیک در سری Batman: Arkham را می بیند که به کنسول های مدرن (PS4 و Xbox One) با گرافیک بهبود یافته باز می گردد. برادران وارنر در حال بازسازی 2009 Batman: Arkham Asylum و 2011 Batman: Arkham City هستند که در این بسته مجموعه به همراه تمام DLC های مرتبط منتشر خواهند شد.",
+    categories: [
+      "PS4",
+      // "Xbox"
+    ],
+    genres: [
+      "Strategy",
+      "Hack and slash/Beat 'em up",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/forpkc92qudmha2rjcov.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ggc6pihcjvcrhiytujdb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/icqqd9frm67e47d7zb7p.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ldvklsva2j5klvopvsmf.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/j268sw3plk5y95surocw.jpg"
+    ],
+    video: "https://www.youtube.com/embed/SJn1tCv1LfU",
+    release_year: 2016,
+    priceIdPS4: 1,
+    sizePS4: 25
+  },
+
+  {
+    id: 18320,
+    title: "Battlefield 1",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2n9d.jpg",
+    description: "با بازی چند نفره حماسی و یک کمپین پر ماجرا، گیم پلی کلاسیک Battlefield را کشف کنید. طلوع جنگ همه جانبه را فقط در میدان نبرد 1 تجربه کنید. از طریق نبردهای حماسی از نبردهای شدید شهری در یک شهر محاصره شده فرانسه به فضاهای باز بزرگ در آلپ ایتالیا یا نبردهای دیوانه وار در تپه های شنی عربی بجنگید. نبردهای بزرگ را به عنوان خودروهای پیاده یا خلبانی در زمین، هوا و دریا، از تانک ها و دوچرخه های روی زمین گرفته تا دو هواپیما و کشتی های جنگی غول پیکر تجربه کنید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer"
+    ],
+    perspectives: [
+      "First person",
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/qtw7wt4lzftyuadu7h8j.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5inc.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5ind.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5inf.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ez6qfdwknjwshjkf5cvo.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/jm9kereghangms42rrp3.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/fsgtjoqvpwpcb7kbdayb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5ine.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5ing.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc5inh.jpg"
+    ],
+    video: "https://www.youtube.com/embed/3qqkfMXYtKI",
+    release_year: 2016,
+    priceIdPS4: 1,
+    sizePS4: 60
+  },
+
+  {
+    id: 1979,
+    title: "Battlefield 4",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1nmf.jpg",
+    description: "Battlefield 4 یک بلاک باستر اکشن تعریف کننده ژانر است که توسط دایس ساخته شده است و از لحظاتی ساخته شده است که مرز بین بازی و شکوه را محو می کند، لحظاتی که فقط در Battlefield یافت می شوند. به بوت کمپ بروید تا اصول اولیه حالت تک نفره جذاب و چند نفره شدید Battlefield 4 را بیاموزید. در اینجا شما همچنین می توانید اطلاعات مربوط به Levolution، Commander Mode، Naval Warfare و بسیاری از ویژگی های بازی هیجان انگیز را پیدا کنید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter",
+      "Simulator",
+      "Strategy"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer"
+    ],
+    perspectives: [
+      "First person",
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/yq7owbqrj09mgfqg3ac3.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/o80vh3ztviwbrkedbvjs.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/gvixjdrjylwi4kifgc4r.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/chkphyps9bwrxoau9hen.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/gkvbblwscco4eaiquxfw.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctjam.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctjai.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctjah.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctjal.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctjaj.jpg"
+    ],
+    video: "https://www.youtube.com/embed/1SRxs5xYWuo",
+    release_year: 2013,
+    priceIdPS4: 1,
+    sizePS4: 40
+  },
+
+  {
+    id: 83728,
+    title: "Battlefield V",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1xbv.jpg",
+    description: "سری Battlefield به ریشه‌های خود در تصویری که قبلاً هرگز دیده نشده بود از جنگ جهانی 2 بازمی‌گردد. با تیم خود در حالت‌هایی مانند عملیات بزرگ بزرگ و سلاح‌های ترکیبی به صورت فیزیکی و چند نفره بازی کنید، یا شاهد درام انسانی در برابر نبردهای جهانی در داستان‌های جنگی تک نفره باشید. همانطور که در مکان‌های حماسی و غیرمنتظره در سرتاسر جهان می‌جنگید، از غنی‌ترین و فراگیرترین میدان نبرد تا کنون لذت ببرید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer",
+      // "Co-operative"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/pjqit6egebe8affgfxey.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/rkp2kggnoid6bthpuv2n.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/xdjjufkmte3ntonkigs5.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/cdlqzmwub64eokzm7cdt.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/w3yuy5qbpbdhmbd4ggu1.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/xokasjrbubfkqtnvy9p3.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/enrem5i1bj7kcgx0qx6n.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/lxeavjeryfvcj2jtzpu5.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/b8aivuwxxtgojaguczad.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/oteswqhfmfxjcu41sug0.jpg"
+    ],
+    video: "https://www.youtube.com/embed/9OTkhsJUK0U",
+    release_year: 2018,
+    priceIdPS4: 1,
+    sizePS4: 40
+  },
+
+  {
+    id: 136659,
+    title: "Ben 10: Power Trip",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2eyt.jpg",
+    description: "بن و خانواده اش در حال لذت بردن از تعطیلات اروپایی خود هستند... تا اینکه جادوگر شیطان صفت Hex قدرت چهار کریستال مرموز را آزاد می کند! فقط بن 10 می تواند نفرین را بشکند - پس برای تبدیل شدن به بیگانگان قدرتمند برای نبرد با دشمنان، حل پازل ها و کشف آزادانه دنیای سه بعدی هیجان انگیز آماده شوید. زمان قهرمان است! با گوئن و پدربزرگ مکس در کنار شما، تمام طنز و رقابت از نمایش شبکه کارتون اینجاست. و از آنجایی که چهار بازو بهتر از دو بازو هستند، کوین لوین برای ماجراجویی در بازی‌های تقسیم‌شده محلی همراه است. این یک سفر برقی است که می خواهید بارها و بارها انجام دهید. زمان قهرمان است!",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Platform",
+      "Hack and slash/Beat 'em up",
+      "Adventure"
+    ],
+    modes: [
+      "Single player",
+      // "Co-operative",
+      // "Split screen"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8hjk.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8hjj.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8hjh.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8hjf.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8hjg.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8hji.jpg"
+    ],
+    video: "https://www.youtube.com/embed/SVkS4zfcIcg",
+    release_year: 2020,
+    priceIdPS4: 1,
+    sizePS4: 10
+  },
+
+  {
+    id: 247451,
+    title: "Ben 10",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co6th3.jpg",
+    description: "Ben 10 یک پورت بدون مجوز روسی Sega Mega Drive است که بر اساس سریال تلویزیونی با همین نام ساخته شده است. هیچ اعتبار توسعه دهنده ای در بازی وجود ندارد، اما چندین عنصر نشان می دهد که توسط BMB ساخته شده است.",
+    categories: [
+      "PS4"
+    ],
+    genres: [
+      "Platform"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Side view"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scmcvd.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scmcvc.jpg"
+    ],
+    video: "",
+    release_year: 2012,
+    priceIdPS4: 1,
+    sizePS4: 5
+  },
+
+  {
+    id: 54842,
+    title: "Biomutant",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1rse.jpg",
+    description: "Biomutant یک RPG افسانه‌ای کونگ‌فو جهان باز و پسا آخرالزمانی است که دارای یک سیستم رزمی منحصربه‌فرد به سبک هنرهای رزمی است که به شما امکان می‌دهد غوغا، تیراندازی و اکشن توانایی جهش‌یافته را با هم ترکیب کنید. طاعون زمین را ویران می کند و درخت زندگی مرگ را از ریشه هایش بیرون می کشد. قبایل تقسیم شده اند. دنیایی را در آشفتگی کاوش کنید و سرنوشت آن را مشخص کنید، آیا ناجی آن خواهید بود یا آن را به سرنوشتی تاریک تر هدایت خواهید کرد؟",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    modes: [
+      "Single player"
+    ],
+    perspectives: [
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ese4zlumuah1vmcif3xc.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/s6wcp1ii1rstnbanjuma.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/dkzqtiiw50jsoin1s7sn.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/iikhubs6t5pqa2fyqec7.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/lxw5vitm6t1ctpvbaveb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/vlsjkoh7fyhynhkhyexh.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/glmnpce4zm5633ujyw4j.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/a9eixod6wgz4cvn93ew7.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/drxacqxzwujkchcizady.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/vmpnbgkbdmpgr3y27fzr.jpg"
+    ],
+    video: "https://www.youtube.com/embed/lVfeSHbjslw",
+    release_year: 2021,
+    priceIdPS4: 1,
+    sizePS4: 30,
+    banner: true,
+    isNew: true,
+  },
+
+  {
+    id: 19164,
+    title: "Borderlands 3",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co20r3.jpg",
+    description: "تیرانداز غارتگر اصلی بازمی گردد، با هزاران اسلحه و یک ماجراجویی پر از ضرب وشتم! به عنوان یکی از چهار شکارچی جدید خرک در میان دنیاها و دشمنان جدید منفجر شوید. به صورت انفرادی یا با دوستان خود بازی کنید تا با دشمنان دیوانه مقابله کنید، تعداد زیادی غارت به دست آورید و خانه خود را از دست بی رحم ترین رهبران فرقه در کهکشان نجات دهید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter",
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer",
+      // "Co-operative",
+      // "Split screen"
+    ],
+    perspectives: [
+      "First person",
+      "Third person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc762z.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc762y.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkqg.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lcu.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lcv.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lcw.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lcy.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lcx.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6lcz.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc6ld0.jpg"
+    ],
+    video: "https://www.youtube.com/embed/LkHNbsQMxPI",
+    release_year: 2019,
+    priceIdPS4: 1,
+    sizePS4: 40
+  },
+
+  {
+    id: 9509,
+    title: "Call of Duty: Black Ops III",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co20yw.jpg",
+    description: "Call of Duty: Black Ops 3 بازیکنان را به آینده‌ای تاریک و پیچیده اعزام می‌کند که در آن نسل جدیدی از سربازان Black Ops ظهور می‌کنند و خطوط بین انسانیت خودمان و فناوری‌ای که برای پیشروی ایجاد کرده‌ایم محو می‌شود، در دنیایی که رباتیک نظامی پیشرفته، جنگ را تعریف می‌کند. با سه حالت بازی منحصر به فرد: کمپین، چند نفره و زامبی که عمیق ترین و جاه طلبانه ترین Call of Duty را برای طرفداران فراهم می کند.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter",
+      "Adventure"
+    ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ll9hzaysptp2to1zjiw8.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/mvlkgxa1mxswaumd9ai4.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/pb3mirzwqhg61qcycvde.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctj9w.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctj9u.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctj9v.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/lvgr88taur1abb42sdmw.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/pgvus6rylg4xveid4di0.jpg"
+    ],
+    video: "https://www.youtube.com/embed/A7Tx9k0C7Ic",
+    release_year: 2015,
+    priceIdPS4: 1,
+    sizePS4: 85
+  },
+
+  {
+    id: 6632,
+    title: "Call of Duty: Advanced Warfare",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1wky.jpg",
+    description: "Call of Duty: Advanced Warfare میدان‌های نبرد قدرتمند آینده را تجسم می‌کند، جایی که هم تکنولوژی و هم تاکتیک تکامل یافته‌اند تا دوره جدیدی از نبرد را برای این فرنچایز آغاز کنند. کوین اسپیسی، بازیگر برنده جایزه اسکار، با ارائه یک بازی خیره کننده، در نقش جاناتان آیرونز - یکی از قدرتمندترین مردان جهان - این چشم انداز دلخراش از آینده جنگ را شکل می دهد.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer",
+      // "Co-operative",
+      // "Split screen"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/cpx6xdycg3hdbbnonioh.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/otojxi2pmbshs8t3snfm.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/thidhbpeiftbn5eqwekk.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ugsyj95yehrl895uwdvb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/dvn09hega4jagahmfm2z.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkgn.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkgo.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctkgm.jpg"
+    ],
+    video: "https://www.youtube.com/embed/sFu5qXMuaJU",
+    release_year: 2014,
+    priceIdPS4: 1,
+    sizePS4: 50
+  },
+
+  {
+    id: 137001,
+    title: "Call of Duty: Black Ops Cold War",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co2n6j.jpg",
+    description: "مجموعه نمادین Black Ops با Call of Duty: Black Ops Cold War بازگشته است – دنباله مستقیم نسخه اصلی و مورد علاقه طرفداران Call of Duty: Black Ops. Black Ops Cold War طرفداران را به اعماق نبرد ژئوپلیتیک ناپایدار جنگ سرد در اوایل دهه 1980 می‌کشاند. در کمپین تک‌نفره جذاب، که بازیکنان با شخصیت‌های تاریخی و حقایق سخت روبرو می‌شوند، هیچ‌چیز آنطور که به نظر می‌رسد نیست، زیرا در سراسر جهان از طریق مکان‌های نمادین مانند برلین شرقی، ویتنام، ترکیه، مقر KGB شوروی و غیره می‌جنگند.\n\nفراتر از کمپین، بازیکنان زرادخانه جنگ سرد از سلاح‌ها و تجهیزات را در نسل بعدی تجربه‌های Multiplayer و Zombies تجربه خواهند کرد. به لبه پرتگاه خوش آمدید و از بازی Call of Duty: Black Ops Cold War لذت ببرید.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer",
+      // "Co-operative",
+      // "Split screen"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8j4h.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8j4j.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8j4l.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8j4i.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sc8j4k.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctjag.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctjad.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctjaf.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctjae.jpg"
+    ],
+    video: "https://www.youtube.com/embed/aTS9n_m7TW0",
+    release_year: 2020,
+    priceIdPS4: 2,
+    sizePS4: 150
+  },
+
+  {
+    id: 83727,
+    title: "Call of Duty: Black Ops 4",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1wkf.jpg",
+    description: "Black Ops بازگشته است! شامل نبرد چند نفره روان، زمینی و روان، بزرگ‌ترین پیشنهاد زامبی‌ها با سه ماجراجویی کامل ارواح در هنگام راه‌اندازی، و Blackout، جایی که جهان Black Ops در یک تجربه عظیم بتل رویال با بزرگترین نقشه در تاریخ Call of Duty، مبارزات Black Ops امضا، شخصیت‌ها، مکان‌ها و سلاح‌های کل مجموعه Black Ops جان می‌گیرد.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer",
+      // "Co-operative",
+      // "Split screen"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/kejyntwkyj5cor0gwpdk.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/dwwulxqveft3ljygw4hj.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/gxrqetgeesus7abzlxsu.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/zuehx1upexu3z3mi2eo9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/yyynkripplx43svs9ifw.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/bofvxbntojlvpwueihdg.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/r5sbfsnwsps0xhjeet2f.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/zz3shb5i0awagmgyrgwi.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/jhvj4m5dz9ty9iwalwbv.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/jqzxwgalunogmu6nn2x3.jpg"
+    ],
+    video: "https://www.youtube.com/embed/tJv-xtxKkQY",
+    release_year: 2018,
+    priceIdPS4: 1,
+    sizePS4: 110
+  },
+
+  {
+    id: 2033,
+    title: "Call of Duty: Ghosts",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co3b15.jpg",
+    description: "بازی Call of Duty: Ghosts در پی یک رویداد فاجعه بار اتفاق می افتد که توازن جهانی قدرت ها را در جهان تغییر داد. در نتیجه، ایالات متحده دیگر به عنوان یک ابرقدرت شناخته نمی شود. ده سال پس از این رویداد، یک دشمن نادیده به عنوان یک تهدید ظاهر می شود، اما بقایای نیروهای ویژه ایالات متحده از هر شاخه گرد هم آمدند تا یک گروه نخبه از سربازان به نام 'ارواح'' را ایجاد کنند، که مصمم به ریشه کن کردن همه تهدیدها برای محافظت از ضعیفان و بقایای آمریکا هستند.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer",
+      // "Co-operative"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/w6u8ywwtpw2qfegjbiev.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ruugkqtdezerszspijhx.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ntunqbnstdzmsmdwi0ob.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/e2vicxwk0okhtdwrzobx.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/rxotqyjsspgvaboh9bt2.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/eokjlbc87agcejgtrvft.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/rndektanhvdu6nth9fmm.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ebls82hbgnp4jgzh0lgr.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/tfgqwj5kwhlkndq4d7i2.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/wskbzxsane7vmm81m6b0.jpg"
+    ],
+    video: "https://www.youtube.com/embed/Zxnx3W-HA18",
+    release_year: 2013,
+    priceIdPS4: 1,
+    sizePS4: 40
+  },
+
+  {
+    id: 18968,
+    title: "Call of Duty: Infinite Warfare",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1wkp.jpg",
+    description: "Call of Duty: Infinite Warfare سه حالت بازی منحصر به فرد را ارائه می‌دهد: Campaign، Multiplayer و Zombies. کمپین بازگشتی به ریشه‌های سخت و نظامی این فرنچایز است، در حالی که جسورانه به آینده نگاه می‌کند و روایتی غنی و جذاب ارائه می‌دهد که شبیه هیچ چیز تا به امروز در یک بازی Call of Duty نیست. بازیکن داستانی به سبک کلاسیک درباره جنگ‌های بزرگ را آغاز می‌کند که در آینده‌ای اتفاق می‌افتد که درگیری‌های انسانی در سراسر منظومه شمسی ما گسترش یافته است.\n\nچند نفره مکانیک‌های محبوب مانند سیستم حرکت مبتنی بر زنجیر را با نوآوری‌های گیم‌پلی ترکیب می‌کند تا یکی از عمیق‌ترین و جذاب‌ترین تجربیات آنلاین را در بازی ارائه دهد. حالت جدید زامبی‌ها با رویکردی بدیع و متمایز و روایتی پر سر و صدا، بازیکنان تعاونی را به هیجان می‌آورد که مطمئناً طرفداران را هیجان‌زده می‌کند. این عنوان محیط‌های خیره‌کننده، چند سیاره‌ای، سلاح‌های جدید و توانایی‌های بازیکنان کاملاً جدید را معرفی می‌کند.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter",
+      "Adventure"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer",
+      // "Co-operative",
+      // "Split screen"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/esorvxsuzcwpvppnmm1g.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/rvn0f6wnh9742p6g2fcd.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/s1ibtjmvd1iobsudmft7.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ktaojdhcbicmno9uo2ju.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/mvaw7so5br49vq8jphdt.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctj90.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctj8z.jpg"
+    ],
+    video: "https://www.youtube.com/embed/y_RI3bZhU50",
+    release_year: 2016,
+    priceIdPS4: 1,
+    sizePS4: 55
+  },
+
+  {
+    id: 28204,
+    title: "Call of Duty: WWII",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co1rdj.jpg",
+    description: "Call of Duty: WWII تجربه نسل بعدی قطعی جنگ جهانی دوم را در سه حالت مختلف بازی ایجاد می کند: Campaign، Multiplayer و Co-Operative. با ویژگی های بصری خیره کننده، این کمپین بازیکنان را در حالی که درگیر یک داستان کاملاً جدید Call of Duty هستند که در نبردهای نمادین جنگ جهانی دوم رخ می دهد، به تئاتر اروپا می برد. بازی چندنفره نشانگر بازگشت به گیم‌پلی اصلی و بوت روی زمین Call of Duty است. سلاح‌های معتبر و اکشن سنتی دویدن و تفنگ شما را در مجموعه وسیعی از مکان‌های با موضوع جنگ جهانی دوم غرق می‌کند. حالت Co-Operative یک داستان جدید و اصلی را در یک تجربه بازی مستقل و پر از لحظات غیرمنتظره و آدرنالین ترشح می کند.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer",
+      // "Co-operative",
+      // "Split screen"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/ijoenntauq5gfurpayt1.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/duzljmjdctiljgu4bzkt.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/zum4prw3m27jsqv2lobq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/mno7spxuafapa8ajvixm.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/m7j8nno7wpfdvxrvnam3.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/o9mbl0rabu0sazsbxiji.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/qslsn7dl1nmjvlidmlc6.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/snkucsvixsexyfcvi1ks.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/vdmxnihoegzdbyahjpat.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/fvyd4c4ybhw5asidd0tk.jpg"
+    ],
+    video: "https://www.youtube.com/embed/NnT-AKSRtF4",
+    release_year: 2017,
+    priceIdPS4: 1,
+    sizePS4: 65
+  },
+
+  {
+    id: 302156,
+    title: "Call of Duty: Black Ops 6",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co8zis.jpg",
+    description: "Black Ops 6 که توسط Treyarch و Raven ساخته شده است، یک اکشن مهیج جاسوسی است که در اوایل دهه 90، دوره گذار و تحول در سیاست جهانی، با پایان جنگ سرد و ظهور ایالات متحده به عنوان یک ابرقدرت مشخص می‌شود. این Black Ops با روایتی شگفت‌انگیز و بدون قید و شرط از قوانین تعامل است.\n\nکمپین Black Ops 6 گیم‌پلی پویا لحظه‌به‌لحظه را ارائه می‌کند که شامل انواع فضاهای بازی با مجموعه‌های پرفروش و لحظات پر اکشن، دزدی‌های پرمخاطره و فعالیت‌های جاسوسی شنل و خنجر است.\n\nدر بهترین تجربه چند نفره در کلاس، بازیکنان مهارت‌های خود را در 16 نقشه جدید، از جمله 12 نقشه هسته 6 در 6 و 4 نقشه Strike که می‌توانند به صورت 2v2 یا 6v6 بازی کنند، آزمایش خواهند کرد.\n\nBlack Ops 6 همچنین نشان‌دهنده بازگشت حماسی Round-Based Zombies است، حالت مورد علاقه طرفداران که در آن بازیکنان انبوهی از مردگان را در دو نقشه کاملاً جدید هنگام راه‌اندازی از بین می‌برند. پس از راه‌اندازی، بازیکنان می‌توانند منتظر نقشه‌های هیجان‌انگیزتر و تجربیات پیشگامانه‌تر باشند که هم در چند نفره و هم در زامبی‌ها قرار می‌گیرند.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter"
+    ],
+    modes: [
+      "Single player",
+      // "Multiplayer",
+      // "Co-operative"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scspgm.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scspgb.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scspgi.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scspge.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scspg9.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scspgg.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scspgh.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scspgd.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scspgl.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/scspga.jpg"
+    ],
+    video: "https://www.youtube.com/embed/V08UPqchVgQ",
+    release_year: 2024,
+    priceIdPS4: 1,
+    sizePS4: 85
+  },
+
+  {
+    id: 165067,
+    title: "Call of Duty: Vanguard",
+    image: "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_cover_big/co3kq8.jpg",
+    description: "این نبرد جنگ جهانی دوم است که هرگز قبل از آن نبوده است. شاهد خاستگاه نیروهای ویژه باشید زیرا نقشی محوری بازی می‌کنید و چهره تاریخ را تغییر می‌دهید و Task Force One را در یک کمپین جذاب در چهار صحنه اصلی جنگ تشکیل می‌دهید. در یک بازی چندنفره آنلاین و سرشار از نوآوری با 20 نقشه موجود هنگام راه‌اندازی، به یک اپراتور اصلی نیروهای ویژه تبدیل شوید. برای اولین فرنچایز، متقاطع زامبی که در حال گسترش جهان است، آماده شوید. خود را در یک تجربه کاملاً یکپارچه Call of Duty: Warzone با یک نقشه جدید و عظیم غرق کنید. این متصل‌ترین Call of Duty تا کنون است که همگی از موتور نسل بعدی Call of Duty که در Modern Warfare معرفی شده است، استفاده می‌شود.\n\nاین Call of Duty: Vanguard است.",
+    categories: [
+      "PS4",
+      // "PC",
+      // "PS5",
+      // "Xbox"
+    ],
+    genres: [
+      "Shooter"
+    ],
+    modes: [
+      "Single player",
+      "Multiplayer",
+      "Co-operative",
+      "Split screen"
+    ],
+    perspectives: [
+      "First person"
+    ],
+    gallery: [
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sccqtp.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sccqtq.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sccqtl.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sccqtn.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sccqtm.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sccqto.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sccqtr.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctj9e.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctj9g.jpg",
+      "https://images.weserv.nl/?url=images.igdb.com/igdb/image/upload/t_screenshot_big/sctj9f.jpg"
+    ],
+    video: "https://www.youtube.com/embed/GYeaKjAahjA",
+    release_year: 2021,
+    priceIdPS4: 2,
+    sizePS4: 110
   }
 ];
