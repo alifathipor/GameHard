@@ -4,12 +4,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>گالری بازی‌ها | جستجو + فیلتر</title>
-  <meta name="description"
-    content="نمایش گالری بازی‌های رایانه‌ای با امکان جستجو و فیلتر بر اساس دستگاه، سبک و حالت بازی." />
+  <title>فروشگاه بازی | گالری مدرن بازی</title>
+  <meta name="description" content="یک گالری مدرن از بازی‌های ویدیویی را با جستجو و فیلتر پیشرفته کاوش کنید. جزئیات، تصاویر و ویدیوهای بازی‌های مورد علاقه خود را برای کامپیوتر و کنسول پیدا کنید." />
+  <meta property="og:title" content="فروشگاه بازی | گالری مدرن بازی">
+  <meta property="og:description" content="یک گالری مدرن از بازی‌های ویدیویی را با جستجو و فیلتر پیشرفته کاوش کنید. جزئیات، تصاویر و ویدیوهای بازی‌های مورد علاقه خود را برای کامپیوتر و کنسول پیدا کنید.">
+  <meta property="og:image:alt" content="نمایی از وبسایت گالری بازی">
+  <meta name="twitter:title" content="فروشگاه بازی | گالری مدرن بازی">
+  <meta name="twitter:description" content="یک گالری مدرن از بازی‌های ویدیویی را با جستجو و فیلتر پیشرفته کاوش کنید. جزئیات، تصاویر و ویدیوهای بازی‌های مورد علاقه خود را برای کامپیوتر و کنسول پیدا کنید.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.css"
@@ -21,143 +26,127 @@
 </head>
 
 <body>
-  <!-- ===== اسلایدر بازی‌های بنر ===== -->
-  <div id="hero">
-    <div id="bg"></div>
-
-    <div id="mainGameBox">
-      <img id="mainImage" src="" alt="">
-    </div>
-
-    <div id="gameTitle"></div>
-
-    <div id="sliderBox">
-      <button id="leftBtn">◀</button>
-      <div id="thumbContainer"></div>
-      <button id="rightBtn">▶</button>
-    </div>
-  </div>
-
-  <script src="games.js"></script>
-  <script src="slider.js"></script>
-
-  <div class="stats-container">
-    <div class="stat">
-      <div class="ps4 odometer">0</div>
-      <div class="type">PS4</div>
-    </div>
-
-    <div class="stat">
-      <div class="PC odometer">0</div>
-      <div class="type">PC</div>
-    </div>
-
-    <div class="stat">
-      <div class="PS2 odometer">0</div>
-      <div class="type">PS2</div>
-    </div>
-    <div class="stat">
-      <div class="PS3 odometer">0</div>
-      <div class="type">PS3</div>
-    </div>
-  </div>
-
-  <div class="container">
-
-    <!-- جستجو -->
-    <div class="search">
-      <input id="search" type="search" placeholder="جستجوی عنوان بازی…" aria-label="جستجو" autocomplete="off" />
-      <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round" />
-      </svg>
-    </div>
-
-    <!-- دکمه‌های دسته‌بندی دستگاه -->
-    <div class="categories" id="categoryButtons">
-      <button data-cat="">همه</button>
-      <!-- <button data-cat="PS5">PS5</button> -->
-      <button data-cat="PS4">PS4</button>
-      <button data-cat="PS3">PS3</button>
-      <button data-cat="PS2">PS2</button>
-      <!-- <button data-cat="Xbox">Xbox</button> -->
-      <button data-cat="PC">PC</button>
-      <!-- <button data-cat="Android">Android</button> -->
-    </div>
-
-    <!-- فیلتر حالت بازی -->
-    <div class="modes-filter">
-      <label for="modeSelect">فیلتر بر اساس حالت:</label>
-      <select id="modeSelect">
-        <option value="">همه حالت‌ها</option>
-        <option value="Single player">تک‌نفره</option>
-        <option value="Multiplayer">چندنفره</option>
-        <option value="Co-operative">همکاری (Co-op)</option>
-        <option value="Split screen">صفحه تقسیم‌شده</option>
-        <option value="Massively Multiplayer Online (MMO)">آنلاین گسترده (MMO)</option>
-      </select>
-    </div>
-
-    <!-- فیلتر بر اساس جدید ترین ها -->
-    <div class="new-filter">
-      <label for="newSelect">فیلتر بر اساس جدید ترین:</label>
-      <select id="newSelect">
-        <option value="">🔄 بدون فیلتر</option>
-        <option value="new">📅 از جدیدترین</option>
-        <option value="old">📅 از قدیمی‌ترین</option>
-      </select>
-    </div>
-
-    <!-- فیلتر سبک -->
-    <div class="genres-filter">
-      <label for="genreSelect">فیلتر بر اساس سبک:</label>
-      <select id="genreSelect">
-        <option value="">همه سبک‌ها</option>
-        <option value="Pinball">پین‌بال</option>
-        <option value="Adventure">ماجراجویی</option>
-        <option value="Indie">ایندی (مستقل)</option>
-        <option value="Arcade">آرکید</option>
-        <option value="Visual Novel">ویژوال ناول</option>
-        <option value="Card & Board Game">بازی کارت و تخته‌ای</option>
-        <option value="MOBA">میدان آنلاین (MOBA)</option>
-        <option value="Point-and-click">اشاره و کلیک</option>
-        <option value="Fighting">مبارزه‌ای</option>
-        <option value="Shooter">شوتر</option>
-        <option value="Music">موسیقی</option>
-        <option value="Platform">سکوبازی</option>
-        <option value="Puzzle">معمایی</option>
-        <option value="Racing">مسابقه‌ای</option>
-        <option value="Real Time Strategy (RTS)">استراتژی‌ هم‌زمان (RTS)</option>
-        <option value="Role-playing (RPG)">نقش‌آفرینی (RPG)</option>
-        <option value="Simulator">شبیه‌سازی</option>
-        <option value="Sport">ورزشی</option>
-        <option value="Strategy">استراتژی</option>
-        <option value="Turn-based strategy (TBS)">استراتژی نوبتی (TBS)</option>
-        <option value="Tactical">تاکتیکی</option>
-        <option value="Hack and slash/Beat 'em up">هک‌انداَسْلش / بزن‌بهادر</option>
-        <option value="Quiz/Trivia">پرسش و معلومات</option>
-      </select>
-    </div>
-    </header>
-
-    <main>
-      <!-- شبکه/لیست کارت‌ها (JS پر می‌کند) -->
-      <div id="grid" class="grid" aria-live="polite" aria-busy="false"></div>
-      <div id="empty" class="empty" hidden>هیچ بازی مطابق جستجو/فیلتر پیدا نشد.</div>
-      <div style="height:80px;"></div>
-    </main>
-
-    <footer class="footer custom-footer">
-      <div class="footerAddress">
-        <span>تماس: <a href="tel:09023394942" dir="ltr"
-            style="font-weight:600;color:#1976d2;text-decoration:none;">09023394942</a></span>
-        <span class="footer-sep">|</span>
-        <span>آدرس: سهند فاز 1 نزدیک میدان امام حسین روبروی گلخانه</span>
+  <div class="page-wrapper">
+    <!-- ===== اسلایدر بازی‌های بنر ===== -->
+    <div id="hero">
+      <div id="bg"></div>
+      <div id="mainGameBox">
+        <img id="mainImage" src="" alt="کاور بازی اصلی">
       </div>
-    </footer>
+      <div id="gameTitle"></div>
+      <div id="sliderBox">
+        <button id="leftBtn" aria-label="اسلاید بعدی">◀</button>
+        <div id="thumbContainer"></div>
+        <button id="rightBtn" aria-label="اسلاید قبلی">▶</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <header class="main-header">
+        <h1>به فروشگاه بازی ما خوش آمدید</h1>
+        <p>جدیدترین بازی‌ها را برای پلتفرم‌های مختلف کشف کنید.</p>
+      </header>
+
+      <div class="stats-container">
+        <div class="stat">
+          <div class="stat-value ps4 odometer">0</div>
+          <div class="stat-label">بازی PS4</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value pc odometer">0</div>
+          <div class="stat-label">بازی PC</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value ps3 odometer">0</div>
+          <div class="stat-label">بازی PS3</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value ps2 odometer">0</div>
+          <div class="stat-label">بازی PS2</div>
+        </div>
+      </div>
+
+      <div class="filters-panel">
+        <!-- جستجو -->
+        <div class="search">
+          <input id="search" type="search" placeholder="جستجوی عنوان بازی…" aria-label="جستجو" autocomplete="off" />
+          <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <!-- فیلترها -->
+        <div class="filter-controls">
+          <select id="genreSelect" aria-label="فیلتر بر اساس سبک">
+            <option value="">همه سبک‌ها</option>
+            <option value="Pinball">پین‌بال</option>
+            <option value="Adventure">ماجراجویی</option>
+            <option value="Indie">ایندی (مستقل)</option>
+            <option value="Arcade">آرکید</option>
+            <option value="Visual Novel">ویژوال ناول</option>
+            <option value="Card & Board Game">بازی کارت و تخته‌ای</option>
+            <option value="MOBA">میدان آنلاین (MOBA)</option>
+            <option value="Point-and-click">اشاره و کلیک</option>
+            <option value="Fighting">مبارزه‌ای</option>
+            <option value="Shooter">شوتر</option>
+            <option value="Music">موسیقی</option>
+            <option value="Platform">سکوبازی</option>
+            <option value="Puzzle">معمایی</option>
+            <option value="Racing">مسابقه‌ای</option>
+            <option value="Real Time Strategy (RTS)">استراتژی‌ هم‌زمان (RTS)</option>
+            <option value="Role-playing (RPG)">نقش‌آفرینی (RPG)</option>
+            <option value="Simulator">شبیه‌سازی</option>
+            <option value="Sport">ورزشی</option>
+            <option value="Strategy">استراتژی</option>
+            <option value="Turn-based strategy (TBS)">استراتژی نوبتی (TBS)</option>
+            <option value="Tactical">تاکتیکی</option>
+            <option value="Hack and slash/Beat 'em up">هک‌انداَسْلش / بزن‌بهادر</option>
+            <option value="Quiz/Trivia">پرسش و معلومات</option>
+          </select>
+          <select id="modeSelect" aria-label="فیلتر بر اساس حالت">
+            <option value="">همه حالت‌ها</option>
+            <option value="Single player">تک‌نفره</option>
+            <option value="Multiplayer">چندنفره</option>
+            <option value="Co-operative">همکاری (Co-op)</option>
+            <option value="Split screen">صفحه تقسیم‌شده</option>
+            <option value="Massively Multiplayer Online (MMO)">آنلاین گسترده (MMO)</option>
+          </select>
+          <select id="newSelect" aria-label="مرتب‌سازی بر اساس تاریخ انتشار">
+            <option value="">مرتب‌سازی پیش‌فرض</option>
+            <option value="new">📅 از جدیدترین</option>
+            <option value="old">📅 از قدیمی‌ترین</option>
+          </select>
+        </div>
+        
+        <!-- دکمه‌های دسته‌بندی دستگاه -->
+        <div class="categories" id="categoryButtons">
+          <button data-cat="" class="active">همه</button>
+          <button data-cat="PS4">PS4</button>
+          <button data-cat="PC">PC</button>
+          <button data-cat="PS3">PS3</button>
+          <button data-cat="PS2">PS2</button>
+        </div>
+      </div>
+
+      <main>
+        <!-- شبکه/لیست کارت‌ها (JS پر می‌کند) -->
+        <div id="grid" class="grid" aria-live="polite" aria-busy="true"></div>
+        <div id="empty" class="empty" hidden>هیچ بازی مطابق جستجو/فیلتر پیدا نشد.</div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-address">
+            <span>تماس: <a href="tel:09023394942" dir="ltr">09023394942</a></span>
+            <span class="footer-sep">|</span>
+            <span>آدرس: سهند فاز 1 نزدیک میدان امام حسین روبروی گلخانه</span>
+          </div>
+          <p>&copy; 2025 فروشگاه بازی. تمام حقوق محفوظ است.</p>
+        </div>
+      </footer>
+    </div>
   </div>
 
-  <!-- ترتیب اسکریپت‌ها مثل همیشه -->
   <script src="games.js"></script>
   <script src="script.js"></script>
 </body>

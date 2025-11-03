@@ -5,26 +5,39 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>جزئیات بازی</title>
-  <meta name="description" content="نمایش اطلاعات کامل یک بازی رایانهای شامل توضیحات، گالری تصاویر و ویدیو." />
+  <meta name="description" content="نمایش اطلاعات کامل یک بازی رایانه‌ای شامل توضیحات، گالری تصاویر و ویدیو." />
+  <meta property="og:title" content="جزئیات بازی">
+  <meta property="og:description" content="نمایش اطلاعات کامل یک بازی رایانه‌ای شامل توضیحات، گالری تصاویر و ویدیو.">
+  <meta property="og:image:alt" content="نمایی از صفحه جزئیات بازی">
+  <meta name="twitter:title" content="جزئیات بازی">
+  <meta name="twitter:description" content="نمایش اطلاعات کامل یک بازی رایانه‌ای شامل توضیحات، گالری تصاویر و ویدیو.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <a href="index.html" class="pill btn-back" style="text-decoration:none;">← بازگشت</a>
-    </header>
-    <header>
-      <h1 class="site-title">جزئیات بازی</h1>
-    </header>
+  <div class="page-wrapper">
+    <div class="container">
+      <header class="details-header">
+        <a href="index.html" class="btn-back">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+          <span>بازگشت</span>
+        </a>
+      </header>
 
-    <main id="detailsContent" aria-live="polite" aria-busy="true">
-      <!-- محتوا توسط details.js ساخته میشود -->
-    </main>
+      <main id="detailsContent" aria-live="polite" aria-busy="true">
+        <!-- محتوا توسط details.js ساخته میشود -->
+      </main>
 
+      <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2025 فروشگاه بازی. تمام حقوق محفوظ است.</p>
+        </div>
+      </footer>
+    </div>
   </div>
 
   <script src="games.js"></script>
