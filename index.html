@@ -14,89 +14,101 @@
 </head>
 
 <body>
+  <!-- ===== اسلایدر بازی‌های بنر ===== -->
+     <div id="hero">
+  <div id="bg"></div>
+
+  <div id="mainGameBox">
+      <img id="mainImage" src="" alt="">
+      <div id="gameTitle"></div>
+  </div>
+
+  <div id="sliderBox">
+      <button id="leftBtn">◀</button>
+      <div id="thumbContainer"></div>
+      <button id="rightBtn">▶</button>
+  </div>
+</div>
+
+<script src="games.js"></script>
+<script src="slider.js"></script>
+
   <div class="container">
-    <header class="header">
-      <div class="brand">
-        <div>
-          <h1 class="site-title">گالری بازی‌های رایانه‌ای</h1>
-          <p class="sub">جستجو کنید یا بر اساس دستگاه، سبک و حالت بازی فیلتر کنید.</p>
-        </div>
-      </div>
+    
+    <!-- جستجو -->
+    <div class="search">
+      <input id="search" type="search" placeholder="جستجوی عنوان بازی…" aria-label="جستجو" autocomplete="off" />
+      <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round" />
+      </svg>
+    </div>
 
-      <!-- جستجو -->
-      <div class="search">
-        <input id="search" type="search" placeholder="جستجوی عنوان بازی…" aria-label="جستجو" autocomplete="off" />
-        <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5"
-            stroke-linecap="round" />
-        </svg>
-      </div>
+    <!-- دکمه‌های دسته‌بندی دستگاه -->
+    <div class="categories" id="categoryButtons">
+      <button data-cat="">همه</button>
+      <button data-cat="PS5">PS5</button>
+      <button data-cat="PS4">PS4</button>
+      <button data-cat="PS3">PS3</button>
+      <button data-cat="PS2">PS2</button>
+      <button data-cat="Xbox">Xbox</button>
+      <button data-cat="PC">PC</button>
+      <button data-cat="Android">Android</button>
+    </div>
 
-      <!-- دکمه‌های دسته‌بندی دستگاه -->
-      <div class="categories" id="categoryButtons">
-        <button data-cat="">همه</button>
-        <button data-cat="PS5">PS5</button>
-        <button data-cat="PS4">PS4</button>
-        <button data-cat="PS3">PS3</button>
-        <button data-cat="PS2">PS2</button>
-        <button data-cat="Xbox">Xbox</button>
-        <button data-cat="PC">PC</button>
-        <button data-cat="Android">Android</button>
-      </div>
+    <!-- فیلتر حالت بازی -->
+    <div class="modes-filter">
+      <label for="modeSelect">فیلتر بر اساس حالت:</label>
+      <select id="modeSelect">
+        <option value="">همه حالت‌ها</option>
+        <option value="Single player">تک‌نفره</option>
+        <option value="Multiplayer">چندنفره</option>
+        <option value="Co-operative">همکاری (Co-op)</option>
+        <option value="Split screen">صفحه تقسیم‌شده</option>
+        <option value="Massively Multiplayer Online (MMO)">آنلاین گسترده (MMO)</option>
+      </select>
+    </div>
 
-      <!-- فیلتر حالت بازی -->
-      <div class="modes-filter">
-        <label for="modeSelect">فیلتر بر اساس حالت:</label>
-        <select id="modeSelect">
-          <option value="">همه حالت‌ها</option>
-          <option value="Single player">تک‌نفره</option>
-          <option value="Multiplayer">چندنفره</option>
-          <option value="Co-operative">همکاری (Co-op)</option>
-          <option value="Split screen">صفحه تقسیم‌شده</option>
-          <option value="Massively Multiplayer Online (MMO)">آنلاین گسترده (MMO)</option>
-        </select>
-      </div>
+    <!-- فیلتر بر اساس جدید ترین ها -->
+    <div class="new-filter">
+      <label for="newSelect">فیلتر بر اساس جدید ترین:</label>
+      <select id="newSelect">
+        <option value="">🔄 بدون فیلتر</option>
+        <option value="new">📅 از جدیدترین</option>
+        <option value="old">📅 از قدیمی‌ترین</option>
+      </select>
+    </div>
 
-      <!-- فیلتر بر اساس جدید ترین ها -->
-      <div class="new-filter">
-        <label for="newSelect">فیلتر بر اساس جدید ترین:</label>
-        <select id="newSelect">
-          <option value="">🔄 بدون فیلتر</option>
-          <option value="new">📅 از جدیدترین</option>
-          <option value="old">📅 از قدیمی‌ترین</option>
-        </select>
-      </div>
-
-      <!-- فیلتر سبک -->
-      <div class="genres-filter">
-        <label for="genreSelect">فیلتر بر اساس سبک:</label>
-        <select id="genreSelect">
-          <option value="">همه سبک‌ها</option>
-          <option value="Pinball">پین‌بال</option>
-          <option value="Adventure">ماجراجویی</option>
-          <option value="Indie">ایندی (مستقل)</option>
-          <option value="Arcade">آرکید</option>
-          <option value="Visual Novel">ویژوال ناول</option>
-          <option value="Card & Board Game">بازی کارت و تخته‌ای</option>
-          <option value="MOBA">میدان آنلاین (MOBA)</option>
-          <option value="Point-and-click">اشاره و کلیک</option>
-          <option value="Fighting">مبارزه‌ای</option>
-          <option value="Shooter">شوتر</option>
-          <option value="Music">موسیقی</option>
-          <option value="Platform">سکوبازی</option>
-          <option value="Puzzle">معمایی</option>
-          <option value="Racing">مسابقه‌ای</option>
-          <option value="Real Time Strategy (RTS)">استراتژی‌ هم‌زمان (RTS)</option>
-          <option value="Role-playing (RPG)">نقش‌آفرینی (RPG)</option>
-          <option value="Simulator">شبیه‌سازی</option>
-          <option value="Sport">ورزشی</option>
-          <option value="Strategy">استراتژی</option>
-          <option value="Turn-based strategy (TBS)">استراتژی نوبتی (TBS)</option>
-          <option value="Tactical">تاکتیکی</option>
-          <option value="Hack and slash/Beat 'em up">هک‌انداَسْلش / بزن‌بهادر</option>
-          <option value="Quiz/Trivia">پرسش و معلومات</option>
-        </select>
-      </div>
+    <!-- فیلتر سبک -->
+    <div class="genres-filter">
+      <label for="genreSelect">فیلتر بر اساس سبک:</label>
+      <select id="genreSelect">
+        <option value="">همه سبک‌ها</option>
+        <option value="Pinball">پین‌بال</option>
+        <option value="Adventure">ماجراجویی</option>
+        <option value="Indie">ایندی (مستقل)</option>
+        <option value="Arcade">آرکید</option>
+        <option value="Visual Novel">ویژوال ناول</option>
+        <option value="Card & Board Game">بازی کارت و تخته‌ای</option>
+        <option value="MOBA">میدان آنلاین (MOBA)</option>
+        <option value="Point-and-click">اشاره و کلیک</option>
+        <option value="Fighting">مبارزه‌ای</option>
+        <option value="Shooter">شوتر</option>
+        <option value="Music">موسیقی</option>
+        <option value="Platform">سکوبازی</option>
+        <option value="Puzzle">معمایی</option>
+        <option value="Racing">مسابقه‌ای</option>
+        <option value="Real Time Strategy (RTS)">استراتژی‌ هم‌زمان (RTS)</option>
+        <option value="Role-playing (RPG)">نقش‌آفرینی (RPG)</option>
+        <option value="Simulator">شبیه‌سازی</option>
+        <option value="Sport">ورزشی</option>
+        <option value="Strategy">استراتژی</option>
+        <option value="Turn-based strategy (TBS)">استراتژی نوبتی (TBS)</option>
+        <option value="Tactical">تاکتیکی</option>
+        <option value="Hack and slash/Beat 'em up">هک‌انداَسْلش / بزن‌بهادر</option>
+        <option value="Quiz/Trivia">پرسش و معلومات</option>
+      </select>
+    </div>
     </header>
 
     <main>

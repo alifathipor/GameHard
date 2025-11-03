@@ -133,31 +133,62 @@ if (!game) {
 
   // رندر محتوای کامل صفحه
   container.innerHTML = `
-    <section>
-      <h2>${game.title}</h2>
-      <div class="meta" style="margin:.5rem 0 1rem;">
-        ${game.categories.map(cat => `<span class="pill">${cat}</span>`).join('')}
-        ${game.genres && game.genres.length
-      ? game.genres.map(g => `<span class="pill genre">${genreNames[g] || g}</span>`).join('')
-      : ''
-    }
-        ${game.modes && game.modes.length
-      ? game.modes.map(m => `<span class="pill mode">${modeNames[m] || m}</span>`).join('')
-      : ''
-    }
-        ${game.perspectives && game.perspectives.length
-      ? game.perspectives.map(p => `<span class="pill perspective">${perspectiveNames[p] || p}</span>`).join('')
-      : ''
-    }
+  <section>
+    <h2>${game.title}</h2>
+
+    ${game.categories?.length ? `
+      <div class="meta">
+        💻 پلتفرم:
+        ${game.categories.map(cat => `
+          <span class="pill">${cat}</span>
+        `).join('')}
       </div>
-      <p class="desc-justify">${game.description}</p>
-      ${releaseInfo}
-      ${priceRows.length > 0 ? `
-        <div class="price-box-details">
-          ${priceRows.join('')}
-        </div>
-      ` : ''}
-    </section>
+    ` : ''}
+
+    ${game.genres?.length ? `
+      <div class="meta">
+        🎮 ژانر:
+        ${game.genres.map(g => `
+          <span class="pill genre">${genreNames[g] || g}</span>
+        `).join('')}
+      </div>
+    ` : ''}
+
+    ${game.modes?.length ? `
+      <div class="meta">
+        👥 حالت:
+        ${game.modes.map(m => `
+          <span class="pill mode">${modeNames[m] || m}</span>
+        `).join('')}
+      </div>
+    ` : ''}
+
+    ${game.perspectives?.length ? `
+      <div class="meta">
+        👁 دیدگاه:
+        ${game.perspectives.map(p => `
+          <span class="pill perspective">${perspectiveNames[p] || p}</span>
+        `).join('')}
+      </div>
+    ` : ''}
+
+    ${game.release_year ? `
+      <div class="meta">
+        📅 تاریخ انتشار:
+        <span style="color:#1976d2">${game.release_year}</span>
+      </div>
+    ` : ''}
+
+    <p class="desc-justify">${game.description}</p>
+
+    ${releaseInfo}
+
+    ${priceRows.length > 0 ? `
+      <div class="price-box-details">
+        ${priceRows.join('')}
+      </div>
+    ` : ''}
+  </section>
 
     <section style="margin-top:20px;">
       <h3>ویدیو</h3>

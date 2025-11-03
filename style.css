@@ -24,11 +24,13 @@ body {
 .header {
   margin-bottom: 24px;
 }
+
 .site-title {
   font-size: 26px;
   font-weight: 800;
   margin-bottom: 6px;
 }
+
 .sub {
   font-size: 14px;
   color: #aaa;
@@ -40,6 +42,7 @@ body {
   position: relative;
   margin-bottom: 16px;
 }
+
 .search input {
   width: 100%;
   padding: 10px 40px 10px 12px;
@@ -50,6 +53,7 @@ body {
   background: #1e1e1e;
   color: #fff;
 }
+
 .search .icon {
   position: absolute;
   right: 10px;
@@ -65,6 +69,7 @@ body {
   gap: 8px;
   margin-bottom: 16px;
 }
+
 .categories button {
   padding: 6px 14px;
   border: none;
@@ -74,11 +79,13 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
+
 .categories button.active {
   background: #ff4c4c;
   color: #fff;
   font-weight: 600;
 }
+
 .categories button:hover {
   background: #333;
   color: #fff;
@@ -101,7 +108,6 @@ body {
   white-space: nowrap;
 }
 
-/* استایل زیبای منو */
 .genres-filter select,
 .modes-filter select,
 .new-filter select {
@@ -118,7 +124,6 @@ body {
   backdrop-filter: blur(6px);
 }
 
-/* وقتی موس روش میره */
 .genres-filter select:hover,
 .modes-filter select:hover,
 .new-filter select:hover {
@@ -126,7 +131,6 @@ body {
   background: rgba(40, 40, 40, 0.95);
 }
 
-/* وقتی انتخاب میشه */
 .genres-filter select:focus,
 .modes-filter select:focus,
 .new-filter select:focus {
@@ -134,7 +138,6 @@ body {
   box-shadow: 0 0 6px #1976d280;
 }
 
-/* استایل برای گزینه‌ها */
 .genres-filter option,
 .modes-filter option,
 .new-filter option {
@@ -143,12 +146,11 @@ body {
   padding: 10px;
 }
 
-
 /* ----------------------- */
-/* گرید کارت‌ها */
+/* گرید کارت‌ها (اصلاح‌شده برای موبایل) */
 .grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr; /* در دسکتاپ یک‌ستونه */
   gap: 20px;
 }
 
@@ -162,6 +164,7 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   transition: transform .2s;
 }
+
 .list-card:hover {
   transform: translateY(-4px);
 }
@@ -172,6 +175,7 @@ body {
   max-width: 220px;
   overflow: hidden;
 }
+
 .thumb {
   width: 100%;
   height: 100%;
@@ -187,37 +191,36 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
 .info-box .title {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
 }
+
 .info-box .title a {
   color: #fff;
   text-decoration: none;
 }
+
 .info-box .title a:hover {
   color: #ff4c4c;
 }
+
 .info-box .desc {
   font-size: 14px;
   color: #ccc;
   margin-bottom: 12px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
-   line-clamp: 3;
-
-  /* بقیه نیازها برای ellipsis */
+  line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 @supports (line-clamp: 3) {
-  .info-box .desc{
-    /* در پیاده‌سازی استاندارد نیاز به -webkit-box نیست */
+  .info-box .desc {
     display: block;
     line-clamp: 3;
   }
@@ -227,6 +230,7 @@ body {
   font-size: 14px;
   margin: 6px 0;
 }
+
 .meta .pill {
   display: inline-block;
   background: #333;
@@ -236,14 +240,15 @@ body {
   font-size: 13px;
   color: #fff;
 }
+
 .meta .genre {
   background: #444e;
 }
+
 .meta .mode {
   background: #2255aa;
 }
 
-/* highlight */
 mark {
   background: #ff4c4c;
   color: #fff;
@@ -251,7 +256,6 @@ mark {
   border-radius: 3px;
 }
 
-/* پیام خالی */
 .empty {
   text-align: center;
   padding: 30px;
@@ -259,8 +263,6 @@ mark {
   color: #aaa;
 }
 
-
-/* --- استایل انتخاب دستهبندی --- */
 .select select {
   width: 200px;
   padding: 14px 14px;
@@ -281,7 +283,6 @@ mark {
   background: color-mix(in oklab, var(--card), #fff 6%);
 }
 
-/* مخفیسازی بصری برای لیبل دسترسپذیر */
 .sr-only {
   position: absolute !important;
   width: 1px; height: 1px;
@@ -350,7 +351,6 @@ mark {
   margin-right: 8px;
 }
 
-
 .btn-back {
   background: linear-gradient(90deg, #f7fafc 0%, #e3e8ee 100%);
   color: #222;
@@ -369,8 +369,6 @@ mark {
   color: #1976d2;
   outline: none;
 }
-
-
 
 .lightbox {
   position: fixed;
@@ -417,43 +415,209 @@ mark {
 
 /* حالت موبایل */
 @media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* دو تا در هر ردیف */
+  }
+
   .list-card {
-    flex-direction: column;   /* عکس بالا، توضیحات پایین */
+    flex-direction: column;
   }
 
   .thumb-box {
     flex: unset;
-    max-width: 100%;          /* عکس عرض کامل */
+    max-width: 100%;
   }
 
   .info-box {
     padding: 12px 14px;
   }
-}
 
-
-.price-box-details {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  background: rgba(255,255,255,0.08);
-  padding: 12px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-/* هر ردیف قیمت (دسکتاپ: افقی) */
-.price-row {
-  display: flex;
-  flex-wrap: wrap;   /* اجازه بده بشکنه */
-  align-items: center;
-  gap: 8px;
-}
-
-/* موبایل: چینش عمودی */
-@media (max-width: 768px) {
   .price-row {
     flex-direction: column;
-    align-items: flex-start; /* بچسبن به سمت راست */
+    align-items: flex-start;
   }
+}
+
+/* ===== استایل اسلایدر Banner ===== */
+/* .banner-slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+}
+
+
+.banner-slider .bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(18px) brightness(0.55);
+  transform: scale(1.2);
+}
+
+
+.banner-slider .main-img {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+
+.banner-slider .title {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 0 2px 4px #000;
+}
+
+
+.banner-slider .thumbs {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 5px 10px;
+}
+.banner-slider .thumbs::-webkit-scrollbar { display: none; }
+
+
+.banner-slider .thumb {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: .6;
+  transition: .3s;
+}
+.banner-slider .thumb.active {
+  opacity: 1;
+  transform: scale(1.08);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+#bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px) brightness(0.4);
+  z-index: -1;
+}
+
+#mainGameBox {
+  width: 250px;
+  height: 300px;
+  margin: 50px auto;
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 2px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 25px rgba(255,255,255,0.1);
+}
+
+#mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gameTitle {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+#sliderBox {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ 
+}
+
+#thumbContainer {
+  width: 300px;
+  max-width: 90vw;
+   overflow-x: hidden;
+  display: flex;
+  gap: 10px;
+  scroll-behavior: smooth;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+}
+#thumbContainer::-webkit-scrollbar {
+  height: 6px;
+}
+#thumbContainer::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+  border-radius: 4px;
+}
+
+
+
+#thumbContainer img {
+  width: 80px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: .7;
+  transition: .2s;
+}
+
+#thumbContainer img.active {
+  border: 2px solid #fff;
+  opacity: 1;
+}
+
+button {
+  background: rgba(255,255,255,0.3);
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+button:hover{
+  background: rgba(255,255,255,0.6);
 }
