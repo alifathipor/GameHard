@@ -168,41 +168,7 @@ const defaultBtn = categoryButtons.querySelector('button[data-cat=""]');
 if (defaultBtn) {
   defaultBtn.classList.add('active');
 }
-
-// ======= اسلایدر بازی‌های Banner =======
-// ----------- Dynamic Banner Slider -----------
-// ======= اسلایدر بازی‌های Banner =======
-
-// === Banner Slider Proper Version ===
-
-// const bannerGames = games.filter(g => g.banner);  
-// let current = 0;
-
-// const slider = document.getElementById("bannerSlider");
-
-// function renderSlider() {
-//   const g = bannerGames[current];
-
-//   slider.innerHTML = `
-//     <div class="bg" style="background-image:url('${g.image}')"></div>
-//     <div class="main-img" style="background-image:url('${g.image}')"></div>
-//     <div class="title">${g.title} - ${g.release_year || ""}</div>
-//     <div class="thumbs">
-//       ${bannerGames.map((x,i)=>`
-//         <div class="thumb ${i===current?"active":""}" 
-//              style="background-image:url('${x.image}')"
-//              onclick="changeSlide(${i})"></div>
-//       `).join("")}
-//     </div>
-//   `;
-// }
-
-// window.changeSlide = function(i){
-//   current = i;
-//   renderSlider();
-// };
-
-// renderSlider();
+//------------------------------banaer game
 const bannerGames = games.filter(g => g.banner);
 const bg = document.getElementById("bg");
 const mainImage = document.getElementById("mainImage");
@@ -268,5 +234,43 @@ setInterval(() => {
   showGame(current);
 }, 8000);
 
+//----animation count
+const createOdometer = (el, value) => {
+  const odometer = new Odometer({
+    el: el,
+    value: 0,
+  });
+
+  let hasRun = false;
+
+  const options = {
+    threshold: [0, 0.9],
+  };
+
+  const callback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (!hasRun) {
+          odometer.update(value);
+          hasRun = true;
+        }
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(callback, options);
+  observer.observe(el);
+};
 
 
+const Ps4 = document.querySelector(".ps4");
+createOdometer(Ps4, games.length);
+
+const PC = document.querySelector(".PC");
+createOdometer(PC, 0);
+
+const PS3 = document.querySelector(".PS3");
+createOdometer(PS3, 0);
+
+const PS2 = document.querySelector(".PS2");
+createOdometer(PS2, 0);

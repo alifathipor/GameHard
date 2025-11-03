@@ -1260,7 +1260,6 @@ const pricesAndroid = {
 };
 
 const games = [
-
   {
     id: 95062,
     title: "Call of Duty: Modern Warfare 2 Campaign Remastered",

@@ -11,30 +11,59 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.css"
+    integrity="sha512-kMPqFnKueEwgQFzXLEEl671aHhQqrZLS5IP3HzqdfozaST/EgU+/wkM07JCmXFAt9GO810I//8DBonsJUzGQsQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
+    integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
   <!-- ===== اسلایدر بازی‌های بنر ===== -->
-     <div id="hero">
-  <div id="bg"></div>
+  <div id="hero">
+    <div id="bg"></div>
 
-  <div id="mainGameBox">
+    <div id="mainGameBox">
       <img id="mainImage" src="" alt="">
-      <div id="gameTitle"></div>
-  </div>
+    </div>
 
-  <div id="sliderBox">
+    <div id="gameTitle"></div>
+
+    <div id="sliderBox">
       <button id="leftBtn">◀</button>
       <div id="thumbContainer"></div>
       <button id="rightBtn">▶</button>
+    </div>
   </div>
-</div>
 
-<script src="games.js"></script>
-<script src="slider.js"></script>
+  <script src="games.js"></script>
+  <script src="slider.js"></script>
+
+  <div class="stats-container">
+    <div class="stat">
+      <div class="ps4 odometer">0</div>
+      <div class="type">PS4</div>
+    </div>
+
+    <div class="stat">
+      <div class="PC odometer">0</div>
+      <div class="type">PC</div>
+    </div>
+
+    <div class="stat">
+      <div class="PS2 odometer">0</div>
+      <div class="type">PS2</div>
+    </div>
+    <div class="stat">
+      <div class="PS3 odometer">0</div>
+      <div class="type">PS3</div>
+    </div>
+  </div>
 
   <div class="container">
-    
+
     <!-- جستجو -->
     <div class="search">
       <input id="search" type="search" placeholder="جستجوی عنوان بازی…" aria-label="جستجو" autocomplete="off" />
@@ -47,13 +76,13 @@
     <!-- دکمه‌های دسته‌بندی دستگاه -->
     <div class="categories" id="categoryButtons">
       <button data-cat="">همه</button>
-      <button data-cat="PS5">PS5</button>
+      <!-- <button data-cat="PS5">PS5</button> -->
       <button data-cat="PS4">PS4</button>
       <button data-cat="PS3">PS3</button>
       <button data-cat="PS2">PS2</button>
-      <button data-cat="Xbox">Xbox</button>
+      <!-- <button data-cat="Xbox">Xbox</button> -->
       <button data-cat="PC">PC</button>
-      <button data-cat="Android">Android</button>
+      <!-- <button data-cat="Android">Android</button> -->
     </div>
 
     <!-- فیلتر حالت بازی -->
@@ -119,7 +148,7 @@
     </main>
 
     <footer class="footer custom-footer">
-      <div class="footer-content">
+      <div class="footerAddress">
         <span>تماس: <a href="tel:09023394942" dir="ltr"
             style="font-weight:600;color:#1976d2;text-decoration:none;">09023394942</a></span>
         <span class="footer-sep">|</span>
