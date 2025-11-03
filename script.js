@@ -57,6 +57,11 @@ function renderCards(list, query = '', selectedGenre = '', selectedCat = '', sel
       </div>
     `;
     frag.appendChild(card);
+    const thumbBox = card.querySelector('.thumb-box');
+    const bgLayer = document.createElement('div');
+    bgLayer.className = 'bg-layer';
+    bgLayer.style.backgroundImage = `url(${image})`;
+    thumbBox.prepend(bgLayer);
   });
 
   grid.appendChild(frag);
@@ -129,7 +134,7 @@ if (bannerGames.length > 0) {
       container.scrollBy({ left: offset, behavior: "smooth" });
     }
   }
-  
+
   function nextSlide() {
     current = (current + 1) % bannerGames.length;
     showGame(current);
@@ -145,13 +150,13 @@ if (bannerGames.length > 0) {
     img.src = g.image;
     img.alt = `تصویر کوچک ${g.title}`;
     img.onclick = () => {
-        showGame(i);
-        clearInterval(autoSlideInterval);
-        autoSlideInterval = setInterval(nextSlide, 8000);
+      showGame(i);
+      clearInterval(autoSlideInterval);
+      autoSlideInterval = setInterval(nextSlide, 8000);
     };
     thumbContainer.appendChild(img);
   });
-  
+
   document.getElementById("rightBtn").onclick = () => {
     prevSlide();
     clearInterval(autoSlideInterval);
@@ -175,42 +180,42 @@ if (bannerGames.length > 0) {
 
 // --- شمارنده آمار ---
 function setupCounters() {
-    const categoryCounts = games.reduce((acc, game) => {
-        if (game.categories && game.categories.length > 0) {
-            game.categories.forEach(cat => {
-                acc[cat] = (acc[cat] || 0) + 1;
-            });
+  const categoryCounts = games.reduce((acc, game) => {
+    if (game.categories && game.categories.length > 0) {
+      game.categories.forEach(cat => {
+        acc[cat] = (acc[cat] || 0) + 1;
+      });
+    }
+    return acc;
+  }, {});
+
+  const createOdometer = (el, value) => {
+    if (!el) return;
+    const odometer = new Odometer({
+      el: el,
+      value: 0,
+      format: 'd'
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setTimeout(() => odometer.update(value), 100);
+          observer.unobserve(el);
         }
-        return acc;
-    }, {});
+      });
+    }, { threshold: 0.1 });
 
-    const createOdometer = (el, value) => {
-        if (!el) return;
-        const odometer = new Odometer({
-            el: el,
-            value: 0,
-            format: 'd'
-        });
+    observer.observe(el);
+  };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => odometer.update(value), 100);
-                    observer.unobserve(el);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        observer.observe(el);
-    };
-
-    createOdometer(document.querySelector(".ps4.odometer"), categoryCounts['PS4'] || 0);
-    createOdometer(document.querySelector(".pc.odometer"), categoryCounts['PC'] || 0);
-    createOdometer(document.querySelector(".ps3.odometer"), categoryCounts['PS3'] || 0);
-    createOdometer(document.querySelector(".ps2.odometer"), categoryCounts['PS2'] || 0);
+  createOdometer(document.querySelector(".ps4.odometer"), categoryCounts['PS4'] || 0);
+  createOdometer(document.querySelector(".pc.odometer"), categoryCounts['PC'] || 0);
+  createOdometer(document.querySelector(".ps3.odometer"), categoryCounts['PS3'] || 0);
+  createOdometer(document.querySelector(".ps2.odometer"), categoryCounts['PS2'] || 0);
 }
 
 // اجرای توابع در زمان بارگذاری
 document.addEventListener('DOMContentLoaded', () => {
-    setupCounters();
+  setupCounters();
 });
