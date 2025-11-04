@@ -30,7 +30,7 @@ function renderCards(list, query = '', selectedGenre = '', selectedCat = '', sel
 
   const frag = document.createDocumentFragment();
 
-  sortedList.forEach(({ id, title, image, categories, isNew, release_year }) => {
+  sortedList.forEach(({ id, title, image, categories, genres, modes, isNew, release_year }) => {
     const matchTitle = title.toLowerCase().includes(q);
     const matchGenre = !selectedGenre || (genres && genres.includes(selectedGenre));
     const matchCategory = !selectedCat || (categories && categories.includes(selectedCat));
